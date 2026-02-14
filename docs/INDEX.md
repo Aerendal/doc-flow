@@ -327,7 +327,7 @@
 
 **Daily use:**
 
-1. **[EXTENDED_PLAN.md](EXTENDED_PLAN.md)** - today's tasks (day_XX section)
+1. **[EXTENDED_PLAN.md](EXTENDED_PLAN.md)** - today's tasks (relevant section)
 2. **[DEPENDENCY_MATRIX.md](DEPENDENCY_MATRIX.md)** - check dependencies unblocked
 3. **[RISK_REGISTER.md](RISK_REGISTER.md)** - monitor triggered risks
 
@@ -433,9 +433,9 @@ Future additions (created during project):
 3. Monitor: [RISK_REGISTER.md](RISK_REGISTER.md) - technical risks
 
 ### Jesteś Developer?
-1. Start: [EXTENDED_PLAN.md](EXTENDED_PLAN.md) - find your day_XX
+1. Start: [EXTENDED_PLAN.md](EXTENDED_PLAN.md) - find your assigned section
 2. Check: [DEPENDENCY_MATRIX.md](DEPENDENCY_MATRIX.md) - dependencies met?
-3. Daily: day_XX.md files - detailed tasks
+3. Daily: entry files - detailed tasks
 
 ### Jesteś Stakeholder?
 1. Start: [INDEX.md](INDEX.md) (this file) - overview

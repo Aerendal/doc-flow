@@ -14,7 +14,7 @@
 - **[UAT_PLAN.md](UAT_PLAN.md)** - Plan UAT (day_85-89 execution)
 
 **Quick links:**
-- Daily tasks: See [EXTENDED_PLAN.md - day_XX](EXTENDED_PLAN.md) for planned activities
+- Daily tasks: See [EXTENDED_PLAN.md - relevant section](EXTENDED_PLAN.md) for planned activities
 - Risk tracking: See [RISK_REGISTER.md](RISK_REGISTER.md) for risk status updates (trigger conditions)
 - Progress: See [DEPENDENCY_MATRIX.md](DEPENDENCY_MATRIX.md) for completion tracking
 
@@ -53,7 +53,7 @@ Work Log to append-only dziennik pracy w stylu journal, który dokumentuje fakty
 1. Copy template entry (see below)
 2. Fill in all sections
 3. Append to bottom of this file (newest entries last)
-4. Commit to git: `git add WORK_LOG.md && git commit -m "Work log: day_XX"`
+4. Commit to git: `git add WORK_LOG.md && git commit -m "Work log: YYYY-MM-DD"`
 
 **Special updates:**
 - **Milestone completion:** Add "🎉 MILESTONE" marker (e.g., day_15 MVP, day_87 v1.0 launch)
@@ -67,19 +67,19 @@ Work Log to append-only dziennik pracy w stylu journal, który dokumentuje fakty
 ```markdown
 ---
 
-## day_XX: [Name of day from EXTENDED_PLAN] | YYYY-MM-DD
+## ENTRY: [Name of section from EXTENDED_PLAN] | YYYY-MM-DD
 
 **Current Phase:** [Phase 1 / Phase 2 / Phase 3]
 
 **Planned tasks (from EXTENDED_PLAN):**
-- [ ] Task 1 from day_XX plan
-- [ ] Task 2 from day_XX plan
-- [ ] Task 3 from day_XX plan
+- [ ] Task 1 from selected plan section
+- [ ] Task 2 from selected plan section
+- [ ] Task 3 from selected plan section
 
 **Actual completed:**
 - [x] Task 1 - DONE (notes: ...)
 - [x] Task 2 - DONE (notes: ...)
-- [ ] Task 3 - DEFERRED to day_XX+1 (reason: ...)
+- [ ] Task 3 - DEFERRED to next entry (reason: ...)
 - [x] Unplanned task: Fixed bug in parser (2h)
 
 **Effort hours:**
@@ -96,8 +96,8 @@ Work Log to append-only dziennik pracy w stylu journal, który dokumentuje fakty
 - Contingency plan activated: [Scenario A / B / C from RISK_REGISTER]
 
 **Dependencies:**
-- Completed dependencies: [day_XX, day_YY] (unblocked by these)
-- Blocking: [day_ZZ] (this day blocks these future days)
+- Completed dependencies: [entry_A, entry_B] (unblocked by these)
+- Blocking: [entry_C] (this entry blocks these future entries)
 - Waiting on: [External dependency, if any]
 
 **Quick retro (3 questions):**
@@ -105,7 +105,7 @@ Work Log to append-only dziennik pracy w stylu journal, który dokumentuje fakty
 2. **What went poorly?** [1-2 sentences]
 3. **What will I change tomorrow?** [1-2 sentences]
 
-**Tomorrow's focus (day_XX+1):**
+**Next focus (next entry):**
 - [ ] Top priority 1
 - [ ] Top priority 2
 - [ ] Top priority 3
@@ -382,7 +382,7 @@ Work Log to append-only dziennik pracy w stylu journal, który dokumentuje fakty
 ### WORK_LOG mapuje się do:
 
 **EXTENDED_PLAN.md:**
-- **Planned tasks:** Copy from day_XX section of EXTENDED_PLAN
+- **Planned tasks:** Copy from relevant section of EXTENDED_PLAN
 - **Effort variance:** Compare actual vs planned hours
 - **Milestones:** Mark milestone days (day_15, 25, 55, 87)
 
@@ -411,7 +411,7 @@ Work Log to append-only dziennik pracy w stylu journal, który dokumentuje fakty
 ```markdown
 ---
 
-## WEEKLY SUMMARY: Week X (day_A to day_B) | YYYY-MM-DD
+## WEEKLY SUMMARY: Week X (range A to B) | YYYY-MM-DD
 
 **Phase:** [Phase 1 / Phase 2 / Phase 3]
 
@@ -423,7 +423,7 @@ Work Log to append-only dziennik pracy w stylu journal, który dokumentuje fakty
 - RED days: Z
 
 **Milestones achieved this week:**
-- [Milestone name] (day_XX)
+- [Milestone name] (milestone id)
 
 **Risks triggered this week:**
 - [Risk ID: R-FX-YYY] - [Status: TRIGGERED / MITIGATED]

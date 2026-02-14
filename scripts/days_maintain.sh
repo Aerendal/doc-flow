@@ -8,11 +8,11 @@ days_maintain.sh <command> [options]
 Commands:
   index                 - generuje worklog/days/index.md (deleguje do scripts/days_index.sh)
   lint                  - uruchamia linter days (cmd/worklog-lint-days)
-  check [--threshold N] - liczy pliki day_*.md; exit 1 jeśli > N (default: 130)
+  check [--threshold N] - liczy pliki markdown; exit 1 jeśli > N (default: 130)
   archive --from A --to B [--out PATH] [--dry-run]
-                        - pakuje zakres day_A..day_B do tar.gz (domyślnie archive/days_A_B.tar.gz)
+                        - pakuje zakres wpisow A..B do tar.gz (domyślnie archive/days_A_B.tar.gz)
   search --pattern REGEX
-                        - szuka REGEX w worklog/days/day_*.md (rg, fallback grep -nR)
+                        - szuka REGEX w plikach markdown w worklog/days (rg, fallback grep -nR)
 
 Wspólne:
   -h, --help            - pomoc
@@ -57,8 +57,8 @@ case "$cmd" in
         *) echo "Nieznana opcja: $1" >&2; usage; exit 1;;
       esac
     done
-    count=$(ls worklog/days/day_*.md | wc -l)
-    echo "day_xx count: $count (threshold: $threshold)"
+    count=$(find worklog/days -maxdepth 1 -type f -name '*.md' ! -name 'index.md' | wc -l)
+    echo "entries count: $count (threshold: $threshold)"
     if (( count > threshold )); then
       exit 1
     fi
@@ -81,10 +81,9 @@ case "$cmd" in
     out=${out:-"archive/days_${from}_${to}.tar.gz"}
     files=()
     for n in $(seq "$from" "$to"); do
-      f=$(printf "worklog/days/day_%d.md" "$n")
-      if [[ -f "$f" ]]; then
+      while IFS= read -r f; do
         files+=("$f")
-      fi
+      done < <(find worklog/days -maxdepth 1 -type f -name "*_${n}.md" | LC_ALL=C sort -V)
     done
     if [[ ${#files[@]} -eq 0 ]]; then
       echo "Brak plików w zadanym zakresie" >&2; exit 1
@@ -111,9 +110,10 @@ case "$cmd" in
       echo "--pattern wymagany" >&2; exit 1
     fi
     if command -v rg >/dev/null 2>&1; then
-      rg --no-heading "$pattern" worklog/days/day_*.md
+      rg --no-heading --glob '*.md' --glob '!index.md' "$pattern" worklog/days
     else
-      grep -nR "$pattern" worklog/days/day_*.md || true
+      find worklog/days -maxdepth 1 -type f -name '*.md' ! -name 'index.md' -print0 \
+        | xargs -0 -r grep -nH "$pattern" || true
     fi
     ;;
 

@@ -1658,7 +1658,7 @@ Risk triggered?
 ### Version 1.1 (2026-02-06)
 **Fixed:**
 - M-01: Added buffer day recommendations and risk-buffer mappings
-- M-02: Enhanced 13 risk entries with deployment-specific triggers and day_XX timeline references
+- M-02: Enhanced 13 risk entries with deployment-specific triggers and timeline references
 - M-03: Added missing deployment-related risks (R-F3-004, R-F3-005)
 - See [FIXES_APPLIED.md](FIXES_APPLIED.md) for detailed changes
 

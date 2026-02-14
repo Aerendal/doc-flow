@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	root := flag.String("root", "worklog/days", "root directory containing day_*.md files")
+	root := flag.String("root", "worklog/days", "root directory containing markdown files")
 	flag.Parse()
 	os.Exit(lintdays.Run(*root, os.Stdout, os.Stderr))
 }

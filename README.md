@@ -1,28 +1,27 @@
 # docflow
 
-CLI do zarządzania dokumentacją i szablonami (Go, vendor-only, bez CGO). Release Candidate 2 (GA-ready).
+CLI do zarządzania dokumentacją i szablonami (Go, bez CGO). Release Candidate 2 (GA-ready).
 
 ## Wymagania
 - Go 1.25+ (zainstalowane lokalnie)
-- Brak dostępu do sieci w czasie budowania/testów → używamy `vendor/`
-- Uwaga: ograniczenie „bez sieci” dotyczy build/test ze źródeł; pobranie binarki z GitHub Releases wymaga sieci.
+- Build ze źródeł (`./cmd/docflow`) jest podstawową ścieżką instalacji
+- Tryb offline działa przy aktualnym `vendor/`; gdy `vendor/` nie jest zsynchronizowany, użyj `-mod=mod`
 
 ## Quickstart (60s)
 ```bash
-# pobierz binarkę z releases (podstaw swój system/arch)
-curl -LO https://github.com/Aerendal/doc-flow/releases/latest/download/docflow-linux-amd64.tar.gz
-tar -xzf docflow-linux-amd64.tar.gz
-chmod +x docflow-linux-amd64
+# zbuduj lokalnie binarkę
+mkdir -p build
+go build -mod=mod -o build/docflow ./cmd/docflow
 
 # szybki audit lokalny (nieblokujący), tworzy bundle w .docflow/out/<run_id>/
-./docflow-linux-amd64 health \
+./build/docflow health \
   --config examples/simple-api/docflow.yaml \
   --rules docs/_meta/GOVERNANCE_RULES.yaml \
   --baseline-mode repo --baseline-dir .docflow/baseline \
   --bundle-dir .docflow/out
 
 # (opcjonalnie) profiling
-./docflow-linux-amd64 scan --cpu-profile /tmp/docflow.cpu examples/simple-api
+./build/docflow scan --cpu-profile /tmp/docflow.cpu examples/simple-api
 go tool pprof -top /tmp/docflow.cpu
 ```
 
@@ -126,22 +125,28 @@ Upewnij się, że `docflow.yaml`, `docs/_meta/GOVERNANCE_RULES.yaml` i baseline 
 
 ## Command palette
 - Bash/fzf: `./scripts/palette.sh` (fzf opcjonalny; fallback lista + wybór numeru). Akcje: import, audit, bundle, demo, checks.
-- W binarce: `./build/docflow-linux-amd64 palette` (tekstowe menu bez fzf).
+- W binarce: `./build/docflow palette` (tekstowe menu bez fzf).
 
 Przykłady `examples/simple-api` i `examples/architecture` są governance-ready (validate/compliance PASS).
 
 ## Instalacja ze źródeł
 ```bash
-GOFLAGS=-mod=vendor go build -o docflow ./cmd/docflow
+mkdir -p build
+
+# preferowany fallback (działa gdy vendor jest niespójny)
+go build -mod=mod -o build/docflow ./cmd/docflow
+
+# opcjonalnie: build offline, gdy vendor jest zsynchronizowany
+GOFLAGS=-mod=vendor go build -o build/docflow ./cmd/docflow
 ```
 
 ## Uruchomienie przykładowe
-- Wersja binarki: `./build/docflow-linux-amd64 --version`
-- Skan: `./build/docflow-linux-amd64 scan -o .docflow/cache/doc_index.json --deterministic`
-- Walidacja: `./build/docflow-linux-amd64 validate --strict`
-- Plan dzienny: `./build/docflow-linux-amd64 plan daily --max 5`
-- Rekomendacje (demo): `./build/docflow-linux-amd64 recommend --doc-type guide --lang pl`
-- Impact szablonów: `./build/docflow-linux-amd64 template-impact --old-index .docflow/cache/doc_index.json`
+- Wersja binarki: `./build/docflow --version`
+- Skan: `./build/docflow scan -o .docflow/cache/doc_index.json --deterministic`
+- Walidacja: `./build/docflow validate --strict`
+- Plan dzienny: `./build/docflow plan daily --max 5`
+- Rekomendacje (demo): `./build/docflow recommend --doc-type guide --lang pl`
+- Impact szablonów: `./build/docflow template-impact --old-index .docflow/cache/doc_index.json`
 
 ## Komendy CLI (overview)
 - `scan` — buduje indeks dokumentów (metadane, checksum, hints).
@@ -172,10 +177,12 @@ Kanoniczny sposób integracji CI pozostaje `docflow health --ci`, bo daje jeden 
 Szczegóły parametrów i kontraktu outputów: `docs/CLI_REFERENCE.md` oraz `docs/CONTRACT.md`.
 
 ## Instalacja (release)
-- Ręcznie: pobierz archiwum z Releases (`docflow-<os>-<arch>.tar.gz` lub `.zip`), rozpakuj i uruchom.
+- Releases są opcjonalne. Jeśli `.../releases/latest/download/...` zwraca `404`, użyj instalacji ze źródeł (sekcja wyżej).
+- Ręcznie (gdy release istnieje): pobierz archiwum z Releases (`docflow-<os>-<arch>.tar.gz` lub `.zip`), rozpakuj i uruchom.
 - Weryfikacja: `sha256sum -c checksums.txt` (plik `checksums.txt` z tej samej strony release).
-- Skrypt instalacyjny: `PREFIX=$HOME/.local ./install.sh --channel latest` (pobiera z dist/ i weryfikuje checksum). `--dry-run` aby sprawdzić bez kopiowania.
-  - Możesz też wskazać własną binarkę `--from /path/to/docflow-linux-amd64`.
+- Skrypt instalacyjny: `PREFIX=$HOME/.local ./install.sh` (domyślnie instaluje lokalny build z `./build/docflow`). `--dry-run` aby sprawdzić bez kopiowania.
+  - Możesz wskazać własną binarkę: `--from /path/to/docflow`.
+  - `--channel latest` używa lokalnych artefaktów `dist/` przygotowanych przez pipeline release.
 
 ## Verify release
 Release zawiera archiwa (`.tar.gz` dla Linux/macOS, `.zip` dla Windows) oraz:
@@ -223,6 +230,7 @@ cosign verify-blob \
 
 ## Troubleshooting
 - **Brak internetu / vendor**: ustaw `GOFLAGS=-mod=vendor`; Go 1.25+ wymagane. Jeśli CI ma dostęp do sieci tylko do pobrania toolchaina, vendor wystarcza do build/test.
+- **`inconsistent vendoring`**: zsynchronizuj vendor `go mod vendor` albo użyj fallback `-mod=mod`.
 - **Permission denied w $HOME/.cache/go-build**: ustaw `GOCACHE=/tmp/go-cache` (jak w poleceniu testów) lub `HOME=/tmp` / `XDG_CACHE_HOME=/tmp`.
 - **Brak template_source**: `template-impact` zwraca puste wyniki — uzupełnij `template_source` w frontmatter dokumentów generowanych z szablonów.
 - **Wysoki czas skanu**: uruchom po raz drugi (checksum cache); rozważ wyłączenie hints jeśli niepotrzebne.
@@ -235,7 +243,10 @@ cosign verify-blob \
 
 ## Testy
 ```bash
-GOFLAGS=-mod=vendor go test ./...
+go test -mod=mod ./internal/... ./pkg/... ./tests/...
+
+# opcjonalnie: offline, gdy vendor jest zsynchronizowany
+GOFLAGS=-mod=vendor go test ./internal/... ./pkg/... ./tests/...
 ```
 
 ## Konfiguracja

@@ -5,7 +5,7 @@ PREFIX="${PREFIX:-$HOME/.local}"
 BIN="${PREFIX}/bin"
 SHARE="${PREFIX}/share"
 COMPL="$SHARE/docflow-completions"
-SRC_BIN="./build/docflow-linux-amd64"
+SRC_BIN="./build/docflow"
 LOG="LOGS/INSTALL_DAY_187.md"
 DRY_RUN=0
 FROM=""
@@ -17,6 +17,8 @@ INSTALL_FZF=0
 
 usage() {
   echo "usage: PREFIX=/desired/prefix ./install.sh [--from url|path] [--channel latest] [--version TAG] [--install-fzf] [--dry-run]" >&2
+  echo "default source: ./build/docflow" >&2
+  echo "--channel latest expects local dist/ artifacts produced by release tooling" >&2
   exit 1
 }
 
@@ -116,7 +118,7 @@ fi
   return 0
 }
 
-# channel latest -> use dist/ artefakty
+# channel latest -> use local dist/ artefakty (nie GitHub API)
 if [[ "$CHANNEL" == "latest" && -z "$FROM" ]]; then
   FROM="dist/docflow-linux-amd64"
 fi
@@ -141,6 +143,13 @@ if [[ -f "$FROM" && -f "$CHECKSUMS" ]]; then
       exit 1
     fi
   fi
+fi
+
+if [[ "$DRY_RUN" -eq 0 && -n "$FROM" && ! "$FROM" =~ ^https?:// && ! -f "$FROM" ]]; then
+  echo "source binary not found: $FROM" >&2
+  echo "build first: go build -mod=mod -o build/docflow ./cmd/docflow" >&2
+  echo "or provide an explicit path/url with --from" >&2
+  exit 1
 fi
 
 if [[ "$DRY_RUN" -eq 0 ]]; then

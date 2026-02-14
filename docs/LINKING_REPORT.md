@@ -362,7 +362,7 @@ New member joins
 - ✓ Dependency validation (DEPENDENCY_MATRIX)
 
 ### For Developers:
-- ✓ Daily tasks w 2 clicks (INDEX → EXTENDED_PLAN → day_XX)
+- ✓ Daily tasks w 2 clicks (INDEX → EXTENDED_PLAN → selected section)
 - ✓ Context dla dependencies (linked from tasks)
 - ✓ Clear navigation nie gubią się
 

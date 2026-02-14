@@ -32,17 +32,32 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     continue-on-error: true
+    outputs:
+      has_sbom: ${{ steps.sbom_probe.outputs.exists }}
     steps:
       - uses: actions/checkout@v4
       - name: Generate SBOM (CycloneDX)
         uses: CycloneDX/gh-gomod-generate-sbom@v2
         with:
-          output: sbom.cdx.json
-          args: mod -licenses -json
+          version: v1
+          args: mod -licenses -json -output sbom.cdx.json
+        continue-on-error: true
+      - name: Detect SBOM output
+        id: sbom_probe
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f sbom.cdx.json ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/upload-artifact@v4
+        if: steps.sbom_probe.outputs.exists == 'true'
         with:
           name: sbom
           path: sbom.cdx.json
+          if-no-files-found: ignore
 
   attest_provenance:
     needs: build
@@ -92,7 +107,7 @@ jobs:
         with:
           path: dist_all
       - name: Download SBOM
-        continue-on-error: true
+        if: ${{ needs.sbom.outputs.has_sbom == 'true' }}
         uses: actions/download-artifact@v4
         with:
           name: sbom

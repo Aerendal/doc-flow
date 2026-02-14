@@ -10,12 +10,12 @@
 
 ## Best practices for users
 - Uruchamiaj `docflow` na zaufanych repo; waliduj wejściowe frontmatter/YAML (brak sandboxa).
-- Ustaw `GOFLAGS=-mod=vendor` i używaj vendora (brak pobierania z sieci w build/test).
+- Ustaw `GOFLAGS=-mod=vendor`; build ze źródeł uruchamiaj w kontrolowanym środowisku sieciowym.
 - Waliduj pliki pochodzące z zewnątrz (`docflow validate --strict`).
 - Weryfikuj artefakty release wg `docs/SECURITY_VERIFICATION.md` (checksums/cosign/attestations/SBOM).
 
 ## Dependency security
-- Vendored dependencies; zalecane okresowe `govulncheck ./...` (wymaga dostępu do sieci).
+- Dependencies kontroluj przez `go.mod/go.sum`; zalecane okresowe `govulncheck ./...` (wymaga dostępu do sieci).
 
 ## Supported versions
 - MVP (v0.x): brak gwarancji LTS; update do najnowszej wersji.

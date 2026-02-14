@@ -21,7 +21,7 @@
 
 ## Integracja (mini pipeline)
 - Fixture: mały katalog 3-5 plików MD (ground_truth) — używany w istniejących testach parser/frontmatter.
-- Warunek: testy muszą przechodzić bez dostępu do sieci (vendor).
+- Warunek: testy muszą przechodzić z `GOFLAGS=-mod=vendor`; dla trybu offline wymagany wcześniej przygotowany `GOMODCACHE`.
 
 ## Determinizm
 - Topo sort i kolejki sortowane alfabetycznie (doc_id/path) po każdym dodaniu.

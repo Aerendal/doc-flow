@@ -19,5 +19,5 @@ Jeśli nie masz zbudowanego `./docflow`, hook pominie walidację.
 - Ustaw `GOCACHE=/tmp/go-cache` w lokalnych testach gdy widzisz `permission denied` w `~/.cache/go-build`.
 
 ## Style
-- Go modules vendored (`GOFLAGS=-mod=vendor`).
-- Brak dostępu do internetu na CI — unikaj dodawania nowych zależności bez vendora.
+- Go modules przez `go.mod/go.sum` (`GOFLAGS=-mod=vendor`).
+- Build/test ze źródeł na CI wymaga dostępu do modułów (sieć lub preseedowany cache).

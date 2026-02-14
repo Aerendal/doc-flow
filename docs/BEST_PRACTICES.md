@@ -29,7 +29,7 @@
 
 ## Dokumentacja
 - Aktualizuj `GOVERNANCE_RULES.yaml` wraz ze zmianami typów dokumentów.
-- Przypominaj w README/TROUBLESHOOTING o braku internetu i vendorze.
+- Przypominaj w README/TROUBLESHOOTING, że build ze źródeł wymaga modułów (sieć lub przygotowany cache).
 
 ## Migracje
 - `migrate-sections` uruchamiaj na branchu roboczym; review diffów przed merge.

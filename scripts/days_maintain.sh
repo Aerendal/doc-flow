@@ -19,7 +19,7 @@ Wspólne:
 
 Uwagi:
 - Nie usuwa źródeł; archiwum to kopia. Usuń/przenieś ręcznie jeśli potrzebujesz.
-- Lint/index używają Go vendora; wymagany Go 1.25+ w PATH.
+- Lint/index używają Go modules (`-mod=vendor`); wymagany Go 1.25+ w PATH.
 USAGE
 }
 

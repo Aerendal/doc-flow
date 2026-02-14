@@ -38,6 +38,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-${{ matrix.go }}-
             ${{ runner.os }}-go-
+      - name: Vendor up-to-date gate
+        if: matrix.go == '1.25.x'
+        run: |
+          go mod vendor
+          git diff --exit-code vendor/ go.mod go.sum
       - name: Test
         env:
           GOFLAGS: -mod=vendor

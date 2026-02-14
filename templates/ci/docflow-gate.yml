@@ -24,6 +24,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-1.25-
             ${{ runner.os }}-go-
+      - name: Vendor up-to-date gate
+        run: |
+          go mod vendor
+          git diff --exit-code vendor/ go.mod go.sum
       - name: Build docflow
         env:
           GOFLAGS: -mod=vendor

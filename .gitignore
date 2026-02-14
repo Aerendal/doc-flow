@@ -16,9 +16,7 @@
 go.work
 go.work.sum
 
-# Vendor
-vendor/
-
+# Vendor is committed (Model 2), do not ignore `vendor/`.
 # Local/runtime artifacts
 .config/
 .local/

@@ -2,8 +2,8 @@
 
 ## Build/Test
 - `permission denied ~/.cache/go-build`: ustaw `GOCACHE=/tmp/go-cache` lub `HOME=/tmp`.
-- `cannot find module providing ... -mod=vendor`: upewnij się, że GOFLAGS=-mod=vendor; zależności są vendored.
-- Starsze Go bez `cmp`/`slices`: repo zawiera shims w `vendor/`; ostrzeżenia można zignorować, ale go mod vendor musi je mieć w modules.txt (do uporządkowania).
+- `cannot find module providing ... -mod=vendor`: uruchom `go mod download` z dostępem do sieci albo użyj binarki z Releases.
+- Nieaktualny cache modułów: wyczyść cache (`go clean -modcache`) i ponów `go mod download`.
 
 ## Walidacja
 - `missing_frontmatter`: dodaj blok `--- ... ---` na początku pliku.
@@ -16,7 +16,7 @@
 - HTML raport pusty: upewnij się, że `docflow compliance --rules ...` wskazuje na prawidłowy plik i indeks obejmuje dokumenty.
 
 ## CI/Release
-- Artefakty nie budują się: brak internetu → użyj vendora, `GOFLAGS=-mod=vendor`.
+- Artefakty nie budują się: upewnij się, że runner ma dostęp do modułów Go (sieć lub preseedowany `GOMODCACHE`).
 - Brak checksumów w Homebrew formula: uzupełnij SHA256 przy pierwszym wydaniu.
 - Release changelog pusty: aktualny workflow bierze ostatni commit — dodaj generator changelogów.
 

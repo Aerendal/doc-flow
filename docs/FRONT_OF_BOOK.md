@@ -5,7 +5,7 @@
 - Checksums: `build/checksums.txt` zweryfikowane (`LOGS/CHECKSUM_VERIFY.md`).
 
 ## Stan jakości
-- Testy: `go test ./...` PASS (vendor).
+- Testy: `go test ./...` PASS (`GOFLAGS=-mod=vendor`).
 - Perf: `LOGS/SCALE_BASELINE_1k.md`, `LOGS/SCALE_BASELINE_LARGE.md`, `LOGS/SCALE_BASELINE_10k.md` (10k: index ~0.56s, validate ~0.9s, RSS ~80 MB).
 - Security/chaos: `LOGS/SECURITY_CHAOS_SANITY.md`.
 - Queue Go/No-Go: `scripts/queue_evaluate.sh` (text/json, cache, workers). Ostatni run READY/READY na examples (`LOGS/QUEUE_GO_NO_GO.md`).

@@ -2,7 +2,7 @@
 
 ## 0. Wymagania
 - Go 1.25+ (lokalnie) lub gotowy binarek z Releases.
-- Brak dostępu do internetu podczas build/test → używaj `GOFLAGS=-mod=vendor`.
+- Brak dostępu do internetu podczas build/test → przygotuj wcześniej cache modułów (`go mod download`) albo użyj binarki z Releases.
 - Ustaw `GOCACHE=/tmp/go-cache` jeśli widzisz `permission denied` dla `~/.cache/go-build`.
 
 ## 1. Szybki start (5 minut)
@@ -79,7 +79,7 @@ template_source: "templates/guide_v1.md"
 
 ## 7. FAQ (skrót)
 - **Permission denied w ~/.cache/go-build?** Ustaw `GOCACHE=/tmp/go-cache` lub `HOME=/tmp`.
-- **Brak internetu na CI?** Użyj `GOFLAGS=-mod=vendor`; wszystkie zależności są vendored.
+- **Brak internetu na CI?** Build ze źródeł wymaga wcześniejszego `go mod download` online lub gotowej binarki z Releases.
 - **Dlaczego compliance pokazuje fałszywe brakujące pola?** Governance heurystyka szuka `field:` w treści; upewnij się, że frontmatter zawiera pola i jest poprawnie sformatowany.
 
 ## 8. Co dalej
@@ -115,4 +115,3 @@ EOF
 ```
 
 **Cache miss scenariusz**: zmiana pojedynczego MD → miss; zmiana docflow.yaml → miss.
-

@@ -4,14 +4,14 @@ CLI do zarządzania dokumentacją i szablonami (Go, bez CGO). Release Candidate 
 
 ## Wymagania
 - Go 1.25+ (zainstalowane lokalnie)
-- Build ze źródeł (`./cmd/docflow`) jest podstawową ścieżką instalacji
-- Tryb offline działa przy aktualnym `vendor/`; gdy `vendor/` nie jest zsynchronizowany, użyj `-mod=mod`
+- Build ze źródeł (`./cmd/docflow`) wymaga dostępu do sieci przy pierwszym pobraniu Go modules (standard)
+- Użycie offline: pobierz gotową binarkę z GitHub Releases
 
 ## Quickstart (60s)
 ```bash
 # zbuduj lokalnie binarkę
 mkdir -p build
-go build -mod=mod -o build/docflow ./cmd/docflow
+go build -mod=vendor -o build/docflow ./cmd/docflow
 
 # szybki audit lokalny (nieblokujący), tworzy bundle w .docflow/out/<run_id>/
 ./build/docflow health \
@@ -132,12 +132,7 @@ Przykłady `examples/simple-api` i `examples/architecture` są governance-ready 
 ## Instalacja ze źródeł
 ```bash
 mkdir -p build
-
-# preferowany fallback (działa gdy vendor jest niespójny)
-go build -mod=mod -o build/docflow ./cmd/docflow
-
-# opcjonalnie: build offline, gdy vendor jest zsynchronizowany
-GOFLAGS=-mod=vendor go build -o build/docflow ./cmd/docflow
+go build -mod=vendor -o build/docflow ./cmd/docflow
 ```
 
 ## Uruchomienie przykładowe
@@ -236,8 +231,7 @@ cosign verify-blob \
 ```
 
 ## Troubleshooting
-- **Brak internetu / vendor**: ustaw `GOFLAGS=-mod=vendor`; Go 1.25+ wymagane. Jeśli CI ma dostęp do sieci tylko do pobrania toolchaina, vendor wystarcza do build/test.
-- **`inconsistent vendoring`**: zsynchronizuj vendor `go mod vendor` albo użyj fallback `-mod=mod`.
+- **Build ze źródeł bez internetu**: wykonaj raz `go mod download` online i zachowaj `GOMODCACHE`, albo użyj binarki z Releases.
 - **Permission denied w $HOME/.cache/go-build**: ustaw `GOCACHE=/tmp/go-cache` (jak w poleceniu testów) lub `HOME=/tmp` / `XDG_CACHE_HOME=/tmp`.
 - **Brak template_source**: `template-impact` zwraca puste wyniki — uzupełnij `template_source` w frontmatter dokumentów generowanych z szablonów.
 - **Wysoki czas skanu**: uruchom po raz drugi (checksum cache); rozważ wyłączenie hints jeśli niepotrzebne.
@@ -250,10 +244,7 @@ cosign verify-blob \
 
 ## Testy
 ```bash
-go test -mod=mod ./internal/... ./pkg/... ./tests/...
-
-# opcjonalnie: offline, gdy vendor jest zsynchronizowany
-GOFLAGS=-mod=vendor go test ./internal/... ./pkg/... ./tests/...
+go test -mod=vendor ./internal/... ./pkg/... ./tests/...
 ```
 
 ## Konfiguracja

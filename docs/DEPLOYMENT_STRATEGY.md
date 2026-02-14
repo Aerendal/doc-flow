@@ -293,7 +293,6 @@ scan:
   exclude_patterns:
     - "node_modules/**"
     - ".git/**"
-    - "vendor/**"
   max_file_size: 10485760  # 10MB
   follow_symlinks: false
 

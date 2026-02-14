@@ -1,0 +1,13 @@
+documents:
+  - doc_id: onboarding_guide
+    doc_type: guide
+    template: testdata/templates/onboarding_guide.md
+    output: docs/generated/onboarding_guide.md
+    context_sources:
+      - product_vision_statement
+    depends_on:
+      - system_architecture
+  - doc_id: release_checklist
+    doc_type: checklist
+    template: testdata/templates/release_checklist.md
+    output: docs/generated/release_checklist.md

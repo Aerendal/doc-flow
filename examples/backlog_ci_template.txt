@@ -1,0 +1,2 @@
+T1 examples/simple-api
+T2 examples/architecture

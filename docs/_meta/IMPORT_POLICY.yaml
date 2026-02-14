@@ -1,0 +1,11 @@
+required_sections:
+  - "Wstęp"
+  - "Przegląd"
+  - "Decyzje architektoniczne"
+  - "Komponenty"
+  - "Ryzyka"
+
+forbidden_sections:
+  - "TODO"
+  - "Lorem"
+  - "Placeholder"

@@ -1,0 +1,16 @@
+project_name: "docflow"
+phases:
+  - day: 1
+    name: "Ustawienie repozytorium"
+    description: "Inicjalizacja repo, struktura katalogów, CI/CD"
+    status: "todo"
+  - day: 2
+    name: "Kontrakt metadanych"
+    description: "Definicja frontmatter YAML, doc_id, depends_on vs context_sources"
+    status: "todo"
+    depends_on: [1]
+  - day: 3
+    name: "ARCHITECTURE.md"
+    description: "Dokument architektury systemu"
+    status: "todo"
+    depends_on: [1, 2]

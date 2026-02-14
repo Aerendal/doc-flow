@@ -1,0 +1,1400 @@
+id,title,industry_code,phase_code,industry_code_isic,industry_code_isic_tag
+5452,Latency Requirements,RTS,,62,"62 Computer programming, consultancy and related activities"
+5459,State Management Design,RTS,,39,39_Reme_Acti
+5494,Data Quality Report,RTS,,50,50
+5505,Performance Requirements,ARVR,,52,52_Ware_And
+5523,Performance Testing,ARVR,,52,52_Ware_And
+5538,User Engagement Metrics,ARVR,,98,98_Undi_Good
+5546,User Onboarding Experience,ARVR,,98,98_Undi_Good
+5567,Integration Requirements,CONV,,62,"62 Computer programming, consultancy and related activities"
+5651,Performance Testing,CV,,52,52_Ware_And
+5671,Data Quality Monitoring,CV,,62,62
+5700,Latency Requirements,NLP,,62,"62 Computer programming, consultancy and related activities"
+5728,API Gateway Setup,NLP,,62,"62 Computer programming, consultancy and related activities"
+5746,API Documentation,NLP,,62,"62 Computer programming, consultancy and related activities"
+5767,Latency Requirements,STR,,62,"62 Computer programming, consultancy and related activities"
+5770,Scalability Requirements,STR,,62,"62 Computer programming, consultancy and related activities"
+5775,State Management Design,STR,,39,39_Reme_Acti
+5780,Capacity Planning,STR,,84,84 Public administration and defence; compulsory social security
+5788,Monitoring Infrastructure Setup,STR,,62,62
+5795,Encryption Implementation,STR,,62,"62 Computer programming, consultancy and related activities"
+5820,API Documentation,STR,,62,"62 Computer programming, consultancy and related activities"
+5844,Scalability Requirements,SRCH,,62,"62 Computer programming, consultancy and related activities"
+5865,Performance Testing,SRCH,,52,52_Ware_And
+5866,Scalability Testing,SRCH,,71,71_Arch_And
+5920,Performance Requirements,GIS,,52,52_Ware_And
+5942,Performance Testing,GIS,,52,52_Ware_And
+5983,Budget Proposal Template,,,47,47
+5984,Request for Proposal (RFP),,,52,52_Ware_And
+5985,Audit Checklist,,,86,86 Human health activities
+5986,System Retirement Plan,,,62,"62 Computer programming, consultancy and related activities"
+5987,Disaster Recovery Plan (DRP),,,38,38_Wast_Coll
+5988,Change Request Form (RFC),,,52,52_Ware_And
+5989,Capacity Forecast Report,,,52,52_Ware_And
+5990,Risk Register,,,71,71
+6054,Latency Requirements,38,,62,"62 Computer programming, consultancy and related activities"
+6061,State Management Design,38,,39,39_Reme_Acti
+6096,Data Quality Report,38,,50,50
+6107,Performance Requirements,39,,52,52_Ware_And
+6125,Performance Testing,39,,52,52_Ware_And
+6140,User Engagement Metrics,39,,98,98_Undi_Good
+6148,User Onboarding Experience,39,,98,98_Undi_Good
+6169,Integration Requirements,40,,62,"62 Computer programming, consultancy and related activities"
+6253,Performance Testing,41,,52,52_Ware_And
+6273,Data Quality Monitoring,41,,62,62
+6302,Latency Requirements,42,,62,"62 Computer programming, consultancy and related activities"
+6330,API Gateway Setup,42,,62,"62 Computer programming, consultancy and related activities"
+6348,API Documentation,42,,62,"62 Computer programming, consultancy and related activities"
+6369,Latency Requirements,43,,62,"62 Computer programming, consultancy and related activities"
+6372,Scalability Requirements,43,,62,"62 Computer programming, consultancy and related activities"
+6377,State Management Design,43,,39,39_Reme_Acti
+6382,Capacity Planning,43,,84,84 Public administration and defence; compulsory social security
+6390,Monitoring Infrastructure Setup,43,,62,62
+6397,Encryption Implementation,43,,62,"62 Computer programming, consultancy and related activities"
+6422,API Documentation,43,,62,"62 Computer programming, consultancy and related activities"
+6446,Scalability Requirements,44,,62,"62 Computer programming, consultancy and related activities"
+6467,Performance Testing,44,,52,52_Ware_And
+6468,Scalability Testing,44,,71,71_Arch_And
+6522,Performance Requirements,45,,52,52_Ware_And
+6544,Performance Testing,45,,52,52_Ware_And
+6585,Cost-Benefit Analysis (CBA),,,71,71_Arch_And
+6586,Total Cost of Ownership (TCO),,,98,98_Undi_Good
+6587,CapEx/OpEx Planning,,,62,"62 Computer programming, consultancy and related activities"
+6588,ROI Projections,,,62,"62 Computer programming, consultancy and related activities"
+6589,Cost Tracking Report,,,50,50
+6590,Request for Information (RFI),,,52,52_Ware_And
+6591,Vendor Evaluation Matrix,,,62,"62 Computer programming, consultancy and related activities"
+6592,Contract Template,,,62,"62 Computer programming, consultancy and related activities"
+6593,SLA Agreement Template,,,62,"62 Computer programming, consultancy and related activities"
+6594,Vendor Risk Assessment,,,64,64
+6595,Procurement Checklist,,,86,86 Human health activities
+6596,Compliance Report Template,,,69,69
+6597,Policy Review Record,,,65,65_Insu
+6598,Certification Documentation,,,62,"62 Computer programming, consultancy and related activities"
+6599,Control Matrix,,,62,"62 Computer programming, consultancy and related activities"
+6600,Audit Trail Log,,,49,49 Land transport; transport via pipelines
+6601,Data Migration Strategy,,,62,"62 Computer programming, consultancy and related activities"
+6602,Archive Strategy Document,,,91,91
+6603,Sunset Communication Plan,,,62,"62 Computer programming, consultancy and related activities"
+6604,Dependency Impact Analysis,,,71,71_Arch_And
+6605,Decommissioning Checklist,,,86,86 Human health activities
+6606,Historical Data Retention Policy,,,65,65_Insu
+6607,Business Continuity Plan (BCP),,,82,82_Offi_Admi
+6608,Recovery Point Objective (RPO) Definition,,,38,38_Wast_Coll
+6609,Recovery Time Objective (RTO) Definition,,,38,38_Wast_Coll
+6610,Failover Procedures,,,62,62
+6611,DR Test Report,,,50,50
+6612,Crisis Communication Plan,,,86,86 Human health activities
+6613,Backup Verification Checklist,,,86,86 Human health activities
+6614,Change Advisory Board (CAB) Notes,,,62,"62 Computer programming, consultancy and related activities"
+6615,Change Calendar,,,62,"62 Computer programming, consultancy and related activities"
+6616,Change Impact Assessment,,,62,"62 Computer programming, consultancy and related activities"
+6617,Rollback Plan Template,,,62,"62 Computer programming, consultancy and related activities"
+6618,Emergency Change Procedure,,,62,"62 Computer programming, consultancy and related activities"
+6619,Change Success Criteria,,,62,"62 Computer programming, consultancy and related activities"
+6620,Growth Projections,,,62,"62 Computer programming, consultancy and related activities"
+6621,Resource Allocation Plan,,,62,"62 Computer programming, consultancy and related activities"
+6622,Scalability Assessment,,,62,"62 Computer programming, consultancy and related activities"
+6623,Performance Baseline,,,52,52_Ware_And
+6624,Capacity Threshold Alerts,,,78,78
+6625,Infrastructure Sizing Guide,,,42,42
+6670,User Onboarding Experience,,,98,98_Undi_Good
+6675,Performance Testing,,,52,52_Ware_And
+6749,Scalability Testing,,,71,71_Arch_And
+6772,Performance Requirements,,,52,52_Ware_And
+6841,Latency Requirements,38,2,62,"62 Computer programming, consultancy and related activities"
+6848,State Management Design,38,3,39,39_Reme_Acti
+6883,Data Quality Report,38,14,50,50
+6894,Performance Requirements,39,2,52,52_Ware_And
+6912,Performance Testing,39,6,52,52_Ware_And
+6927,User Engagement Metrics,39,11,98,98_Undi_Good
+6935,User Onboarding Experience,39,13,98,98_Undi_Good
+6956,Integration Requirements,40,2,62,"62 Computer programming, consultancy and related activities"
+7040,Performance Testing,41,6,52,52_Ware_And
+7060,Data Quality Monitoring,41,11,62,62
+7089,Latency Requirements,42,2,62,"62 Computer programming, consultancy and related activities"
+7117,API Gateway Setup,42,8,62,"62 Computer programming, consultancy and related activities"
+7135,API Documentation,42,12,62,"62 Computer programming, consultancy and related activities"
+7156,Latency Requirements,43,2,62,"62 Computer programming, consultancy and related activities"
+7159,Scalability Requirements,43,2,62,"62 Computer programming, consultancy and related activities"
+7164,State Management Design,43,3,39,39_Reme_Acti
+7169,Capacity Planning,43,4,84,84 Public administration and defence; compulsory social security
+7177,Monitoring Infrastructure Setup,43,5,62,62
+7184,Encryption Implementation,43,7,62,"62 Computer programming, consultancy and related activities"
+7209,API Documentation,43,12,62,"62 Computer programming, consultancy and related activities"
+7233,Scalability Requirements,44,2,62,"62 Computer programming, consultancy and related activities"
+7254,Performance Testing,44,6,52,52_Ware_And
+7255,Scalability Testing,44,6,71,71_Arch_And
+7309,Performance Requirements,45,2,52,52_Ware_And
+7331,Performance Testing,45,6,52,52_Ware_And
+7372,Budget Proposal Template,,17,47,47
+7373,Cost-Benefit Analysis (CBA),,17,71,71_Arch_And
+7374,Total Cost of Ownership (TCO),,17,98,98_Undi_Good
+7375,CapEx/OpEx Planning,,17,62,"62 Computer programming, consultancy and related activities"
+7376,ROI Projections,,17,62,"62 Computer programming, consultancy and related activities"
+7377,Cost Tracking Report,,17,50,50
+7378,Change Request Form (RFC),,22,52,52_Ware_And
+7379,Change Advisory Board (CAB) Notes,,22,62,"62 Computer programming, consultancy and related activities"
+7380,Change Calendar,,22,62,"62 Computer programming, consultancy and related activities"
+7381,Change Impact Assessment,,22,62,"62 Computer programming, consultancy and related activities"
+7382,Rollback Plan Template,,22,62,"62 Computer programming, consultancy and related activities"
+7383,Emergency Change Procedure,,22,62,"62 Computer programming, consultancy and related activities"
+7384,Change Success Criteria,,22,62,"62 Computer programming, consultancy and related activities"
+7385,Capacity Forecast Report,,23,52,52_Ware_And
+7386,Growth Projections,,23,62,"62 Computer programming, consultancy and related activities"
+7387,Resource Allocation Plan,,23,62,"62 Computer programming, consultancy and related activities"
+7388,Scalability Assessment,,23,62,"62 Computer programming, consultancy and related activities"
+7389,Performance Baseline,,23,52,52_Ware_And
+7390,Capacity Threshold Alerts,,23,78,78
+7391,Infrastructure Sizing Guide,,23,42,42
+7392,System Retirement Plan,,20,62,"62 Computer programming, consultancy and related activities"
+7393,Data Migration Strategy,,20,62,"62 Computer programming, consultancy and related activities"
+7394,Archive Strategy Document,,20,91,91
+7395,Sunset Communication Plan,,20,62,"62 Computer programming, consultancy and related activities"
+7396,Dependency Impact Analysis,,20,71,71_Arch_And
+7397,Decommissioning Checklist,,20,86,86 Human health activities
+7398,Historical Data Retention Policy,,20,65,65_Insu
+7399,Disaster Recovery Plan (DRP),,21,38,38_Wast_Coll
+7400,Business Continuity Plan (BCP),,21,82,82_Offi_Admi
+7401,Recovery Point Objective (RPO) Definition,,21,38,38_Wast_Coll
+7402,Recovery Time Objective (RTO) Definition,,21,38,38_Wast_Coll
+7403,Failover Procedures,,21,62,62
+7404,DR Test Report,,21,50,50
+7405,Crisis Communication Plan,,21,86,86 Human health activities
+7406,Backup Verification Checklist,,21,86,86 Human health activities
+7407,Audit Checklist,,19,86,86 Human health activities
+7408,Compliance Report Template,,19,69,69
+7409,Policy Review Record,,19,65,65_Insu
+7410,Certification Documentation,,19,62,"62 Computer programming, consultancy and related activities"
+7411,Risk Register,,19,71,71
+7412,Control Matrix,,19,62,"62 Computer programming, consultancy and related activities"
+7413,Audit Trail Log,,19,49,49 Land transport; transport via pipelines
+7414,Request for Proposal (RFP),,18,52,52_Ware_And
+7415,Request for Information (RFI),,18,52,52_Ware_And
+7416,Vendor Evaluation Matrix,,18,62,"62 Computer programming, consultancy and related activities"
+7417,Contract Template,,18,62,"62 Computer programming, consultancy and related activities"
+7418,SLA Agreement Template,,18,62,"62 Computer programming, consultancy and related activities"
+7419,Vendor Risk Assessment,,18,64,64
+7420,Procurement Checklist,,18,86,86 Human health activities
+7426,Performance Requirements,46,P02,52,52_Ware_And
+7449,Performance Testing,46,P06,52,52_Ware_And
+7463,Performance Tuning Guide,46,P09,52,52_Ware_And
+7467,Performance Degradation Response,46,P10,52,52_Ware_And
+7492,Budget Proposal Template,46,P17,47,47
+7493,Cost-Benefit Analysis (CBA),46,P17,71,71_Arch_And
+7494,Total Cost of Ownership (TCO),46,P17,98,98_Undi_Good
+7495,CapEx/OpEx Planning,46,P17,62,"62 Computer programming, consultancy and related activities"
+7496,ROI Projections,46,P17,62,"62 Computer programming, consultancy and related activities"
+7497,Cost Tracking Report,46,P17,50,50
+7498,Request for Proposal (RFP),46,P18,52,52_Ware_And
+7499,Request for Information (RFI),46,P18,52,52_Ware_And
+7500,Vendor Evaluation Matrix,46,P18,62,"62 Computer programming, consultancy and related activities"
+7501,Contract Template,46,P18,62,"62 Computer programming, consultancy and related activities"
+7502,SLA Agreement Template,46,P18,62,"62 Computer programming, consultancy and related activities"
+7503,Vendor Risk Assessment,46,P18,64,64
+7504,Procurement Checklist,46,P18,86,86 Human health activities
+7505,Audit Checklist,46,P19,86,86 Human health activities
+7506,Compliance Report Template,46,P19,69,69
+7507,Policy Review Record,46,P19,65,65_Insu
+7508,Certification Documentation,46,P19,62,"62 Computer programming, consultancy and related activities"
+7509,Risk Register,46,P19,71,71
+7510,Control Matrix,46,P19,62,"62 Computer programming, consultancy and related activities"
+7511,Audit Trail Log,46,P19,49,49 Land transport; transport via pipelines
+7512,System Retirement Plan,46,P20,62,"62 Computer programming, consultancy and related activities"
+7513,Data Migration Strategy,46,P20,62,"62 Computer programming, consultancy and related activities"
+7514,Archive Strategy Document,46,P20,91,91
+7515,Sunset Communication Plan,46,P20,62,"62 Computer programming, consultancy and related activities"
+7516,Dependency Impact Analysis,46,P20,71,71_Arch_And
+7517,Decommissioning Checklist,46,P20,86,86 Human health activities
+7518,Historical Data Retention Policy,46,P20,65,65_Insu
+7519,Disaster Recovery Plan (DRP),46,P21,38,38_Wast_Coll
+7520,Business Continuity Plan (BCP),46,P21,82,82_Offi_Admi
+7521,Recovery Point Objective (RPO) Definition,46,P21,38,38_Wast_Coll
+7522,Recovery Time Objective (RTO) Definition,46,P21,38,38_Wast_Coll
+7523,Failover Procedures,46,P21,62,62
+7524,DR Test Report,46,P21,50,50
+7525,Crisis Communication Plan,46,P21,86,86 Human health activities
+7526,Backup Verification Checklist,46,P21,86,86 Human health activities
+7527,Change Request Form (RFC),46,P22,52,52_Ware_And
+7528,Change Advisory Board (CAB) Notes,46,P22,62,"62 Computer programming, consultancy and related activities"
+7529,Change Calendar,46,P22,62,"62 Computer programming, consultancy and related activities"
+7530,Change Impact Assessment,46,P22,62,"62 Computer programming, consultancy and related activities"
+7531,Rollback Plan Template,46,P22,62,"62 Computer programming, consultancy and related activities"
+7532,Emergency Change Procedure,46,P22,62,"62 Computer programming, consultancy and related activities"
+7533,Change Success Criteria,46,P22,62,"62 Computer programming, consultancy and related activities"
+7534,Capacity Forecast Report,46,P23,52,52_Ware_And
+7535,Growth Projections,46,P23,62,"62 Computer programming, consultancy and related activities"
+7536,Resource Allocation Plan,46,P23,62,"62 Computer programming, consultancy and related activities"
+7537,Scalability Assessment,46,P23,62,"62 Computer programming, consultancy and related activities"
+7538,Performance Baseline,46,P23,52,52_Ware_And
+7539,Capacity Threshold Alerts,46,P23,78,78
+7540,Infrastructure Sizing Guide,46,P23,42,42
+7544,Performance Requirements,47,P02,52,52_Ware_And
+7546,Latency Requirements,47,P02,62,"62 Computer programming, consultancy and related activities"
+7548,Scalability Requirements,47,P02,62,"62 Computer programming, consultancy and related activities"
+7563,Load Testing,47,P06,71,71_Arch_And
+7577,Query Optimization Procedure,47,P09,62,"62 Computer programming, consultancy and related activities"
+7578,Performance Degradation Response,47,P10,52,52_Ware_And
+7596,Capacity Planning Report,47,P14,50,50
+7603,Performance Improvement Plan,47,P16,52,52_Ware_And
+7604,Budget Proposal Template,47,P17,47,47
+7605,Cost-Benefit Analysis (CBA),47,P17,71,71_Arch_And
+7606,Total Cost of Ownership (TCO),47,P17,98,98_Undi_Good
+7607,CapEx/OpEx Planning,47,P17,62,"62 Computer programming, consultancy and related activities"
+7608,ROI Projections,47,P17,62,"62 Computer programming, consultancy and related activities"
+7609,Cost Tracking Report,47,P17,50,50
+7610,Request for Proposal (RFP),47,P18,52,52_Ware_And
+7611,Request for Information (RFI),47,P18,52,52_Ware_And
+7612,Vendor Evaluation Matrix,47,P18,62,"62 Computer programming, consultancy and related activities"
+7613,Contract Template,47,P18,62,"62 Computer programming, consultancy and related activities"
+7614,SLA Agreement Template,47,P18,62,"62 Computer programming, consultancy and related activities"
+7615,Vendor Risk Assessment,47,P18,64,64
+7616,Procurement Checklist,47,P18,86,86 Human health activities
+7617,Audit Checklist,47,P19,86,86 Human health activities
+7618,Compliance Report Template,47,P19,69,69
+7619,Policy Review Record,47,P19,65,65_Insu
+7620,Certification Documentation,47,P19,62,"62 Computer programming, consultancy and related activities"
+7621,Risk Register,47,P19,71,71
+7622,Control Matrix,47,P19,62,"62 Computer programming, consultancy and related activities"
+7623,Audit Trail Log,47,P19,49,49 Land transport; transport via pipelines
+7624,System Retirement Plan,47,P20,62,"62 Computer programming, consultancy and related activities"
+7625,Data Migration Strategy,47,P20,62,"62 Computer programming, consultancy and related activities"
+7626,Archive Strategy Document,47,P20,91,91
+7627,Sunset Communication Plan,47,P20,62,"62 Computer programming, consultancy and related activities"
+7628,Dependency Impact Analysis,47,P20,71,71_Arch_And
+7629,Decommissioning Checklist,47,P20,86,86 Human health activities
+7630,Historical Data Retention Policy,47,P20,65,65_Insu
+7631,Disaster Recovery Plan (DRP),47,P21,38,38_Wast_Coll
+7632,Business Continuity Plan (BCP),47,P21,82,82_Offi_Admi
+7633,Recovery Point Objective (RPO) Definition,47,P21,38,38_Wast_Coll
+7634,Recovery Time Objective (RTO) Definition,47,P21,38,38_Wast_Coll
+7635,Failover Procedures,47,P21,62,62
+7636,DR Test Report,47,P21,50,50
+7637,Crisis Communication Plan,47,P21,86,86 Human health activities
+7638,Backup Verification Checklist,47,P21,86,86 Human health activities
+7639,Change Request Form (RFC),47,P22,52,52_Ware_And
+7640,Change Advisory Board (CAB) Notes,47,P22,62,"62 Computer programming, consultancy and related activities"
+7641,Change Calendar,47,P22,62,"62 Computer programming, consultancy and related activities"
+7642,Change Impact Assessment,47,P22,62,"62 Computer programming, consultancy and related activities"
+7643,Rollback Plan Template,47,P22,62,"62 Computer programming, consultancy and related activities"
+7644,Emergency Change Procedure,47,P22,62,"62 Computer programming, consultancy and related activities"
+7645,Change Success Criteria,47,P22,62,"62 Computer programming, consultancy and related activities"
+7646,Capacity Forecast Report,47,P23,52,52_Ware_And
+7647,Growth Projections,47,P23,62,"62 Computer programming, consultancy and related activities"
+7648,Resource Allocation Plan,47,P23,62,"62 Computer programming, consultancy and related activities"
+7649,Scalability Assessment,47,P23,62,"62 Computer programming, consultancy and related activities"
+7650,Performance Baseline,47,P23,52,52_Ware_And
+7651,Capacity Threshold Alerts,47,P23,78,78
+7652,Infrastructure Sizing Guide,47,P23,42,42
+7703,Accessibility Guidelines,48,P12,62,"62 Computer programming, consultancy and related activities"
+7723,Budget Proposal Template,48,P17,47,47
+7724,Cost-Benefit Analysis (CBA),48,P17,71,71_Arch_And
+7725,Total Cost of Ownership (TCO),48,P17,98,98_Undi_Good
+7726,CapEx/OpEx Planning,48,P17,62,"62 Computer programming, consultancy and related activities"
+7727,ROI Projections,48,P17,62,"62 Computer programming, consultancy and related activities"
+7728,Cost Tracking Report,48,P17,50,50
+7729,Request for Proposal (RFP),48,P18,52,52_Ware_And
+7730,Request for Information (RFI),48,P18,52,52_Ware_And
+7731,Vendor Evaluation Matrix,48,P18,62,"62 Computer programming, consultancy and related activities"
+7732,Contract Template,48,P18,62,"62 Computer programming, consultancy and related activities"
+7733,SLA Agreement Template,48,P18,62,"62 Computer programming, consultancy and related activities"
+7734,Vendor Risk Assessment,48,P18,64,64
+7735,Procurement Checklist,48,P18,86,86 Human health activities
+7736,Audit Checklist,48,P19,86,86 Human health activities
+7737,Compliance Report Template,48,P19,69,69
+7738,Policy Review Record,48,P19,65,65_Insu
+7739,Certification Documentation,48,P19,62,"62 Computer programming, consultancy and related activities"
+7740,Risk Register,48,P19,71,71
+7741,Control Matrix,48,P19,62,"62 Computer programming, consultancy and related activities"
+7742,Audit Trail Log,48,P19,49,49 Land transport; transport via pipelines
+7743,System Retirement Plan,48,P20,62,"62 Computer programming, consultancy and related activities"
+7744,Data Migration Strategy,48,P20,62,"62 Computer programming, consultancy and related activities"
+7745,Archive Strategy Document,48,P20,91,91
+7746,Sunset Communication Plan,48,P20,62,"62 Computer programming, consultancy and related activities"
+7747,Dependency Impact Analysis,48,P20,71,71_Arch_And
+7748,Decommissioning Checklist,48,P20,86,86 Human health activities
+7749,Historical Data Retention Policy,48,P20,65,65_Insu
+7750,Disaster Recovery Plan (DRP),48,P21,38,38_Wast_Coll
+7751,Business Continuity Plan (BCP),48,P21,82,82_Offi_Admi
+7752,Recovery Point Objective (RPO) Definition,48,P21,38,38_Wast_Coll
+7753,Recovery Time Objective (RTO) Definition,48,P21,38,38_Wast_Coll
+7754,Failover Procedures,48,P21,62,62
+7755,DR Test Report,48,P21,50,50
+7756,Crisis Communication Plan,48,P21,86,86 Human health activities
+7757,Backup Verification Checklist,48,P21,86,86 Human health activities
+7758,Change Request Form (RFC),48,P22,52,52_Ware_And
+7759,Change Advisory Board (CAB) Notes,48,P22,62,"62 Computer programming, consultancy and related activities"
+7760,Change Calendar,48,P22,62,"62 Computer programming, consultancy and related activities"
+7761,Change Impact Assessment,48,P22,62,"62 Computer programming, consultancy and related activities"
+7762,Rollback Plan Template,48,P22,62,"62 Computer programming, consultancy and related activities"
+7763,Emergency Change Procedure,48,P22,62,"62 Computer programming, consultancy and related activities"
+7764,Change Success Criteria,48,P22,62,"62 Computer programming, consultancy and related activities"
+7765,Capacity Forecast Report,48,P23,52,52_Ware_And
+7766,Growth Projections,48,P23,62,"62 Computer programming, consultancy and related activities"
+7767,Resource Allocation Plan,48,P23,62,"62 Computer programming, consultancy and related activities"
+7768,Scalability Assessment,48,P23,62,"62 Computer programming, consultancy and related activities"
+7769,Performance Baseline,48,P23,52,52_Ware_And
+7770,Capacity Threshold Alerts,48,P23,78,78
+7771,Infrastructure Sizing Guide,48,P23,42,42
+7792,Migration Strategy,49,P04,62,"62 Computer programming, consultancy and related activities"
+7794,API Gateway Setup,49,P05,62,"62 Computer programming, consultancy and related activities"
+7806,Performance Testing,49,P06,52,52_Ware_And
+7807,Failover Testing,49,P06,71,71_Arch_And
+7851,Budget Proposal Template,49,P17,47,47
+7852,Cost-Benefit Analysis (CBA),49,P17,71,71_Arch_And
+7853,Total Cost of Ownership (TCO),49,P17,98,98_Undi_Good
+7854,CapEx/OpEx Planning,49,P17,62,"62 Computer programming, consultancy and related activities"
+7855,ROI Projections,49,P17,62,"62 Computer programming, consultancy and related activities"
+7856,Cost Tracking Report,49,P17,50,50
+7857,Request for Proposal (RFP),49,P18,52,52_Ware_And
+7858,Request for Information (RFI),49,P18,52,52_Ware_And
+7859,Vendor Evaluation Matrix,49,P18,62,"62 Computer programming, consultancy and related activities"
+7860,Contract Template,49,P18,62,"62 Computer programming, consultancy and related activities"
+7861,SLA Agreement Template,49,P18,62,"62 Computer programming, consultancy and related activities"
+7862,Vendor Risk Assessment,49,P18,64,64
+7863,Procurement Checklist,49,P18,86,86 Human health activities
+7864,Audit Checklist,49,P19,86,86 Human health activities
+7865,Compliance Report Template,49,P19,69,69
+7866,Policy Review Record,49,P19,65,65_Insu
+7867,Certification Documentation,49,P19,62,"62 Computer programming, consultancy and related activities"
+7868,Risk Register,49,P19,71,71
+7869,Control Matrix,49,P19,62,"62 Computer programming, consultancy and related activities"
+7870,Audit Trail Log,49,P19,49,49 Land transport; transport via pipelines
+7871,System Retirement Plan,49,P20,62,"62 Computer programming, consultancy and related activities"
+7872,Data Migration Strategy,49,P20,62,"62 Computer programming, consultancy and related activities"
+7873,Archive Strategy Document,49,P20,91,91
+7874,Sunset Communication Plan,49,P20,62,"62 Computer programming, consultancy and related activities"
+7875,Dependency Impact Analysis,49,P20,71,71_Arch_And
+7876,Decommissioning Checklist,49,P20,86,86 Human health activities
+7877,Historical Data Retention Policy,49,P20,65,65_Insu
+7878,Disaster Recovery Plan (DRP),49,P21,38,38_Wast_Coll
+7879,Business Continuity Plan (BCP),49,P21,82,82_Offi_Admi
+7880,Recovery Point Objective (RPO) Definition,49,P21,38,38_Wast_Coll
+7881,Recovery Time Objective (RTO) Definition,49,P21,38,38_Wast_Coll
+7882,Failover Procedures,49,P21,62,62
+7883,DR Test Report,49,P21,50,50
+7884,Crisis Communication Plan,49,P21,86,86 Human health activities
+7885,Backup Verification Checklist,49,P21,86,86 Human health activities
+7886,Change Request Form (RFC),49,P22,52,52_Ware_And
+7887,Change Advisory Board (CAB) Notes,49,P22,62,"62 Computer programming, consultancy and related activities"
+7888,Change Calendar,49,P22,62,"62 Computer programming, consultancy and related activities"
+7889,Change Impact Assessment,49,P22,62,"62 Computer programming, consultancy and related activities"
+7890,Rollback Plan Template,49,P22,62,"62 Computer programming, consultancy and related activities"
+7891,Emergency Change Procedure,49,P22,62,"62 Computer programming, consultancy and related activities"
+7892,Change Success Criteria,49,P22,62,"62 Computer programming, consultancy and related activities"
+7893,Capacity Forecast Report,49,P23,52,52_Ware_And
+7894,Growth Projections,49,P23,62,"62 Computer programming, consultancy and related activities"
+7895,Resource Allocation Plan,49,P23,62,"62 Computer programming, consultancy and related activities"
+7896,Scalability Assessment,49,P23,62,"62 Computer programming, consultancy and related activities"
+7897,Performance Baseline,49,P23,52,52_Ware_And
+7898,Capacity Threshold Alerts,49,P23,78,78
+7899,Infrastructure Sizing Guide,49,P23,42,42
+7910,Compliance Requirements,50,P02,69,69
+7938,Security Testing,50,P06,62,62_Comp_Prog
+7940,Access Control Review,50,P07,62,"62 Computer programming, consultancy and related activities"
+7970,API Documentation,50,P12,62,"62 Computer programming, consultancy and related activities"
+7987,Budget Proposal Template,50,P17,47,47
+7988,Cost-Benefit Analysis (CBA),50,P17,71,71_Arch_And
+7989,Total Cost of Ownership (TCO),50,P17,98,98_Undi_Good
+7990,CapEx/OpEx Planning,50,P17,62,"62 Computer programming, consultancy and related activities"
+7991,ROI Projections,50,P17,62,"62 Computer programming, consultancy and related activities"
+7992,Cost Tracking Report,50,P17,50,50
+7993,Request for Proposal (RFP),50,P18,52,52_Ware_And
+7994,Request for Information (RFI),50,P18,52,52_Ware_And
+7995,Vendor Evaluation Matrix,50,P18,62,"62 Computer programming, consultancy and related activities"
+7996,Contract Template,50,P18,62,"62 Computer programming, consultancy and related activities"
+7997,SLA Agreement Template,50,P18,62,"62 Computer programming, consultancy and related activities"
+7998,Vendor Risk Assessment,50,P18,64,64
+7999,Procurement Checklist,50,P18,86,86 Human health activities
+8000,Audit Checklist,50,P19,86,86 Human health activities
+8001,Compliance Report Template,50,P19,69,69
+8002,Policy Review Record,50,P19,65,65_Insu
+8003,Certification Documentation,50,P19,62,"62 Computer programming, consultancy and related activities"
+8004,Risk Register,50,P19,71,71
+8005,Control Matrix,50,P19,62,"62 Computer programming, consultancy and related activities"
+8006,Audit Trail Log,50,P19,49,49 Land transport; transport via pipelines
+8007,System Retirement Plan,50,P20,62,"62 Computer programming, consultancy and related activities"
+8008,Data Migration Strategy,50,P20,62,"62 Computer programming, consultancy and related activities"
+8009,Archive Strategy Document,50,P20,91,91
+8010,Sunset Communication Plan,50,P20,62,"62 Computer programming, consultancy and related activities"
+8011,Dependency Impact Analysis,50,P20,71,71_Arch_And
+8012,Decommissioning Checklist,50,P20,86,86 Human health activities
+8013,Historical Data Retention Policy,50,P20,65,65_Insu
+8014,Disaster Recovery Plan (DRP),50,P21,38,38_Wast_Coll
+8015,Business Continuity Plan (BCP),50,P21,82,82_Offi_Admi
+8016,Recovery Point Objective (RPO) Definition,50,P21,38,38_Wast_Coll
+8017,Recovery Time Objective (RTO) Definition,50,P21,38,38_Wast_Coll
+8018,Failover Procedures,50,P21,62,62
+8019,DR Test Report,50,P21,50,50
+8020,Crisis Communication Plan,50,P21,86,86 Human health activities
+8021,Backup Verification Checklist,50,P21,86,86 Human health activities
+8022,Change Request Form (RFC),50,P22,52,52_Ware_And
+8023,Change Advisory Board (CAB) Notes,50,P22,62,"62 Computer programming, consultancy and related activities"
+8024,Change Calendar,50,P22,62,"62 Computer programming, consultancy and related activities"
+8025,Change Impact Assessment,50,P22,62,"62 Computer programming, consultancy and related activities"
+8026,Rollback Plan Template,50,P22,62,"62 Computer programming, consultancy and related activities"
+8027,Emergency Change Procedure,50,P22,62,"62 Computer programming, consultancy and related activities"
+8028,Change Success Criteria,50,P22,62,"62 Computer programming, consultancy and related activities"
+8029,Capacity Forecast Report,50,P23,52,52_Ware_And
+8030,Growth Projections,50,P23,62,"62 Computer programming, consultancy and related activities"
+8031,Resource Allocation Plan,50,P23,62,"62 Computer programming, consultancy and related activities"
+8032,Scalability Assessment,50,P23,62,"62 Computer programming, consultancy and related activities"
+8033,Performance Baseline,50,P23,52,52_Ware_And
+8034,Capacity Threshold Alerts,50,P23,78,78
+8035,Infrastructure Sizing Guide,50,P23,42,42
+8038,Competitive Analysis,51,P01,71,71_Arch_And
+8080,Load Testing,51,P06,71,71_Arch_And
+8115,API Documentation,51,P12,62,"62 Computer programming, consultancy and related activities"
+8135,Budget Proposal Template,51,P17,47,47
+8136,Cost-Benefit Analysis (CBA),51,P17,71,71_Arch_And
+8137,Total Cost of Ownership (TCO),51,P17,98,98_Undi_Good
+8138,CapEx/OpEx Planning,51,P17,62,"62 Computer programming, consultancy and related activities"
+8139,ROI Projections,51,P17,62,"62 Computer programming, consultancy and related activities"
+8140,Cost Tracking Report,51,P17,50,50
+8141,Request for Proposal (RFP),51,P18,52,52_Ware_And
+8142,Request for Information (RFI),51,P18,52,52_Ware_And
+8143,Vendor Evaluation Matrix,51,P18,62,"62 Computer programming, consultancy and related activities"
+8144,Contract Template,51,P18,62,"62 Computer programming, consultancy and related activities"
+8145,SLA Agreement Template,51,P18,62,"62 Computer programming, consultancy and related activities"
+8146,Vendor Risk Assessment,51,P18,64,64
+8147,Procurement Checklist,51,P18,86,86 Human health activities
+8148,Audit Checklist,51,P19,86,86 Human health activities
+8149,Compliance Report Template,51,P19,69,69
+8150,Policy Review Record,51,P19,65,65_Insu
+8151,Certification Documentation,51,P19,62,"62 Computer programming, consultancy and related activities"
+8152,Risk Register,51,P19,71,71
+8153,Control Matrix,51,P19,62,"62 Computer programming, consultancy and related activities"
+8154,Audit Trail Log,51,P19,49,49 Land transport; transport via pipelines
+8155,System Retirement Plan,51,P20,62,"62 Computer programming, consultancy and related activities"
+8156,Data Migration Strategy,51,P20,62,"62 Computer programming, consultancy and related activities"
+8157,Archive Strategy Document,51,P20,91,91
+8158,Sunset Communication Plan,51,P20,62,"62 Computer programming, consultancy and related activities"
+8159,Dependency Impact Analysis,51,P20,71,71_Arch_And
+8160,Decommissioning Checklist,51,P20,86,86 Human health activities
+8161,Historical Data Retention Policy,51,P20,65,65_Insu
+8162,Disaster Recovery Plan (DRP),51,P21,38,38_Wast_Coll
+8163,Business Continuity Plan (BCP),51,P21,82,82_Offi_Admi
+8164,Recovery Point Objective (RPO) Definition,51,P21,38,38_Wast_Coll
+8165,Recovery Time Objective (RTO) Definition,51,P21,38,38_Wast_Coll
+8166,Failover Procedures,51,P21,62,62
+8167,DR Test Report,51,P21,50,50
+8168,Crisis Communication Plan,51,P21,86,86 Human health activities
+8169,Backup Verification Checklist,51,P21,86,86 Human health activities
+8170,Change Request Form (RFC),51,P22,52,52_Ware_And
+8171,Change Advisory Board (CAB) Notes,51,P22,62,"62 Computer programming, consultancy and related activities"
+8172,Change Calendar,51,P22,62,"62 Computer programming, consultancy and related activities"
+8173,Change Impact Assessment,51,P22,62,"62 Computer programming, consultancy and related activities"
+8174,Rollback Plan Template,51,P22,62,"62 Computer programming, consultancy and related activities"
+8175,Emergency Change Procedure,51,P22,62,"62 Computer programming, consultancy and related activities"
+8176,Change Success Criteria,51,P22,62,"62 Computer programming, consultancy and related activities"
+8177,Capacity Forecast Report,51,P23,52,52_Ware_And
+8178,Growth Projections,51,P23,62,"62 Computer programming, consultancy and related activities"
+8179,Resource Allocation Plan,51,P23,62,"62 Computer programming, consultancy and related activities"
+8180,Scalability Assessment,51,P23,62,"62 Computer programming, consultancy and related activities"
+8181,Performance Baseline,51,P23,52,52_Ware_And
+8182,Capacity Threshold Alerts,51,P23,78,78
+8183,Infrastructure Sizing Guide,51,P23,42,42
+8221,Load Testing,52,P06,71,71_Arch_And
+8250,API Documentation,52,P12,62,"62 Computer programming, consultancy and related activities"
+8268,Budget Proposal Template,52,P17,47,47
+8269,Cost-Benefit Analysis (CBA),52,P17,71,71_Arch_And
+8270,Total Cost of Ownership (TCO),52,P17,98,98_Undi_Good
+8271,CapEx/OpEx Planning,52,P17,62,"62 Computer programming, consultancy and related activities"
+8272,ROI Projections,52,P17,62,"62 Computer programming, consultancy and related activities"
+8273,Cost Tracking Report,52,P17,50,50
+8274,Request for Proposal (RFP),52,P18,52,52_Ware_And
+8275,Request for Information (RFI),52,P18,52,52_Ware_And
+8276,Vendor Evaluation Matrix,52,P18,62,"62 Computer programming, consultancy and related activities"
+8277,Contract Template,52,P18,62,"62 Computer programming, consultancy and related activities"
+8278,SLA Agreement Template,52,P18,62,"62 Computer programming, consultancy and related activities"
+8279,Vendor Risk Assessment,52,P18,64,64
+8280,Procurement Checklist,52,P18,86,86 Human health activities
+8281,Audit Checklist,52,P19,86,86 Human health activities
+8282,Compliance Report Template,52,P19,69,69
+8283,Policy Review Record,52,P19,65,65_Insu
+8284,Certification Documentation,52,P19,62,"62 Computer programming, consultancy and related activities"
+8285,Risk Register,52,P19,71,71
+8286,Control Matrix,52,P19,62,"62 Computer programming, consultancy and related activities"
+8287,Audit Trail Log,52,P19,49,49 Land transport; transport via pipelines
+8288,System Retirement Plan,52,P20,62,"62 Computer programming, consultancy and related activities"
+8289,Data Migration Strategy,52,P20,62,"62 Computer programming, consultancy and related activities"
+8290,Archive Strategy Document,52,P20,91,91
+8291,Sunset Communication Plan,52,P20,62,"62 Computer programming, consultancy and related activities"
+8292,Dependency Impact Analysis,52,P20,71,71_Arch_And
+8293,Decommissioning Checklist,52,P20,86,86 Human health activities
+8294,Historical Data Retention Policy,52,P20,65,65_Insu
+8295,Disaster Recovery Plan (DRP),52,P21,38,38_Wast_Coll
+8296,Business Continuity Plan (BCP),52,P21,82,82_Offi_Admi
+8297,Recovery Point Objective (RPO) Definition,52,P21,38,38_Wast_Coll
+8298,Recovery Time Objective (RTO) Definition,52,P21,38,38_Wast_Coll
+8299,Failover Procedures,52,P21,62,62
+8300,DR Test Report,52,P21,50,50
+8301,Crisis Communication Plan,52,P21,86,86 Human health activities
+8302,Backup Verification Checklist,52,P21,86,86 Human health activities
+8303,Change Request Form (RFC),52,P22,52,52_Ware_And
+8304,Change Advisory Board (CAB) Notes,52,P22,62,"62 Computer programming, consultancy and related activities"
+8305,Change Calendar,52,P22,62,"62 Computer programming, consultancy and related activities"
+8306,Change Impact Assessment,52,P22,62,"62 Computer programming, consultancy and related activities"
+8307,Rollback Plan Template,52,P22,62,"62 Computer programming, consultancy and related activities"
+8308,Emergency Change Procedure,52,P22,62,"62 Computer programming, consultancy and related activities"
+8309,Change Success Criteria,52,P22,62,"62 Computer programming, consultancy and related activities"
+8310,Capacity Forecast Report,52,P23,52,52_Ware_And
+8311,Growth Projections,52,P23,62,"62 Computer programming, consultancy and related activities"
+8312,Resource Allocation Plan,52,P23,62,"62 Computer programming, consultancy and related activities"
+8313,Scalability Assessment,52,P23,62,"62 Computer programming, consultancy and related activities"
+8314,Performance Baseline,52,P23,52,52_Ware_And
+8315,Capacity Threshold Alerts,52,P23,78,78
+8316,Infrastructure Sizing Guide,52,P23,42,42
+8387,API Documentation,53,P12,62,"62 Computer programming, consultancy and related activities"
+8389,Accessibility Guidelines,53,P12,62,"62 Computer programming, consultancy and related activities"
+8406,Budget Proposal Template,53,P17,47,47
+8407,Cost-Benefit Analysis (CBA),53,P17,71,71_Arch_And
+8408,Total Cost of Ownership (TCO),53,P17,98,98_Undi_Good
+8409,CapEx/OpEx Planning,53,P17,62,"62 Computer programming, consultancy and related activities"
+8410,ROI Projections,53,P17,62,"62 Computer programming, consultancy and related activities"
+8411,Cost Tracking Report,53,P17,50,50
+8412,Request for Proposal (RFP),53,P18,52,52_Ware_And
+8413,Request for Information (RFI),53,P18,52,52_Ware_And
+8414,Vendor Evaluation Matrix,53,P18,62,"62 Computer programming, consultancy and related activities"
+8415,Contract Template,53,P18,62,"62 Computer programming, consultancy and related activities"
+8416,SLA Agreement Template,53,P18,62,"62 Computer programming, consultancy and related activities"
+8417,Vendor Risk Assessment,53,P18,64,64
+8418,Procurement Checklist,53,P18,86,86 Human health activities
+8419,Audit Checklist,53,P19,86,86 Human health activities
+8420,Compliance Report Template,53,P19,69,69
+8421,Policy Review Record,53,P19,65,65_Insu
+8422,Certification Documentation,53,P19,62,"62 Computer programming, consultancy and related activities"
+8423,Risk Register,53,P19,71,71
+8424,Control Matrix,53,P19,62,"62 Computer programming, consultancy and related activities"
+8425,Audit Trail Log,53,P19,49,49 Land transport; transport via pipelines
+8426,System Retirement Plan,53,P20,62,"62 Computer programming, consultancy and related activities"
+8427,Data Migration Strategy,53,P20,62,"62 Computer programming, consultancy and related activities"
+8428,Archive Strategy Document,53,P20,91,91
+8429,Sunset Communication Plan,53,P20,62,"62 Computer programming, consultancy and related activities"
+8430,Dependency Impact Analysis,53,P20,71,71_Arch_And
+8431,Decommissioning Checklist,53,P20,86,86 Human health activities
+8432,Historical Data Retention Policy,53,P20,65,65_Insu
+8433,Disaster Recovery Plan (DRP),53,P21,38,38_Wast_Coll
+8434,Business Continuity Plan (BCP),53,P21,82,82_Offi_Admi
+8435,Recovery Point Objective (RPO) Definition,53,P21,38,38_Wast_Coll
+8436,Recovery Time Objective (RTO) Definition,53,P21,38,38_Wast_Coll
+8437,Failover Procedures,53,P21,62,62
+8438,DR Test Report,53,P21,50,50
+8439,Crisis Communication Plan,53,P21,86,86 Human health activities
+8440,Backup Verification Checklist,53,P21,86,86 Human health activities
+8441,Change Request Form (RFC),53,P22,52,52_Ware_And
+8442,Change Advisory Board (CAB) Notes,53,P22,62,"62 Computer programming, consultancy and related activities"
+8443,Change Calendar,53,P22,62,"62 Computer programming, consultancy and related activities"
+8444,Change Impact Assessment,53,P22,62,"62 Computer programming, consultancy and related activities"
+8445,Rollback Plan Template,53,P22,62,"62 Computer programming, consultancy and related activities"
+8446,Emergency Change Procedure,53,P22,62,"62 Computer programming, consultancy and related activities"
+8447,Change Success Criteria,53,P22,62,"62 Computer programming, consultancy and related activities"
+8448,Capacity Forecast Report,53,P23,52,52_Ware_And
+8449,Growth Projections,53,P23,62,"62 Computer programming, consultancy and related activities"
+8450,Resource Allocation Plan,53,P23,62,"62 Computer programming, consultancy and related activities"
+8451,Scalability Assessment,53,P23,62,"62 Computer programming, consultancy and related activities"
+8452,Performance Baseline,53,P23,52,52_Ware_And
+8453,Capacity Threshold Alerts,53,P23,78,78
+8454,Infrastructure Sizing Guide,53,P23,42,42
+8492,Failover Testing,54,P06,71,71_Arch_And
+8498,Incident Response Plan,54,P07,62,
+8523,API Documentation,54,P12,62,"62 Computer programming, consultancy and related activities"
+8541,Budget Proposal Template,54,P17,47,47
+8542,Cost-Benefit Analysis (CBA),54,P17,71,71_Arch_And
+8543,Total Cost of Ownership (TCO),54,P17,98,98_Undi_Good
+8544,CapEx/OpEx Planning,54,P17,62,"62 Computer programming, consultancy and related activities"
+8545,ROI Projections,54,P17,62,"62 Computer programming, consultancy and related activities"
+8546,Cost Tracking Report,54,P17,50,50
+8547,Request for Proposal (RFP),54,P18,52,52_Ware_And
+8548,Request for Information (RFI),54,P18,52,52_Ware_And
+8549,Vendor Evaluation Matrix,54,P18,62,"62 Computer programming, consultancy and related activities"
+8550,Contract Template,54,P18,62,"62 Computer programming, consultancy and related activities"
+8551,SLA Agreement Template,54,P18,62,"62 Computer programming, consultancy and related activities"
+8552,Vendor Risk Assessment,54,P18,64,64
+8553,Procurement Checklist,54,P18,86,86 Human health activities
+8554,Audit Checklist,54,P19,86,86 Human health activities
+8555,Compliance Report Template,54,P19,69,69
+8556,Policy Review Record,54,P19,65,65_Insu
+8557,Certification Documentation,54,P19,62,"62 Computer programming, consultancy and related activities"
+8558,Risk Register,54,P19,71,71
+8559,Control Matrix,54,P19,62,"62 Computer programming, consultancy and related activities"
+8560,Audit Trail Log,54,P19,49,49 Land transport; transport via pipelines
+8561,System Retirement Plan,54,P20,62,"62 Computer programming, consultancy and related activities"
+8562,Data Migration Strategy,54,P20,62,"62 Computer programming, consultancy and related activities"
+8563,Archive Strategy Document,54,P20,91,91
+8564,Sunset Communication Plan,54,P20,62,"62 Computer programming, consultancy and related activities"
+8565,Dependency Impact Analysis,54,P20,71,71_Arch_And
+8566,Decommissioning Checklist,54,P20,86,86 Human health activities
+8567,Historical Data Retention Policy,54,P20,65,65_Insu
+8568,Disaster Recovery Plan (DRP),54,P21,38,38_Wast_Coll
+8569,Business Continuity Plan (BCP),54,P21,82,82_Offi_Admi
+8570,Recovery Point Objective (RPO) Definition,54,P21,38,38_Wast_Coll
+8571,Recovery Time Objective (RTO) Definition,54,P21,38,38_Wast_Coll
+8572,Failover Procedures,54,P21,62,62
+8573,DR Test Report,54,P21,50,50
+8574,Crisis Communication Plan,54,P21,86,86 Human health activities
+8575,Backup Verification Checklist,54,P21,86,86 Human health activities
+8576,Change Request Form (RFC),54,P22,52,52_Ware_And
+8577,Change Advisory Board (CAB) Notes,54,P22,62,"62 Computer programming, consultancy and related activities"
+8578,Change Calendar,54,P22,62,"62 Computer programming, consultancy and related activities"
+8579,Change Impact Assessment,54,P22,62,"62 Computer programming, consultancy and related activities"
+8580,Rollback Plan Template,54,P22,62,"62 Computer programming, consultancy and related activities"
+8581,Emergency Change Procedure,54,P22,62,"62 Computer programming, consultancy and related activities"
+8582,Change Success Criteria,54,P22,62,"62 Computer programming, consultancy and related activities"
+8583,Capacity Forecast Report,54,P23,52,52_Ware_And
+8584,Growth Projections,54,P23,62,"62 Computer programming, consultancy and related activities"
+8585,Resource Allocation Plan,54,P23,62,"62 Computer programming, consultancy and related activities"
+8586,Scalability Assessment,54,P23,62,"62 Computer programming, consultancy and related activities"
+8587,Performance Baseline,54,P23,52,52_Ware_And
+8588,Capacity Threshold Alerts,54,P23,78,78
+8589,Infrastructure Sizing Guide,54,P23,42,42
+8590,Architecture Monitoring Strategy,,,41,41
+8598,Integration Implementation Specification,,,62,"62 Computer programming, consultancy and related activities"
+8599,API Monitoring Runbook,,,62,62
+8616,Data Retention Requirements,,,62,"62 Computer programming, consultancy and related activities"
+8628,Database Connection Pooling Setup,,,62,"62 Computer programming, consultancy and related activities"
+8632,Storage Capacity Monitoring,,,35,"35 Electricity, gas, steam and air conditioning supply"
+8636,SRE Practice Rollout Plan,,,62,"62 Computer programming, consultancy and related activities"
+8642,Replication Setup Guide,,,62,"62 Computer programming, consultancy and related activities"
+8647,Sprint Execution Guidance,,,62,"62 Computer programming, consultancy and related activities"
+8652,API Integration Specification,,,62,"62 Computer programming, consultancy and related activities"
+8654,Quality Metrics Definition,,,62,"62 Computer programming, consultancy and related activities"
+8668,Database Strategy Document,,,62,"62 Computer programming, consultancy and related activities"
+8671,Functional Requirements Specification (FRS),,,62,"62 Computer programming, consultancy and related activities"
+8677,Statistics Update Procedure,,,62,"62 Computer programming, consultancy and related activities"
+8688,Database Health Report,,,86,86_Huma_Heal
+8690,Go-Live Architecture Checklist,,,41,41
+8693,API Release Plan,,,68,68 Real estate activities
+8700,Mobile Development Roadmap,,,72,72_Scie_Rese
+8703,Blameless Postmortem Template,,,47,47
+8704,Product Health Monitoring,,,86,86_Huma_Heal
+8707,Interface Specification,,,62,"62 Computer programming, consultancy and related activities"
+8724,Maintenance Window Notifications,,,35,"35 Electricity, gas, steam and air conditioning supply"
+8725,Stakeholder Presentation,,,62,"62 Computer programming, consultancy and related activities"
+8736,Database Testing Strategy,,,71,71_Arch_And
+8738,Migration Status Updates,,,62,"62 Computer programming, consultancy and related activities"
+8747,Data Migration Plan,,,62,"62 Computer programming, consultancy and related activities"
+8768,Incident Communication Plan,,,62,"62 Computer programming, consultancy and related activities"
+8775,Chaos Engineering Strategy,,,42,42_Civi_Engi
+8779,Communication During Incidents,,,62,"62 Computer programming, consultancy and related activities"
+8781,Project Closure Report,,,50,50
+8784,Project Success Analysis,,,71,71_Arch_And
+8787,API Security Design,,,62,62_Comp_Prog
+8797,Functional Requirements,,,62,"62 Computer programming, consultancy and related activities"
+8801,Architecture Onboarding,,,41,41
+8806,Data Reconciliation Procedure,,,62,"62 Computer programming, consultancy and related activities"
+8808,Proof of Concept (PoC) Plan,,,62,"62 Computer programming, consultancy and related activities"
+8810,Configuration Guide,,,62,"62 Computer programming, consultancy and related activities"
+8818,Product Analytics Strategy,,,62,"62 Computer programming, consultancy and related activities"
+8822,Mobile App Requirements Specification,,,62,"62 Computer programming, consultancy and related activities"
+8828,Architecture Recovery Procedures,,,38,38_Wast_Coll
+8829,Cookie Policy Document,,,65,65_Insu
+8839,Data Mapping Reference,,,71,71
+8842,Architecture Incident Response,,,62,
+8845,Test Effectiveness Review,,,62,"62 Computer programming, consultancy and related activities"
+8849,UAT Sign-off Document,,,62,"62 Computer programming, consultancy and related activities"
+8852,Beta Tester Communication,,,62,"62 Computer programming, consultancy and related activities"
+8857,Cost Planning and Forecasting,,,01,01_Crop_And
+8869,Risk and Issue Report,,,01,01_Crop_And
+8875,Architecture Fault Diagnosis,,,41,41
+8885,Wireframe Specifications,,,62,"62 Computer programming, consultancy and related activities"
+8901,Project Status Report,,,50,50
+8908,Infrastructure Testing Plan,,,71,71_Arch_And
+8910,Integration Architecture Training,,,85,85_Educ
+8914,API Platform Implementation Schedule,,,52,52_Ware_And
+8923,Component Library Documentation,,,91,91
+8925,Database Troubleshooting Guide,,,62,"62 Computer programming, consultancy and related activities"
+8927,Slow Query Monitoring,,,62,62
+8936,Frontend Metrics Definition,,,62,"62 Computer programming, consultancy and related activities"
+8943,UAT Preparation,,,62,"62 Computer programming, consultancy and related activities"
+8945,On-Call Training,,,85,85_Educ
+8950,Rollback Plan,,,62,"62 Computer programming, consultancy and related activities"
+8953,OKR (Objectives and Key Results),,,01,01_Crop_And
+8963,Incident Classification,,,62,"62 Computer programming, consultancy and related activities"
+8970,API Documentation Training,,,85,85_Educ
+8974,Setup Android Development Environment,,,01,01_Crop_And
+8980,OpenAPI/Swagger Definition,,,62,"62 Computer programming, consultancy and related activities"
+8987,Data Transformation Rules,,,52,52_Ware_And
+8992,User Journey Maps,,,98,98_Undi_Good
+9009,Project Timeline / Schedule,,,62,"62 Computer programming, consultancy and related activities"
+9030,Chaos Engineering Testing,,,42,42_Civi_Engi
+9035,Product Privacy Requirements,,,84,84 Public administration and defence; compulsory social security
+9044,Error Handling Strategy,,,01,01_Crop_And
+9051,Integration Performance Metrics,,,52,52_Ware_And
+9053,Improvement Recommendations,,,63,63
+9058,Database Naming Conventions,,,35,"35 Electricity, gas, steam and air conditioning supply"
+9060,Database Monitoring Strategy,,,62,62
+9067,Monitoring Strategy Document,,,62,62
+9086,Index Maintenance Procedure,,,62,62
+9092,Task Assignment Document,,,62,"62 Computer programming, consultancy and related activities"
+9096,App Store Compliance Review,,,47,47
+9098,App Store Submission Guide,,,47,47
+9109,Integration Pattern Implementation,,,62,"62 Computer programming, consultancy and related activities"
+9110,Risk Management Plan,,,39,39_Reme_Acti
+9116,Architecture Status Report,,,41,41
+9118,SQL Best Practices Guide,,,62,"62 Computer programming, consultancy and related activities"
+9127,Cloud Security Architecture,,,62,62_Comp_Prog
+9132,API Integration Guide,,,62,"62 Computer programming, consultancy and related activities"
+9145,Data Encryption Specification,,,62,"62 Computer programming, consultancy and related activities"
+9150,Escape Analysis,,,71,71_Arch_And
+9151,Unit Test Specification,,,62,"62 Computer programming, consultancy and related activities"
+9152,Code Examples Repository,,,47,47
+9168,Information Architecture Document,,,52,52_Ware_And
+9173,Cloud Migration Retrospective,,,62,62_Comp_Prog
+9177,Team Scaling Plan,,,62,"62 Computer programming, consultancy and related activities"
+9182,Database Health Checks,,,86,86_Huma_Heal
+9184,Go-Live Checklist,,,86,86 Human health activities
+9185,Mobile UI/UX Design,,,62,"62 Computer programming, consultancy and related activities"
+9195,App Lifecycle Management,,,39,39_Reme_Acti
+9198,Database Migration Plan,,,62,"62 Computer programming, consultancy and related activities"
+9199,Product Backlog Management,,,39,39_Reme_Acti
+9200,Project Retrospective Report,,,50,50
+9204,Middleware Configuration,,,62,"62 Computer programming, consultancy and related activities"
+9205,Technology Stack Selection,,,62,"62 Computer programming, consultancy and related activities"
+9210,Technical Wiki / Knowledge Base,,,71,71_Arch_And
+9221,Non-Functional Requirements (NFR),,,23,23_Manu_Of
+9238,Tool Selection Plan,,,62,"62 Computer programming, consultancy and related activities"
+9242,Detailed Project Schedule,,,62,62
+9243,Project Issue Management Procedure,,,39,39_Reme_Acti
+9247,Post-Release Review,,,47,47
+9251,Interaction Design Specification,,,62,"62 Computer programming, consultancy and related activities"
+9262,Architecture Reference,,,41,41
+9265,Product Lessons Learned,,,85,85 Education
+9275,SRE Security Practices,,,62,62_Comp_Prog
+9277,Cloud Incident Response,,,62,62_Comp_Prog
+9283,API Security Testing,,,62,62_Comp_Prog
+9286,Integration Deployment Plan,,,62,"62 Computer programming, consultancy and related activities"
+9293,Installation Guide,,,33,33_Repa_And
+9296,Cost Optimization Findings,,,62,"62 Computer programming, consultancy and related activities"
+9298,Integration Patterns Catalog,,,62,"62 Computer programming, consultancy and related activities"
+9309,API Status Updates,,,62,"62 Computer programming, consultancy and related activities"
+9312,Rollout Plan,,,62,"62 Computer programming, consultancy and related activities"
+9314,Data Exchange Requirements,,,66,66
+9316,Security Architecture Document,,,62,62_Comp_Prog
+9320,API Error Codes Reference,,,62,"62 Computer programming, consultancy and related activities"
+9323,Procurement Plan,,,62,"62 Computer programming, consultancy and related activities"
+9328,Integration Test Plan,,,62,"62 Computer programming, consultancy and related activities"
+9343,Security Architecture for Cloud,,,62,62_Comp_Prog
+9344,User Experience Monitoring Plan,,,98,98_Undi_Good
+9351,Product Performance Report,,,52,52_Ware_And
+9353,Build and Deployment Guide,,,01,01_Crop_And
+9355,User Testing Results Summary,,,71,71_Arch_And
+9362,Project Quality Assurance Plan,,,61,61 Telecommunications
+9377,Product Metrics Framework,,,88,88_Soci_Work
+9379,User Journey Mapping,,,98,98_Undi_Good
+9381,API Contract Testing,,,71,71_Arch_And
+9384,API Reference Documentation,,,62,"62 Computer programming, consultancy and related activities"
+9386,Data Privacy Architecture Assessment,,,84,84 Public administration and defence; compulsory social security
+9405,Test Data Preparation Plan,,,62,"62 Computer programming, consultancy and related activities"
+9416,Device Testing Procedure,,,71,71_Arch_And
+9420,Incident Checklist,,,86,86 Human health activities
+9426,Architecture Improvement Plan,,,41,41
+9427,Data Dictionary,,,62,"62 Computer programming, consultancy and related activities"
+9436,Mobile Testing Strategy,,,71,71_Arch_And
+9438,Cloud Compliance Roadmap,,,62,62_Comp_Prog
+9442,Dashboard Design Standards,,,01,01_Crop_And
+9456,Browser Compatibility Matrix,,,62,"62 Computer programming, consultancy and related activities"
+9457,Testing Best Practices,,,71,71_Arch_And
+9458,System Overview Training Material,,,85,85_Educ
+9460,Stakeholder Architecture Updates,,,41,41
+9467,Incident Response Training,,,85,85_Educ
+9480,Integration Strategy Vision,,,62,"62 Computer programming, consultancy and related activities"
+9492,API Performance Testing,,,52,52_Ware_And
+9500,API Improvement Plan,,,62,"62 Computer programming, consultancy and related activities"
+9506,Resource Management Plan,,,39,39_Reme_Acti
+9510,Cost Monitoring,,,62,62
+9514,Chaos Engineering Training,,,85,85_Educ
+9518,Database Patching Procedure,,,51,51 Air transport
+9519,High-Level Architecture Concept,,,41,41
+9529,Service Reliability Requirements,,,01,01_Crop_And
+9536,Architecture Glossary,,,41,41
+9543,Patching Strategy,,,51,51 Air transport
+9548,Backup Procedure,,,62,"62 Computer programming, consultancy and related activities"
+9554,Architecture Review Presentation,,,41,41
+9557,Product Vision Statement,,,62,"62 Computer programming, consultancy and related activities"
+9560,Post-Implementation Support,,,09,09_Mini_Supp
+9572,Stakeholder Communication Plan,,,62,"62 Computer programming, consultancy and related activities"
+9573,Automation Framework Setup,,,88,88_Soci_Work
+9586,Incident Escalation Matrix,,,62,"62 Computer programming, consultancy and related activities"
+9587,Privacy Policy for Mobile App,,,84,84 Public administration and defence; compulsory social security
+9589,Automation Priority Plan,,,62,"62 Computer programming, consultancy and related activities"
+9590,Security Architecture,,,62,62_Comp_Prog
+9602,QA Strategy Document,,,62,"62 Computer programming, consultancy and related activities"
+9603,Browser/Device Support Matrix,,,09,09_Mini_Supp
+9610,Data Privacy Impact Assessment (DPIA),,,84,84 Public administration and defence; compulsory social security
+9611,Incident Pattern Analysis,,,71,71_Arch_And
+9612,Data Protection Strategy,,,62,"62 Computer programming, consultancy and related activities"
+9616,Troubleshooting Guide,,,62,"62 Computer programming, consultancy and related activities"
+9621,API Design Specification,,,62,"62 Computer programming, consultancy and related activities"
+9627,Rollback Procedure,,,62,"62 Computer programming, consultancy and related activities"
+9632,Change Request Process,,,62,"62 Computer programming, consultancy and related activities"
+9641,Cost Report,,,50,50
+9645,Mobile Analytics Setup,,,62,"62 Computer programming, consultancy and related activities"
+9647,Deliverable Acceptance Criteria,,,62,"62 Computer programming, consultancy and related activities"
+9651,System Context Diagram,,,62,"62 Computer programming, consultancy and related activities"
+9656,Integration Monitoring Runbook,,,62,62
+9665,On-Call Rotation Design,,,62,"62 Computer programming, consultancy and related activities"
+9669,Toil Reduction Strategy,,,35,35_Elec
+9680,Architecture Best Practices,,,41,41
+9696,Customer Feedback Collection,,,36,36_Wate_Coll
+9699,Feature Catalog,,,62,"62 Computer programming, consultancy and related activities"
+9700,Data Architecture,,,41,41
+9705,Lessons Learned in Architecture,,,41,41
+9719,Regression Testing Plan,,,71,71_Arch_And
+9731,API Key Management Setup,,,39,39_Reme_Acti
+9735,Test Result Analysis,,,71,71_Arch_And
+9741,Database Security Implementation,,,62,62_Comp_Prog
+9745,Integration Project Postmortem,,,47,47
+9747,Business Impact Assessment,,,82,82_Offi_Admi
+9761,Cloud Migration Plan,,,62,62_Comp_Prog
+9764,Technical Design Document (TDD),,,71,71_Arch_And
+9769,Product Operations Runbook,,,62,"62 Computer programming, consultancy and related activities"
+9770,QA Project Schedule,,,62,"62 Computer programming, consultancy and related activities"
+9779,Test Coverage Monitoring,,,62,62
+9780,Product Manager Onboarding,,,78,78
+9797,Operational Architecture Guide,,,41,41
+9804,Project Management Plan,,,39,39_Reme_Acti
+9806,Test Automation Code,,,62,"62 Computer programming, consultancy and related activities"
+9807,Feature Release Communication,,,68,68 Real estate activities
+9809,Visual Regression Test Specification,,,62,"62 Computer programming, consultancy and related activities"
+9814,Test Strategy Document,,,62,"62 Computer programming, consultancy and related activities"
+9826,API Integration for Mobile,,,52,52_Ware_And
+9829,Cloud Optimization Tips,,,62,62_Comp_Prog
+9830,Integration Architecture,,,41,41
+9832,Resource Allocation for QA,,,52,52_Ware_And
+9838,API Response Time Monitoring,,,62,62
+9845,API Analytics Dashboard,,,59,"59 Motion picture, video and television programme production"
+9848,Design Review Notes,,,62,"62 Computer programming, consultancy and related activities"
+9849,Announcement for End-Users,,,52,52_Ware_And
+9853,Trade-off Analysis Document,,,45,45_Whol_And
+9859,ADR (Architecture Decision Records),,,41,41
+9863,iOS/Android Implementation Guide,,,01,01_Crop_And
+9865,Integration Monitoring,,,62,62
+9868,Budget and Cost Plan,,,01,01_Crop_And
+9874,KPI Dashboard,,,59,"59 Motion picture, video and television programme production"
+9875,API Deprecation Procedure,,,62,"62 Computer programming, consultancy and related activities"
+9899,API Authentication & Authorization,,,62,"62 Computer programming, consultancy and related activities"
+9909,Disaster Recovery Requirements,,,38,38_Wast_Coll
+9910,Alert Configuration Guide,,,62,"62 Computer programming, consultancy and related activities"
+9918,Network Security Design,,,62,62_Comp_Prog
+9920,API Platform Tool Training,,,85,85_Educ
+9924,Incident Transparency Report,,,50,50
+9929,Knowledge Transfer Plan,,,61,61 Telecommunications
+9935,Query Optimization Patterns,,,62,"62 Computer programming, consultancy and related activities"
+9936,System Landscape Assessment,,,01,01_Crop_And
+9943,Use Case Specification,,,98,98_Undi_Good
+9952,Performance Testing Approach,,,52,52_Ware_And
+9956,Performance Metrics Definition,,,52,52_Ware_And
+9962,Container Orchestration Setup,,,62,62_Comp_Prog
+9965,Data Privacy Checklist,,,84,84 Public administration and defence; compulsory social security
+9972,Release Communication,,,68,68 Real estate activities
+9976,Data Integrity Testing,,,71,71_Arch_And
+9981,Bug Triage Procedure,,,62,"62 Computer programming, consultancy and related activities"
+9994,RFC (Request for Comments),,,52,52_Ware_And
+10004,Product Strategy Document,,,62,"62 Computer programming, consultancy and related activities"
+10006,Post-Deployment Support Plan,,,09,09_Mini_Supp
+10013,Go-Live Readiness Checklist,,,86,86 Human health activities
+10029,Feature Monitoring Guide,,,62,62
+10030,Architecture Cutover Plan,,,41,41
+10032,Alerting Best Practices,,,62,"62 Computer programming, consultancy and related activities"
+10038,API Integration Examples,,,62,"62 Computer programming, consultancy and related activities"
+10046,Project Methodology Training,,,85,85_Educ
+10048,Mobile App Vision Document,,,62,"62 Computer programming, consultancy and related activities"
+10049,Build and Release Procedure,,,01,01_Crop_And
+10051,API Usage Monitoring,,,62,62
+10055,Architecture Implementation Guide,,,41,41
+10065,Stakeholder Analysis,,,71,71_Arch_And
+10071,Incident Review Process,,,62,"62 Computer programming, consultancy and related activities"
+10075,Test Plan,,,62,"62 Computer programming, consultancy and related activities"
+10080,User Acceptance Testing (UAT) Plan,,,71,71_Arch_And
+10086,Stakeholder Requirements Matrix,,,62,"62 Computer programming, consultancy and related activities"
+10093,API Product Vision,,,62,"62 Computer programming, consultancy and related activities"
+10098,Custom Adapter Development,,,72,72_Scie_Rese
+10111,Offline-First Architecture,,,41,41
+10118,Architecture Review Retrospective,,,41,41
+10121,Backup and Recovery Reference,,,01,01_Crop_And
+10133,Database Cutover Procedure,,,62,"62 Computer programming, consultancy and related activities"
+10147,Configuration Management Document,,,39,39_Reme_Acti
+10151,Solution Vision Document,,,62,"62 Computer programming, consultancy and related activities"
+10152,DBA Onboarding Guide,,,78,78
+10157,IaC Tool Training,,,85,85_Educ
+10166,Availability Requirements,,,62,62
+10175,Lessons Learned Document,,,85,85 Education
+10176,Toil Reduction Case Studies,,,35,35_Elec
+10189,Architecture Performance Metrics,,,52,52_Ware_And
+10194,Cutover Procedure,,,62,"62 Computer programming, consultancy and related activities"
+10211,API Strategy Vision,,,62,"62 Computer programming, consultancy and related activities"
+10222,Component Usage Guide,,,62,"62 Computer programming, consultancy and related activities"
+10226,Architecture Evolution Plan,,,41,41
+10229,Database Administration Runbook,,,84,84 Public administration and defence; compulsory social security
+10232,Design Pattern Catalog,,,62,"62 Computer programming, consultancy and related activities"
+10252,Patching and Update Procedure,,,01,01_Crop_And
+10253,Integration Patterns Document,,,62,"62 Computer programming, consultancy and related activities"
+10254,Compliance Mapping,,,69,69
+10255,Compliance and Regulatory Requirements,,,01,01_Crop_And
+10257,Market Analysis,,,71,71_Arch_And
+10260,Crash Reporting Setup,,,50,50
+10262,Service Dependency Map,,,01,01_Crop_And
+10264,API Platform Goals,,,52,52_Ware_And
+10268,Project Charter,,,62,"62 Computer programming, consultancy and related activities"
+10285,Penetration Test Report,,,50,50
+10287,Data Validation Testing,,,71,71_Arch_And
+10297,Local Storage/Database Design,,,35,"35 Electricity, gas, steam and air conditioning supply"
+10298,Reliability Report,,,50,50
+10300,Glossary of Terms,,,61,61 Telecommunications
+10307,Work Breakdown Structure (WBS),,,88,88_Soci_Work
+10311,User Insights Repository,,,98,98_Undi_Good
+10313,Secrets Management,,,39,39_Reme_Acti
+10320,IaC Code Repository,,,47,47
+10323,Project Objectives,,,62,"62 Computer programming, consultancy and related activities"
+10330,Project Plans Reference,,,62,"62 Computer programming, consultancy and related activities"
+10369,Escalation Procedure,,,62,"62 Computer programming, consultancy and related activities"
+10370,Database Architecture Diagram,,,41,41
+10373,Product Best Practices,,,62,"62 Computer programming, consultancy and related activities"
+10377,API Incident Postmortem,,,47,47
+10380,Development Environment Setup,,,72,72_Scie_Rese
+10387,Common Issues and Solutions,,,01,01_Crop_And
+10389,Infrastructure Development Roadmap,,,72,72_Scie_Rese
+10398,Integration Support Training,,,85,85_Educ
+10399,Epic and User Story Breakdown,,,01,01_Crop_And
+10407,Infrastructure Patterns Library,,,42,42
+10411,Code Examples for Mobile,,,52,52_Ware_And
+10425,Cloud Best Practices,,,62,62_Comp_Prog
+10426,API Design Patterns,,,62,"62 Computer programming, consultancy and related activities"
+10429,Common Cloud Issues and Solutions,,,62,62_Comp_Prog
+10435,Review and Approval Process,,,01,01_Crop_And
+10441,User Research Summary,,,72,72_Scie_Rese
+10451,Infrastructure as Code (IaC) Design,,,42,42
+10453,Common Database Issues and Solutions,,,01,01_Crop_And
+10468,Runbook Automation,,,62,"62 Computer programming, consultancy and related activities"
+10473,Test Results Report,,,50,50
+10477,Post-Migration Validation,,,47,47
+10493,CSS/Styling Guidelines,,,62,"62 Computer programming, consultancy and related activities"
+10502,FinOps Metrics and KPIs,,,01,01_Crop_And
+10506,Test Environment Setup,,,62,"62 Computer programming, consultancy and related activities"
+10514,Mobile Design Patterns Library,,,91,91
+10520,Architecture Decision Records (ADR),,,41,41
+10523,Database Security Audit,,,62,62_Comp_Prog
+10527,Performance Optimization Tips,,,52,52_Ware_And
+10529,Database Configuration Reference,,,62,"62 Computer programming, consultancy and related activities"
+10538,DevOps Engineer Onboarding,,,62,62
+10541,Cloud Strategy Document,,,62,62_Comp_Prog
+10550,Design System / Component Library,,,91,91
+10557,Component Architecture Diagram,,,41,41
+10566,Release Notes for Mobile,,,52,52_Ware_And
+10567,Sales Enablement Materials,,,16,16_Manu_Of
+10569,Cloud Infrastructure Requirements,,,62,62_Comp_Prog
+10572,Database Performance Report,,,52,52_Ware_And
+10579,API Testing Strategy,,,71,71_Arch_And
+10582,Test Automation Tool Training,,,85,85_Educ
+10585,API Developer Onboarding,,,78,78
+10587,Logging Strategy,,,02,02_Fore_And
+10589,Cost Optimization Testing,,,71,71_Arch_And
+10602,Implementation Plan,,,62,"62 Computer programming, consultancy and related activities"
+10613,User Management Procedure,,,39,39_Reme_Acti
+10615,Accessibility Testing Checklist,,,71,71_Arch_And
+10616,Architecture Validation Testing,,,71,71_Arch_And
+10623,API Documentation Generation,,,62,"62 Computer programming, consultancy and related activities"
+10642,Reference Implementation,,,62,"62 Computer programming, consultancy and related activities"
+10644,Security Implementation,,,62,62_Comp_Prog
+10648,Integration Security Architecture,,,62,62_Comp_Prog
+10663,Project Team Onboarding,,,78,78
+10668,Roadmap Updates,,,71,71
+10671,Integration Best Practices,,,62,"62 Computer programming, consultancy and related activities"
+10675,Product Training Materials,,,85,85_Educ
+10687,Test Case Implementation,,,62,"62 Computer programming, consultancy and related activities"
+10691,API Version Rollout,,,62,"62 Computer programming, consultancy and related activities"
+10695,Multi-Cloud Strategy,,,62,62_Comp_Prog
+10697,Platform Strategy Document,,,52,52_Ware_And
+10705,Feature Rollback Procedure,,,62,"62 Computer programming, consultancy and related activities"
+10707,Hotfix Verification,,,62,"62 Computer programming, consultancy and related activities"
+10708,Business Value Proposition,,,82,82_Offi_Admi
+10715,Dependency Mapping,,,71,71
+10723,Quality Metrics Report,,,50,50
+10727,Sprint Planning Document,,,62,"62 Computer programming, consultancy and related activities"
+10737,Security Architecture Review,,,62,62_Comp_Prog
+10747,Solution Architecture Document,,,41,41
+10755,API Integration Reference,,,62,"62 Computer programming, consultancy and related activities"
+10757,Error Budget Concept,,,62,"62 Computer programming, consultancy and related activities"
+10763,Component Specification,,,62,"62 Computer programming, consultancy and related activities"
+10777,Incident Management Tool Setup,,,39,39_Reme_Acti
+10779,QA Engineer Onboarding,,,78,78
+10780,Launch Checklist,,,86,86 Human health activities
+10785,OWASP Top 10 Assessment,,,62,"62 Computer programming, consultancy and related activities"
+10806,Release Notes,,,68,68 Real estate activities
+10807,Test Automation Framework Guide,,,88,88_Soci_Work
+10813,Database Deployment Plan,,,62,"62 Computer programming, consultancy and related activities"
+10816,Accessibility Compliance,,,69,69
+10828,Test Environment Setup Plan,,,62,"62 Computer programming, consultancy and related activities"
+10831,Smoke Testing Procedure,,,71,71_Arch_And
+10836,Frontend Developer Onboarding,,,78,78
+10852,Project Requirements Analysis,,,71,71_Arch_And
+10870,Cloud Security Training,,,85,85 Education
+10880,A/B Testing Guide,,,71,71_Arch_And
+10889,Breaking Change Management,,,39,39_Reme_Acti
+10891,Distributed Tracing Setup,,,62,62
+10896,Customer Feedback Analysis,,,71,71_Arch_And
+10923,SRE Practice Review,,,62,"62 Computer programming, consultancy and related activities"
+10926,App Store Review Guidelines Summary,,,47,47
+10927,Runbook Catalog,,,62,"62 Computer programming, consultancy and related activities"
+10930,Toil Tracking Procedure,,,35,35_Elec
+10931,Testing Methodology Training,,,85,85_Educ
+10935,Cloud Platform Training,,,85,85 Education
+10937,Log Aggregation Strategy,,,62,"62 Computer programming, consultancy and related activities"
+10944,Message Format Reference,,,28,28_Manu_Of
+10946,Mobile Interaction Patterns,,,62,"62 Computer programming, consultancy and related activities"
+10953,API Consumer Analysis,,,71,71_Arch_And
+10956,Code Review Guidelines,,,62,"62 Computer programming, consultancy and related activities"
+10959,Threat Model,,,62,62_Comp_Prog
+10971,Design Debt Register,,,71,71
+11011,Technology Strategy,,,62,"62 Computer programming, consultancy and related activities"
+11013,Test Case Repository,,,47,47
+11020,System Administration Guide,,,84,84 Public administration and defence; compulsory social security
+11023,Dependency and Library List,,,01,01_Crop_And
+11028,Security Testing Report,,,50,50 Water transport
+11032,Workload Assessment,,,88,88_Soci_Work
+11033,JavaScript Best Practices,,,62,"62 Computer programming, consultancy and related activities"
+11050,Browser-Specific Issue Guide,,,62,"62 Computer programming, consultancy and related activities"
+11051,SRE Vision Statement,,,62,"62 Computer programming, consultancy and related activities"
+11055,API Lifecycle Management Design,,,39,39_Reme_Acti
+11058,Feature Adoption Monitoring,,,62,62
+11069,Technology Stack Documentation,,,62,"62 Computer programming, consultancy and related activities"
+11072,Architecture Health Metrics,,,86,86_Huma_Heal
+11078,Project Lessons Learned Log,,,85,85 Education
+11079,Cloud Migration Roadmap,,,62,62_Comp_Prog
+11086,Alerting System Implementation,,,62,"62 Computer programming, consultancy and related activities"
+11089,Competitive Intelligence,,,62,"62 Computer programming, consultancy and related activities"
+11097,Stored Procedures Reference,,,47,47
+11102,User Story Refinement,,,98,98_Undi_Good
+11105,Data Mapping Specification,,,71,71
+11106,Integration Status Report,,,50,50
+11116,Solution Architecture Training,,,85,85_Educ
+11125,Lessons Learned in UX,,,85,85 Education
+11126,Service Maintenance Windows,,,01,01_Crop_And
+11134,SLI Monitoring Strategy,,,62,62
+11136,Domain Knowledge Training,,,85,85_Educ
+11140,API Outage Response,,,35,"35 Electricity, gas, steam and air conditioning supply"
+11156,Query Performance Testing,,,52,52_Ware_And
+11161,Project Business Case,,,82,82_Offi_Admi
+11164,Rate Limiting Configuration,,,62,"62 Computer programming, consultancy and related activities"
+11180,Quality Management Plan,,,39,39_Reme_Acti
+11184,Sanity Testing Procedure,,,71,71_Arch_And
+11193,Product FAQ,,,62,"62 Computer programming, consultancy and related activities"
+11199,Crash Rate Monitoring,,,62,62
+11201,Success Criteria Definition,,,62,"62 Computer programming, consultancy and related activities"
+11218,Disaster Recovery Testing,,,38,38_Wast_Coll
+11220,Production Issue Triage,,,01,01_Crop_And
+11227,Library and Framework Reference,,,01,01_Crop_And
+11238,Product Roadmap,,,71,71
+11253,Database Deployment Schedule,,,62,"62 Computer programming, consultancy and related activities"
+11260,Test Data Reference,,,62,"62 Computer programming, consultancy and related activities"
+11268,Cloud Resource Reference,,,62,62_Comp_Prog
+11270,API Best Practices Guide,,,62,"62 Computer programming, consultancy and related activities"
+11272,Feature Performance Review,,,52,52_Ware_And
+11277,Performance Testing for Mobile,,,52,52_Ware_And
+11279,Accessibility (A11y) Design Guide,,,62,"62 Computer programming, consultancy and related activities"
+11280,Index Strategy Design,,,62,"62 Computer programming, consultancy and related activities"
+11281,Project Handover Procedure,,,01,01_Crop_And
+11283,Database Administration Training,,,85,85_Educ
+11288,Lessons from App Store Reviews,,,47,47
+11295,Sprint Planning,,,62,"62 Computer programming, consultancy and related activities"
+11312,Performance Tips for Mobile,,,52,52_Ware_And
+11314,IaC Implementation,,,62,"62 Computer programming, consultancy and related activities"
+11315,API Security Assessment,,,62,62_Comp_Prog
+11319,Integration Architecture Reference,,,41,41
+11320,Dashboard Specification,,,59,"59 Motion picture, video and television programme production"
+11324,Mobile-Specific Constraints,,,62,62
+11331,Alerting Configuration,,,62,"62 Computer programming, consultancy and related activities"
+11343,Feature Prioritization Matrix,,,62,"62 Computer programming, consultancy and related activities"
+11367,Navigation Architecture,,,41,41
+11380,Product Incident Response,,,62,
+11383,Test Execution Report,,,50,50
+11386,Budget Tracking,,,62,"62 Computer programming, consultancy and related activities"
+11399,Project Risk Assessment,,,64,64
+11401,Backup System Configuration,,,62,"62 Computer programming, consultancy and related activities"
+11407,Database Tool Training,,,85,85_Educ
+11418,API Deprecation Notice,,,62,"62 Computer programming, consultancy and related activities"
+11426,UAT Execution Plan,,,62,"62 Computer programming, consultancy and related activities"
+11427,API Change Communication,,,62,"62 Computer programming, consultancy and related activities"
+11430,Feature Specification,,,62,"62 Computer programming, consultancy and related activities"
+11437,Code Documentation / API Docs,,,62,"62 Computer programming, consultancy and related activities"
+11439,Infrastructure Status Report,,,42,42
+11444,Test Data Preparation,,,62,"62 Computer programming, consultancy and related activities"
+11448,Data Security Design,,,62,62_Comp_Prog
+11457,Architecture Evolution Review,,,41,41
+11464,Quality Status Report,,,50,50
+11465,OWASP Testing Report,,,71,71_Arch_And
+11475,Test Automation Tips,,,62,"62 Computer programming, consultancy and related activities"
+11481,Executive Summary,,,62,"62 Computer programming, consultancy and related activities"
+11483,Rollout Strategy,,,62,"62 Computer programming, consultancy and related activities"
+11484,Setup iOS Development Environment,,,72,72_Scie_Rese
+11486,User Retention Metrics,,,98,98_Undi_Good
+11511,Incident Commander Role,,,01,01_Crop_And
+11517,Mobile Developer Onboarding,,,78,78
+11527,Cloud Resource Provisioning,,,61,61 Telecommunications
+11534,Recommendations Document,,,63,63
+11538,Integration Lessons Learned,,,85,85 Education
+11546,Product Documentation,,,62,"62 Computer programming, consultancy and related activities"
+11551,API Versioning Strategy,,,62,"62 Computer programming, consultancy and related activities"
+11554,Cross-Browser Testing Plan,,,71,71_Arch_And
+11558,SLO Reference,,,62,"62 Computer programming, consultancy and related activities"
+11560,Mobile App Architecture,,,41,41
+11564,Device and OS Support Matrix,,,01,01_Crop_And
+11570,Action Item Tracking,,,62,"62 Computer programming, consultancy and related activities"
+11572,User Personas,,,98,98_Undi_Good
+11582,Incident Classification Matrix,,,62,"62 Computer programming, consultancy and related activities"
+11583,Compliance Checklist,,,69,69
+11590,Quality Metrics Tracking,,,62,"62 Computer programming, consultancy and related activities"
+11591,Metrics Definition Document,,,62,"62 Computer programming, consultancy and related activities"
+11611,Stored Procedures Implementation,,,47,47
+11624,Database Installation Guide,,,33,33_Repa_And
+11634,Responsive Design Specification,,,62,"62 Computer programming, consultancy and related activities"
+11635,Project Performance Dashboard,,,52,52_Ware_And
+11637,User Feedback Collection Plan,,,36,36_Wate_Coll
+11647,Quality Objectives,,,62,"62 Computer programming, consultancy and related activities"
+11648,Beta Testing Program,,,71,71_Arch_And
+11655,Business Requirements Analysis,,,71,71_Arch_And
+11661,Major Incident Handling,,,01,01_Crop_And
+11667,Target User Profile,,,98,98_Undi_Good
+11670,Architecture Monitoring Guide,,,41,41
+11673,Milestone Plan,,,62,"62 Computer programming, consultancy and related activities"
+11675,Release Readiness Statement,,,68,68 Real estate activities
+11682,Incident Response Runbook,,,62,
+11683,Frontend Security Checklist,,,86,86 Human health activities
+11685,Deadlock Resolution Guide,,,62,"62 Computer programming, consultancy and related activities"
+11694,Security Checklist,,,86,86 Human health activities
+11696,Bug Report,,,50,50
+11700,OAuth/JWT Implementation,,,62,"62 Computer programming, consultancy and related activities"
+11719,Platform-Specific Quirks Document,,,52,52_Ware_And
+11729,API Rate Limiting Requirements,,,62,"62 Computer programming, consultancy and related activities"
+11745,Architecture Validation,,,41,41
+11752,User Issue Troubleshooting,,,98,98_Undi_Good
+11753,Status Report Template,,,50,50
+11762,SRE Onboarding Guide,,,78,78
+11776,Message Format Specification,,,28,28_Manu_Of
+11778,Product Launch Plan,,,62,"62 Computer programming, consultancy and related activities"
+11781,Product Status Report,,,50,50
+11785,Golden Signals Monitoring,,,62,62
+11787,Database Schema Design,,,62,"62 Computer programming, consultancy and related activities"
+11797,UI/UX Design Document,,,62,"62 Computer programming, consultancy and related activities"
+11800,Mobile Security Checklist,,,86,86 Human health activities
+11808,Feasibility Study,,,62,"62 Computer programming, consultancy and related activities"
+11811,Design System Training,,,85,85_Educ
+11822,Risk Mitigation Plan,,,86,86 Human health activities
+11827,Component Catalog,,,62,"62 Computer programming, consultancy and related activities"
+11843,Testing Cycle Retrospective,,,71,71_Arch_And
+11850,Cost Optimization Procedures,,,62,"62 Computer programming, consultancy and related activities"
+11853,Design Guidelines / Brand Guide,,,01,01_Crop_And
+11855,Automation Strategy,,,62,"62 Computer programming, consultancy and related activities"
+11862,Project Management Best Practices,,,39,39_Reme_Acti
+11865,High Availability Design,,,62,62
+11866,Project Scope Definition,,,62,"62 Computer programming, consultancy and related activities"
+11873,Error Budget Report,,,50,50
+11875,Infrastructure Improvement Recommendations,,,42,42
+11877,Project Progress Monitoring,,,62,62
+11890,Customer Impact Communication,,,62,"62 Computer programming, consultancy and related activities"
+11893,Data Security in Transit,,,61,61 Telecommunications
+11902,Mobile Development Best Practices,,,72,72_Scie_Rese
+11903,App Update Strategy,,,62,"62 Computer programming, consultancy and related activities"
+11905,Test Harness Development,,,72,72_Scie_Rese
+11906,Integration Performance Report,,,52,52_Ware_And
+11919,User Feedback Summary,,,98,98_Undi_Good
+11920,SLI/SLO/SLA Design,,,62,"62 Computer programming, consultancy and related activities"
+11921,Blameless Postmortem Culture,,,47,47
+11944,Compliance Monitoring,,,62,62
+11949,Design Retrospective,,,62,"62 Computer programming, consultancy and related activities"
+11954,Sensitive Data Identification,,,62,"62 Computer programming, consultancy and related activities"
+11955,Postmortem Database,,,47,47
+11958,Feature Implementation Specification,,,62,"62 Computer programming, consultancy and related activities"
+11961,Threat Modeling,,,62,62
+11962,Data Synchronization Incident,,,78,78
+11985,Database Compliance Checklist,,,69,69
+11989,Security Assessment Report,,,50,50 Water transport
+12001,Cloud Architecture Vision,,,62,62_Comp_Prog
+12020,Networking Architecture,,,88,88_Soci_Work
+12021,Partitioning Strategy,,,62,"62 Computer programming, consultancy and related activities"
+12024,Architecture Patterns Library,,,41,41
+12037,Database Schema Reference,,,62,"62 Computer programming, consultancy and related activities"
+12046,SLO/SLI Training,,,85,85_Educ
+12048,Database Recovery Procedures,,,38,38_Wast_Coll
+12050,Coding Standards Document,,,01,01_Crop_And
+12060,Integration Goals,,,62,"62 Computer programming, consultancy and related activities"
+12067,Developer Portal Creation,,,50,50
+12075,Integration Component Inventory,,,28,28_Manu_Of
+12078,FAQ Document,,,62,"62 Computer programming, consultancy and related activities"
+12100,Replication Design,,,62,"62 Computer programming, consultancy and related activities"
+12105,Feature Flag Management,,,39,39_Reme_Acti
+12109,Backup and Recovery Testing,,,01,01_Crop_And
+12113,Feature Flags Strategy,,,62,"62 Computer programming, consultancy and related activities"
+12118,User Acceptance Test (UAT) Plan,,,98,98_Undi_Good
+12119,Network Performance Monitoring,,,52,52_Ware_And
+12124,Data Protection Compliance,,,69,69
+12130,Cloud Monitoring Strategy,,,62,62_Comp_Prog
+12131,API Developer Onboarding Plan,,,78,78
+12134,Cutover Plan,,,62,"62 Computer programming, consultancy and related activities"
+12142,Tool Training,,,85,85_Educ
+12143,Automated Test Monitoring,,,62,62
+12145,UI/UX Roadmap,,,71,71
+12149,Test Coverage Report,,,50,50
+12155,Frontend Architecture Document,,,41,41
+12156,Defect Reproduction Procedure,,,01,01_Crop_And
+12157,Product Requirements Document (PRD),,,62,"62 Computer programming, consultancy and related activities"
+12185,Market Opportunity Analysis,,,59,59_Moti_Pict
+12187,Emergency Procedures Training,,,85,85_Educ
+12190,Architecture Decision Log,,,41,41
+12203,Metrics Definition,,,62,"62 Computer programming, consultancy and related activities"
+12208,System Interoperability Analysis,,,71,71_Arch_And
+12209,High Availability Requirements,,,62,62
+12212,Product Retrospective,,,62,"62 Computer programming, consultancy and related activities"
+12217,SLO Validation Testing,,,71,71_Arch_And
+12222,Testing Vision Statement,,,71,71_Arch_And
+12227,Database Monitoring Runbook,,,62,62
+12233,Critical Bug Hotfix Procedure,,,62,"62 Computer programming, consultancy and related activities"
+12239,Customer Satisfaction Tracking,,,62,"62 Computer programming, consultancy and related activities"
+12243,Announcement Bulletin,,,62,"62 Computer programming, consultancy and related activities"
+12248,Integration Architecture Design,,,41,41
+12260,Integration Improvement Plan,,,62,"62 Computer programming, consultancy and related activities"
+12267,End-to-End Testing,,,71,71_Arch_And
+12282,Backup and Recovery Design,,,01,01_Crop_And
+12296,Incident Response Design,,,62,
+12312,Runbook,,,62,"62 Computer programming, consultancy and related activities"
+12318,Risks and Open Issues Report,,,01,01_Crop_And
+12323,Value Proposition Canvas,,,47,47
+12329,Frontend Monitoring Guide,,,62,62
+12335,Caching Strategy Document,,,62,"62 Computer programming, consultancy and related activities"
+12340,Progress Update,,,62,"62 Computer programming, consultancy and related activities"
+12342,Container and Kubernetes Training,,,85,85 Education
+12361,Go-to-Market Strategy,,,73,73_Adve_And
+12370,API Error Rate Monitoring,,,62,62
+12371,Change Management Plan,,,39,39_Reme_Acti
+12379,Cloud Architecture Design,,,62,62_Comp_Prog
+12395,Product Improvement Roadmap,,,71,71
+12399,Integration Failure Response,,,62,62
+12404,Infrastructure Maintenance Schedule,,,62,62
+12406,API Gateway Design,,,62,"62 Computer programming, consultancy and related activities"
+12416,Integration Support Procedure,,,09,09_Mini_Supp
+12420,Project Change Log,,,62,"62 Computer programming, consultancy and related activities"
+12441,Database Platform Selection,,,52,52_Ware_And
+12458,Project Retrospective,,,62,"62 Computer programming, consultancy and related activities"
+12468,Cloud Operations Runbook,,,62,62_Comp_Prog
+12474,Technology Reference,,,62,"62 Computer programming, consultancy and related activities"
+12477,Non-Functional Requirements,,,23,23_Manu_Of
+12489,Release Readiness Checklist,,,68,68 Real estate activities
+12490,Database Consolidation Strategy,,,62,"62 Computer programming, consultancy and related activities"
+12493,On-Call Runbook,,,62,"62 Computer programming, consultancy and related activities"
+12503,Error Budget Reference,,,62,"62 Computer programming, consultancy and related activities"
+12512,Target Customer Profile,,,62,"62 Computer programming, consultancy and related activities"
+12513,Business Requirements Document (BRD),,,82,82_Offi_Admi
+12523,SLO/SLA Requirements,,,62,"62 Computer programming, consultancy and related activities"
+12526,Database Requirements Specification,,,62,"62 Computer programming, consultancy and related activities"
+12527,Logging and Audit Trail,,,01,01_Crop_And
+12531,Cloud Architecture Reference,,,62,62_Comp_Prog
+12544,Project Closure Plan,,,62,"62 Computer programming, consultancy and related activities"
+12545,App Crash Investigation Guide,,,80,80_Secu_And
+12548,Integration Implementation Schedule,,,62,"62 Computer programming, consultancy and related activities"
+12550,Database Performance Testing,,,52,52_Ware_And
+12554,System Cutover Plan,,,62,"62 Computer programming, consultancy and related activities"
+12555,User Stories Document,,,98,98_Undi_Good
+12557,Post-Incident Review (PIR),,,47,47
+12561,Communication Plan,,,62,"62 Computer programming, consultancy and related activities"
+12573,Release Planning for App Store,,,52,52_Ware_And
+12575,Known Issues Database,,,98,98_Undi_Good
+12579,Networking Setup,,,88,88_Soci_Work
+12597,Best Practices Guide,,,62,"62 Computer programming, consultancy and related activities"
+12599,Observability Architecture,,,41,41
+12605,Technology Stack Training,,,85,85_Educ
+12618,API Support Procedure,,,09,09_Mini_Supp
+12627,UI/UX Patterns Library,,,91,91
+12631,Replication Lag Monitoring,,,62,62
+12634,Database Migration Retrospective,,,62,"62 Computer programming, consultancy and related activities"
+12635,Data Recovery Procedures,,,38,38_Wast_Coll
+12651,Alert Runbook,,,62,"62 Computer programming, consultancy and related activities"
+12653,Changelog / Version History,,,62,"62 Computer programming, consultancy and related activities"
+12667,User Testing Findings,,,71,71_Arch_And
+12668,Product Release Plan,,,68,68 Real estate activities
+12681,Beta Testing Plan,,,71,71_Arch_And
+12700,In-App Update Communication,,,62,"62 Computer programming, consultancy and related activities"
+12708,Code Architecture Guideline,,,41,41
+12709,Deployment Architecture,,,41,41
+12710,Database Best Practices,,,62,"62 Computer programming, consultancy and related activities"
+12711,Message Flow Monitoring,,,28,28_Manu_Of
+12713,Test Case Specification,,,62,"62 Computer programming, consultancy and related activities"
+12715,Integration Testing Plan,,,71,71_Arch_And
+12726,User Stories for Mobile,,,52,52_Ware_And
+12736,Runbook Reference,,,62,"62 Computer programming, consultancy and related activities"
+12738,Lessons Learned Repository,,,47,47
+12744,Test Patterns Library,,,91,91
+12746,Error Budget Policy,,,65,65_Insu
+12754,Incident Response Procedure,,,62,
+12755,API Usage Guide,,,62,"62 Computer programming, consultancy and related activities"
+12764,Compliance Testing Report,,,71,71_Arch_And
+12767,Bug Tracking and Management,,,01,01_Crop_And
+12768,Mobile SDK Documentation,,,62,"62 Computer programming, consultancy and related activities"
+12770,Error Tracking Setup,,,62,"62 Computer programming, consultancy and related activities"
+12776,API Versioning Maintenance,,,62,62
+12794,API Requirements Specification,,,62,"62 Computer programming, consultancy and related activities"
+12801,API Reference for Mobile Developers,,,52,52_Ware_And
+12802,Infrastructure Documentation,,,42,42
+12812,Problem Statement,,,62,"62 Computer programming, consultancy and related activities"
+12820,Incident Response for Frontend,,,52,52_Ware_And
+12825,Service Level Philosophy,,,01,01_Crop_And
+12851,Database Incident Postmortem,,,47,47
+12864,Resource Planning,,,62,"62 Computer programming, consultancy and related activities"
+12866,Data Architecture Vision,,,41,41
+12870,Integration Monitoring Strategy,,,62,62
+12876,Icons/Assets Reference,,,62,"62 Computer programming, consultancy and related activities"
+12877,Project Decision Log,,,62,"62 Computer programming, consultancy and related activities"
+12881,Screen Design Specification,,,62,"62 Computer programming, consultancy and related activities"
+12884,API Monitoring Strategy,,,62,62
+12903,Integration Requirements Specification,,,62,"62 Computer programming, consultancy and related activities"
+12907,System Design Document,,,62,"62 Computer programming, consultancy and related activities"
+12916,Product Quality Criteria,,,62,"62 Computer programming, consultancy and related activities"
+12918,Acceptance Criteria,,,62,"62 Computer programming, consultancy and related activities"
+12920,Design Decisions Log,,,62,"62 Computer programming, consultancy and related activities"
+12926,Integration Patterns Training,,,85,85_Educ
+12928,App Store Submission Checklist,,,47,47
+12929,Compliance Architecture Review,,,41,41
+12930,Database Vulnerability Assessment,,,62,"62 Computer programming, consultancy and related activities"
+12933,Identity and Access Management,,,01,01_Crop_And
+12936,Rate Limit Incident Handling,,,01,01_Crop_And
+12940,Project Vision Statement,,,62,"62 Computer programming, consultancy and related activities"
+12958,Non-Functional Testing Requirements,,,23,23_Manu_Of
+12959,Device Testing Matrix,,,71,71_Arch_And
+12964,Corruption Detection and Recovery,,,01,01_Crop_And
+12965,Capacity Management Procedure,,,39,39_Reme_Acti
+12977,Risk Tracking,,,86,86 Human health activities
+12981,Project Execution Plan,,,62,"62 Computer programming, consultancy and related activities"
+12982,Deployment Architecture Guide,,,41,41
+12986,Scaling Procedures,,,62,"62 Computer programming, consultancy and related activities"
+12991,Acceptance Criteria Definition,,,62,"62 Computer programming, consultancy and related activities"
+13006,Database Architecture Design,,,41,41
+13018,Data Flow Diagram,,,62,"62 Computer programming, consultancy and related activities"
+13023,Testing Requirements,,,71,71_Arch_And
+13026,SLO Adoption Plan,,,62,"62 Computer programming, consultancy and related activities"
+13028,UI Test Strategy,,,62,"62 Computer programming, consultancy and related activities"
+13041,Maintenance Schedule,,,62,62
+13042,Project Glossary,,,61,61 Telecommunications
+13044,Backup and Recovery Procedure,,,01,01_Crop_And
+13061,Capacity Planning Model,TBD,TBD,84,84 Public administration and defence; compulsory social security
+13062,Common API Issues and Solutions,TBD,TBD,01,01_Crop_And
+13069,Common Integration Issues and Solutions,TBD,TBD,01,01_Crop_And
+13075,Common Test Issues and Solutions,TBD,TBD,01,01_Crop_And
+13082,Configuration Reference,TBD,TBD,62,"62 Computer programming, consultancy and related activities"
+13083,Cost-Benefit Analysis,TBD,TBD,71,71_Arch_And
+13087,Database Incident Response,TBD,TBD,62,
+13088,Deployment Plan,TBD,TBD,62,"62 Computer programming, consultancy and related activities"
+13092,Developer Onboarding Guide,TBD,TBD,78,78
+13093,Disaster Recovery Plan,TBD,TBD,38,38_Wast_Coll
+13109,Implementation Roadmap,TBD,TBD,71,71
+13110,Incident Postmortem,TBD,TBD,47,47
+13135,Performance Baseline Document,TBD,TBD,52,52_Ware_And
+13140,Performance Test Plan,TBD,TBD,52,52_Ware_And
+13141,Performance Testing Plan,TBD,TBD,52,52_Ware_And
+13158,Resilience Testing,TBD,TBD,71,71_Arch_And
+13165,SLI/SLO Implementation,TBD,TBD,62,"62 Computer programming, consultancy and related activities"
+13166,SLO Performance Report,TBD,TBD,52,52_Ware_And
+13167,SRE Best Practices,TBD,TBD,62,"62 Computer programming, consultancy and related activities"
+13168,SRE Implementation Roadmap,TBD,TBD,71,71
+13176,Schema Implementation,TBD,TBD,62,"62 Computer programming, consultancy and related activities"
+13193,Solution Architecture Reference,TBD,TBD,41,41
+13204,Usability Testing Plan,TBD,TBD,71,71_Arch_And

@@ -1,0 +1,12 @@
+families:
+  - doc_type: specification
+    required_deps:
+      - product_vision_statement
+      - system_architecture
+    optional_deps:
+      - security_requirements
+  - doc_type: guide
+    required_deps:
+      - product_vision_statement
+    optional_deps:
+      - onboarding_assets

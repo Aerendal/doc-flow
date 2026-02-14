@@ -1,0 +1,88 @@
+name: Docflow Gate
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+
+jobs:
+  docflow-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+      - name: Cache Go build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-1.25-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-1.25-
+            ${{ runner.os }}-go-
+      - name: Build docflow
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: go build -o build/docflow-ci ./cmd/docflow
+
+      - name: Validate
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: ./build/docflow-ci validate --config docflow.yaml --governance docs/_meta/GOVERNANCE_RULES.yaml --strict
+
+      - name: Compliance
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: ./build/docflow-ci compliance --config docflow.yaml --rules docs/_meta/GOVERNANCE_RULES.yaml --format json --output /tmp/compliance_report.json
+
+      - name: Section order lint
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: |
+          mkdir -p .docflow
+          go run ./tools/section_order_lint.go docs examples
+
+      - name: Queue evaluate
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: |
+          scripts/queue_evaluate.sh --bin ./build/docflow-ci --format json --cache /tmp/queue_cache_ci.json examples/backlog_ci_template.txt > /tmp/queue_report.json
+          ./scripts/queue_report_html.py /tmp/queue_report.json /tmp/queue_report.html
+
+      - name: Health artifacts
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: |
+          ./scripts/healthcheck.sh
+          mkdir -p dist/health
+          cp /tmp/health_badge.svg dist/health/health_badge.svg
+          cp /tmp/health_report.html dist/health/health_report.html
+
+      - name: Run history rotate
+        run: |
+          ./scripts/run_history_rotate.sh --limit 200 --max-size 1048576 --archive LOGS/run_history_archive.json || true
+          ls -l .docflow/run_history.json LOGS/run_history_archive.json || true
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: docflow-gate-reports
+          path: |
+            /tmp/compliance_report.json
+            /tmp/queue_report.json
+            /tmp/queue_report.html
+            .docflow/section_order_lint.json
+            dist/health/health_badge.svg
+            dist/health/health_report.html
+            .docflow/run_history.json
+            LOGS/run_history_archive.json

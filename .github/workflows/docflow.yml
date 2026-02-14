@@ -1,0 +1,125 @@
+name: docflow
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      baseline_mode:
+        description: "Where to get baseline: repo or artifact"
+        required: true
+        default: "repo"
+        type: choice
+        options:
+          - repo
+          - artifact
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
+env:
+  GOFLAGS: -mod=vendor
+  GOCACHE: /tmp/go-cache
+  CONFIG_PATH: docflow.yaml
+  RULES_PATH: docs/_meta/GOVERNANCE_RULES.yaml
+  BASELINE_DIR: .docflow/baseline
+
+jobs:
+  docflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.x"
+
+      - name: Build docflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          # Prefer your canonical build script if it injects version/commit/date:
+          # ./scripts/build.sh
+          go build -trimpath -buildvcs=false -o ./build/docflow ./cmd/docflow
+          ./build/docflow --version || true
+
+      - name: Prepare baseline (repo)
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.baseline_mode == 'repo' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "${BASELINE_DIR}"
+
+          if [ ! -f "${BASELINE_DIR}/validate.json" ]; then
+            echo "Baseline validate.json not found; generating (warn mode)."
+            ./build/docflow --config "${CONFIG_PATH}" validate \
+              --format json --output "${BASELINE_DIR}/validate.json" --warn
+          fi
+
+          if [ ! -f "${BASELINE_DIR}/compliance.json" ]; then
+            echo "Baseline compliance.json not found; generating (warn mode)."
+            ./build/docflow --config "${CONFIG_PATH}" compliance \
+              --rules "${RULES_PATH}" \
+              --format json --output "${BASELINE_DIR}/compliance.json" --warn
+          fi
+
+      - name: Download baseline (artifact)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.baseline_mode == 'artifact' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: docflow-baseline
+          path: .docflow/baseline
+
+      - name: Docflow health (CI bundle)
+        id: health
+        shell: bash
+        run: |
+          set +e
+          BASELINE_MODE="${{ github.event_name == 'workflow_dispatch' && inputs.baseline_mode || 'repo' }}"
+          ./build/docflow --config "${CONFIG_PATH}" health --ci \
+            --bundle-dir .docflow/out \
+            --baseline-mode "${BASELINE_MODE}" \
+            --baseline-dir "${BASELINE_DIR}" \
+            --rules "${RULES_PATH}"
+          HEALTH_EXIT=$?
+          RUN_DIR="$(ls -1dt .docflow/out/* 2>/dev/null | head -n 1 || true)"
+          echo "health_exit=${HEALTH_EXIT}" >> "$GITHUB_OUTPUT"
+          echo "run_dir=${RUN_DIR}" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Detect SARIF
+        id: sarif
+        if: ${{ always() && steps.health.outputs.run_dir != '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f "${{ steps.health.outputs.run_dir }}/validate.sarif" ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload SARIF (validate)
+        if: ${{ always() && steps.sarif.outputs.exists == 'true' }}
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: ${{ steps.health.outputs.run_dir }}/validate.sarif
+          category: docflow-validate
+
+      - name: Upload health bundle (artifact)
+        if: ${{ always() && steps.health.outputs.run_dir != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: docflow-bundle
+          path: ${{ steps.health.outputs.run_dir }}
+
+      - name: Enforce health exit code
+        if: ${{ steps.health.outputs.health_exit != '0' }}
+        shell: bash
+        run: |
+          exit "${{ steps.health.outputs.health_exit }}"

@@ -1,0 +1,3929 @@
+{
+  "avg_headings": 59.05669481302775,
+  "avg_lines": 282.2388419782871,
+  "categories": {
+    "API": {
+      "Count": 57,
+      "Examples": [
+        "api_analytics_dashboard",
+        "api_authentication_authorization",
+        "api_best_practices_guide"
+      ]
+    },
+    "Architecture/Design": {
+      "Count": 61,
+      "Examples": [
+        "accessibility_a11y_design_guide",
+        "adr_architecture_decision_records",
+        "architecture_best_practices"
+      ]
+    },
+    "Change Management": {
+      "Count": 8,
+      "Examples": [
+        "breaking_change_management",
+        "change_advisory_board_cab_notes",
+        "change_calendar"
+      ]
+    },
+    "Code Quality": {
+      "Count": 4,
+      "Examples": [
+        "code_examples_for_mobile",
+        "code_examples_repository",
+        "coding_standards_document"
+      ]
+    },
+    "Communication/Reporting": {
+      "Count": 25,
+      "Examples": [
+        "announcement_bulletin",
+        "announcement_for_end_users",
+        "bug_report"
+      ]
+    },
+    "Data/Database": {
+      "Count": 28,
+      "Examples": [
+        "cloud_migration_retrospective",
+        "common_database_issues_and_solutions",
+        "data_dictionary"
+      ]
+    },
+    "Deployment/CI-CD": {
+      "Count": 22,
+      "Examples": [
+        "build_and_deployment_guide",
+        "build_and_release_procedure",
+        "database_deployment_plan"
+      ]
+    },
+    "Documentation": {
+      "Count": 7,
+      "Examples": [
+        "certification_documentation",
+        "component_library_documentation",
+        "contract_template"
+      ]
+    },
+    "Incident/Operations": {
+      "Count": 35,
+      "Examples": [
+        "architecture_incident_response",
+        "blameless_postmortem_culture",
+        "blameless_postmortem_template"
+      ]
+    },
+    "Infrastructure/Config": {
+      "Count": 16,
+      "Examples": [
+        "backup_system_configuration",
+        "configuration_guide",
+        "configuration_management_document"
+      ]
+    },
+    "Integration": {
+      "Count": 12,
+      "Examples": [
+        "common_integration_issues_and_solutions",
+        "integration_best_practices",
+        "integration_component_inventory"
+      ]
+    },
+    "Monitoring/Observability": {
+      "Count": 50,
+      "Examples": [
+        "alert_configuration_guide",
+        "alert_runbook",
+        "alerting_best_practices"
+      ]
+    },
+    "Onboarding/Training": {
+      "Count": 32,
+      "Examples": [
+        "architecture_onboarding",
+        "chaos_engineering_training",
+        "cloud_platform_training"
+      ]
+    },
+    "Other": {
+      "Count": 139,
+      "Examples": [
+        "accessibility_guidelines",
+        "action_item_tracking",
+        "app_crash_investigation_guide"
+      ]
+    },
+    "Performance": {
+      "Count": 8,
+      "Examples": [
+        "performance_baseline",
+        "performance_baseline_document",
+        "performance_degradation_response"
+      ]
+    },
+    "Planning/Strategy": {
+      "Count": 85,
+      "Examples": [
+        "app_update_strategy",
+        "archive_strategy_document",
+        "automation_priority_plan"
+      ]
+    },
+    "Product/Feature": {
+      "Count": 10,
+      "Examples": [
+        "feature_catalog",
+        "feature_flag_management",
+        "feature_prioritization_matrix"
+      ]
+    },
+    "Project Management": {
+      "Count": 18,
+      "Examples": [
+        "detailed_project_schedule",
+        "product_backlog_management",
+        "product_retrospective"
+      ]
+    },
+    "Requirements/Specs": {
+      "Count": 42,
+      "Examples": [
+        "acceptance_criteria",
+        "acceptance_criteria_definition",
+        "availability_requirements"
+      ]
+    },
+    "Review/Compliance": {
+      "Count": 14,
+      "Examples": [
+        "accessibility_compliance",
+        "app_store_compliance_review",
+        "app_store_review_guidelines_summary"
+      ]
+    },
+    "Risk Management": {
+      "Count": 2,
+      "Examples": [
+        "risk_register",
+        "risk_tracking"
+      ]
+    },
+    "Runbooks/Procedures": {
+      "Count": 47,
+      "Examples": [
+        "app_store_submission_checklist",
+        "audit_checklist",
+        "backup_and_recovery_procedure"
+      ]
+    },
+    "Security": {
+      "Count": 25,
+      "Examples": [
+        "access_control_review",
+        "cloud_security_architecture",
+        "cloud_security_training"
+      ]
+    },
+    "Team/Roles": {
+      "Count": 1,
+      "Examples": [
+        "distributed_tracing_setup"
+      ]
+    },
+    "Testing/QA": {
+      "Count": 81,
+      "Examples": [
+        "a_b_testing_guide",
+        "accessibility_testing_checklist",
+        "architecture_validation_testing"
+      ]
+    }
+  },
+  "frontmatter_status": {
+    "needs_content": 829
+  },
+  "heading_patterns": [
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 732
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 20
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 10
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 8
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 7
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 6
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 6
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 6
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 5
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 5
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 4
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 4
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 3
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 3
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 3
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 2
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 1
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 1
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 1
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 1
+    },
+    {
+      "Pattern": "h1 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2 \u003e h2",
+      "Count": 1
+    }
+  ],
+  "language_dist": {
+    "PL": 829
+  },
+  "max_depth": 2,
+  "top_headings": [
+    {
+      "Name": "Cel dokumentu",
+      "Count": 829
+    },
+    {
+      "Name": "Metadane",
+      "Count": 829
+    },
+    {
+      "Name": "Szybkie powiązania",
+      "Count": 825
+    },
+    {
+      "Name": "Jak używać dokumentu",
+      "Count": 818
+    },
+    {
+      "Name": "Zakres i granice",
+      "Count": 807
+    },
+    {
+      "Name": "Wejścia i wyjścia",
+      "Count": 805
+    },
+    {
+      "Name": "Fazy cyklu życia",
+      "Count": 801
+    },
+    {
+      "Name": "Powiązania (meta)",
+      "Count": 801
+    },
+    {
+      "Name": "Zależności dokumentu",
+      "Count": 801
+    },
+    {
+      "Name": "Wymagane rozwinięcia",
+      "Count": 798
+    },
+    {
+      "Name": "Wymagane streszczenia",
+      "Count": 798
+    },
+    {
+      "Name": "Powiązania sekcja↔sekcja",
+      "Count": 796
+    },
+    {
+      "Name": "Struktura sekcji (szkielet)",
+      "Count": 792
+    },
+    {
+      "Name": "Założenia",
+      "Count": 786
+    },
+    {
+      "Name": "Decyzje i uzasadnienia",
+      "Count": 786
+    },
+    {
+      "Name": "Ryzyka i ograniczenia",
+      "Count": 786
+    },
+    {
+      "Name": "Definicje robocze",
+      "Count": 786
+    },
+    {
+      "Name": "Otwarte pytania",
+      "Count": 786
+    },
+    {
+      "Name": "Przykłady użycia",
+      "Count": 786
+    },
+    {
+      "Name": "Powiązania z innymi dokumentami",
+      "Count": 781
+    },
+    {
+      "Name": "Wymagane odwołania do standardów",
+      "Count": 781
+    },
+    {
+      "Name": "Artefakty powiązane",
+      "Count": 780
+    },
+    {
+      "Name": "Weryfikacja spójności",
+      "Count": 780
+    },
+    {
+      "Name": "Ścieżki informacji",
+      "Count": 772
+    },
+    {
+      "Name": "Lista kontrolna spójności relacji",
+      "Count": 771
+    },
+    {
+      "Name": "Powiązania z sekcjami innych dokumentów",
+      "Count": 771
+    },
+    {
+      "Name": "Mapa relacji sekcja→sekcja",
+      "Count": 771
+    },
+    {
+      "Name": "Mapa relacji dokument→dokument",
+      "Count": 771
+    },
+    {
+      "Name": "Użytkownicy i interesariusze",
+      "Count": 770
+    },
+    {
+      "Name": "Ścieżka decyzji",
+      "Count": 770
+    },
+    {
+      "Name": "Ścieżka akceptacji",
+      "Count": 770
+    },
+    {
+      "Name": "Guidance",
+      "Count": 768
+    },
+    {
+      "Name": "Słownik pojęć w dokumencie",
+      "Count": 765
+    },
+    {
+      "Name": "Metryki jakości",
+      "Count": 761
+    },
+    {
+      "Name": "Checklisty jakości",
+      "Count": 757
+    },
+    {
+      "Name": "Wymagania skalowalności",
+      "Count": 755
+    },
+    {
+      "Name": "Wersjonowanie treści",
+      "Count": 755
+    },
+    {
+      "Name": "Walidacja zgodności",
+      "Count": 755
+    },
+    {
+      "Name": "Dostępność w sytuacjach awaryjnych",
+      "Count": 755
+    },
+    {
+      "Name": "Zależności danych między systemami",
+      "Count": 755
+    },
+    {
+      "Name": "Integracje i interfejsy",
+      "Count": 755
+    },
+    {
+      "Name": "Logowanie i audyt",
+      "Count": 755
+    },
+    {
+      "Name": "Wymagane aktualizacje",
+      "Count": 755
+    },
+    {
+      "Name": "Zasady bezpieczeństwa informacji",
+      "Count": 755
+    },
+    {
+      "Name": "Kontrola zmian",
+      "Count": 755
+    },
+    {
+      "Name": "KPI i SLA",
+      "Count": 755
+    },
+    {
+      "Name": "Wymogi prawne i regulacyjne",
+      "Count": 755
+    },
+    {
+      "Name": "Wymagania dostępności danych",
+      "Count": 755
+    },
+    {
+      "Name": "Retencja i archiwizacja",
+      "Count": 755
+    },
+    {
+      "Name": "Ochrona danych i prywatność",
+      "Count": 755
+    },
+    {
+      "Name": "Wymagania danych",
+      "Count": 755
+    },
+    {
+      "Name": "Harmonogram przeglądów",
+      "Count": 755
+    },
+    {
+      "Name": "Historia zmian sekcji",
+      "Count": 755
+    },
+    {
+      "Name": "Scenariusze awaryjne",
+      "Count": 755
+    },
+    {
+      "Name": "Wymagania wydajnościowe",
+      "Count": 755
+    },
+    {
+      "Name": "Utrzymanie i operacje",
+      "Count": 755
+    },
+    {
+      "Name": "Audyty i przeglądy",
+      "Count": 755
+    },
+    {
+      "Name": "Monitoring i utrzymanie",
+      "Count": 755
+    },
+    {
+      "Name": "Testy i weryfikacja",
+      "Count": 755
+    },
+    {
+      "Name": "Wymagania dostępnościowe",
+      "Count": 755
+    },
+    {
+      "Name": "Wpływ na inne systemy",
+      "Count": 755
+    },
+    {
+      "Name": "Kryteria ukończenia",
+      "Count": 753
+    },
+    {
+      "Name": "Guidance (skrót)",
+      "Count": 36
+    },
+    {
+      "Name": "Checklisty Definition of Ready (DoR)",
+      "Count": 34
+    },
+    {
+      "Name": "Checklisty Definition of Done (DoD)",
+      "Count": 34
+    },
+    {
+      "Name": "Checklisty jakości (DoR/DoD skrót)",
+      "Count": 30
+    },
+    {
+      "Name": "Struktura sekcji",
+      "Count": 27
+    },
+    {
+      "Name": "Kryteria ukończenia (DoD)",
+      "Count": 9
+    },
+    {
+      "Name": "Kryteria wejścia (DoR)",
+      "Count": 9
+    },
+    {
+      "Name": "Typowe problemy / rozwiązania",
+      "Count": 3
+    },
+    {
+      "Name": "Disaster Recovery Plan (DRP)",
+      "Count": 2
+    },
+    {
+      "Name": "Test Case Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Migration Status Updates",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Monitoring Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Compliance Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Pattern Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Platform-Specific Quirks Document",
+      "Count": 1
+    },
+    {
+      "Name": "Project Status Report",
+      "Count": 1
+    },
+    {
+      "Name": "Configuration Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Escalation Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "Project Scope Definition",
+      "Count": 1
+    },
+    {
+      "Name": "API Monitoring Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Product Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Response Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "App Lifecycle Management",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "Product Training Materials",
+      "Count": 1
+    },
+    {
+      "Name": "Deliverable Acceptance Criteria",
+      "Count": 1
+    },
+    {
+      "Name": "Design System Training",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Tuning Guide",
+      "Count": 1
+    },
+    {
+      "Name": "ROI Projections",
+      "Count": 1
+    },
+    {
+      "Name": "Rollback Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Build and Deployment Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Recommendations Document",
+      "Count": 1
+    },
+    {
+      "Name": "Smoke Testing Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Budget Tracking",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Architecture Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Data Protection Compliance",
+      "Count": 1
+    },
+    {
+      "Name": "Log Aggregation Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "RFC (Request for Comments)",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Architecture Vision",
+      "Count": 1
+    },
+    {
+      "Name": "Project Charter",
+      "Count": 1
+    },
+    {
+      "Name": "Sunset Communication Plan",
+      "Count": 1
+    },
+    {
+      "Name": "UI/UX Roadmap",
+      "Count": 1
+    },
+    {
+      "Name": "IaC Tool Training",
+      "Count": 1
+    },
+    {
+      "Name": "Stakeholder Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Test Execution Report",
+      "Count": 1
+    },
+    {
+      "Name": "Resilience Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Resource Allocation for QA",
+      "Count": 1
+    },
+    {
+      "Name": "Stakeholder Requirements Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "Technical Wiki / Knowledge Base",
+      "Count": 1
+    },
+    {
+      "Name": "User Acceptance Test (UAT) Plan",
+      "Count": 1
+    },
+    {
+      "Name": "API Security Design",
+      "Count": 1
+    },
+    {
+      "Name": "Project Team Onboarding",
+      "Count": 1
+    },
+    {
+      "Name": "Testing Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Visual Regression Test Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Improvement Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Validation",
+      "Count": 1
+    },
+    {
+      "Name": "Business Continuity Plan (BCP)",
+      "Count": 1
+    },
+    {
+      "Name": "Change Success Criteria",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Requirements Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Review and Approval Process",
+      "Count": 1
+    },
+    {
+      "Name": "Rollback Plan Template",
+      "Count": 1
+    },
+    {
+      "Name": "System Context Diagram",
+      "Count": 1
+    },
+    {
+      "Name": "Change Calendar",
+      "Count": 1
+    },
+    {
+      "Name": "Middleware Configuration",
+      "Count": 1
+    },
+    {
+      "Name": "Dependency Mapping",
+      "Count": 1
+    },
+    {
+      "Name": "Market Opportunity Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "UI/UX Patterns Library",
+      "Count": 1
+    },
+    {
+      "Name": "Usability Testing Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Quality Management Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Database Migration Retrospective",
+      "Count": 1
+    },
+    {
+      "Name": "Business Impact Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Capacity Management Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Data Recovery Procedures",
+      "Count": 1
+    },
+    {
+      "Name": "Release Notes",
+      "Count": 1
+    },
+    {
+      "Name": "Breaking Change Management",
+      "Count": 1
+    },
+    {
+      "Name": "DevOps Engineer Onboarding",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Security Training",
+      "Count": 1
+    },
+    {
+      "Name": "Control Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "SLO/SLI Training",
+      "Count": 1
+    },
+    {
+      "Name": "Automation Framework Setup",
+      "Count": 1
+    },
+    {
+      "Name": "API Usage Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Solution Architecture Training",
+      "Count": 1
+    },
+    {
+      "Name": "Configuration Management Document",
+      "Count": 1
+    },
+    {
+      "Name": "Database Migration Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Feasibility Study",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Project Retrospective Report",
+      "Count": 1
+    },
+    {
+      "Name": "Request for Information (RFI)",
+      "Count": 1
+    },
+    {
+      "Name": "Implementation Plan",
+      "Count": 1
+    },
+    {
+      "Name": "API Versioning Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Database Tool Training",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Project Closure Report",
+      "Count": 1
+    },
+    {
+      "Name": "Project Risk Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Device and OS Support Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Architecture Design",
+      "Count": 1
+    },
+    {
+      "Name": "Rate Limit Incident Handling",
+      "Count": 1
+    },
+    {
+      "Name": "Test Data Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Project Management Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Unit Test Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Accessibility Guidelines",
+      "Count": 1
+    },
+    {
+      "Name": "API Requirements Specification",
+      "Count": 1
+    },
+    {
+      "Name": "User Stories for Mobile",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Test Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Technical Design Document (TDD)",
+      "Count": 1
+    },
+    {
+      "Name": "Bug Triage Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Change Request Process",
+      "Count": 1
+    },
+    {
+      "Name": "Changelog / Version History",
+      "Count": 1
+    },
+    {
+      "Name": "Design Review Notes",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Implementation Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Logging and Audit Trail",
+      "Count": 1
+    },
+    {
+      "Name": "Test Results Report",
+      "Count": 1
+    },
+    {
+      "Name": "Testing Cycle Retrospective",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Validation Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Performance Report",
+      "Count": 1
+    },
+    {
+      "Name": "Sales Enablement Materials",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure Patterns Library",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Implementation Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Scaling Procedures",
+      "Count": 1
+    },
+    {
+      "Name": "API Authentication \u0026 Authorization",
+      "Count": 1
+    },
+    {
+      "Name": "Component Library Documentation",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Monitoring Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Library and Framework Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Technology Reference",
+      "Count": 1
+    },
+    {
+      "Name": "User Testing Findings",
+      "Count": 1
+    },
+    {
+      "Name": "Statistics Update Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Backup Verification Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile App Vision Document",
+      "Count": 1
+    },
+    {
+      "Name": "On-Call Training",
+      "Count": 1
+    },
+    {
+      "Name": "SQL Best Practices Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure Status Report",
+      "Count": 1
+    },
+    {
+      "Name": "Kryteria włączenia do planu (priorytety)",
+      "Count": 1
+    },
+    {
+      "Name": "SLI/SLO/SLA Design",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Response Design",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Architecture Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Lessons Learned",
+      "Count": 1
+    },
+    {
+      "Name": "Security Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure Improvement Recommendations",
+      "Count": 1
+    },
+    {
+      "Name": "App Store Compliance Review",
+      "Count": 1
+    },
+    {
+      "Name": "DBA Onboarding Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Epic and User Story Breakdown",
+      "Count": 1
+    },
+    {
+      "Name": "Go-to-Market Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Scalability Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "SRE Vision Statement",
+      "Count": 1
+    },
+    {
+      "Name": "Success Criteria Definition",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Cutover Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile Security Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Product Quality Criteria",
+      "Count": 1
+    },
+    {
+      "Name": "Team Scaling Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Functional Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Crash Reporting Setup",
+      "Count": 1
+    },
+    {
+      "Name": "API Documentation",
+      "Count": 1
+    },
+    {
+      "Name": "Customer Satisfaction Tracking",
+      "Count": 1
+    },
+    {
+      "Name": "Risk Tracking",
+      "Count": 1
+    },
+    {
+      "Name": "Test Patterns Library",
+      "Count": 1
+    },
+    {
+      "Name": "Troubleshooting Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Evolution Review",
+      "Count": 1
+    },
+    {
+      "Name": "API Reference Documentation",
+      "Count": 1
+    },
+    {
+      "Name": "Design System / Component Library",
+      "Count": 1
+    },
+    {
+      "Name": "Metrics Definition Document",
+      "Count": 1
+    },
+    {
+      "Name": "Stored Procedures Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Database Schema Design",
+      "Count": 1
+    },
+    {
+      "Name": "Sanity Testing Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Archive Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "Data Privacy Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Failover Procedures",
+      "Count": 1
+    },
+    {
+      "Name": "Project Plans Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Knowledge Transfer Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Tool Selection Plan",
+      "Count": 1
+    },
+    {
+      "Name": "API Best Practices Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Product Requirements Document (PRD)",
+      "Count": 1
+    },
+    {
+      "Name": "Common Issues \u0026 Solutions",
+      "Count": 1
+    },
+    {
+      "Name": "Configuration Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Database Patching Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Performance Metrics",
+      "Count": 1
+    },
+    {
+      "Name": "Resource Planning",
+      "Count": 1
+    },
+    {
+      "Name": "Test Automation Tips",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Tips for Mobile",
+      "Count": 1
+    },
+    {
+      "Name": "Post-Implementation Support",
+      "Count": 1
+    },
+    {
+      "Name": "Product Backlog Management",
+      "Count": 1
+    },
+    {
+      "Name": "Quality Objectives",
+      "Count": 1
+    },
+    {
+      "Name": "Action Item Tracking",
+      "Count": 1
+    },
+    {
+      "Name": "OWASP Top 10 Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Quality Status Report",
+      "Count": 1
+    },
+    {
+      "Name": "High Availability Design",
+      "Count": 1
+    },
+    {
+      "Name": "Lessons Learned in UX",
+      "Count": 1
+    },
+    {
+      "Name": "Monitoring Infrastructure Setup",
+      "Count": 1
+    },
+    {
+      "Name": "SRE Implementation Roadmap",
+      "Count": 1
+    },
+    {
+      "Name": "Beta Testing Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Pattern Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Lessons Learned in Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "Offline-First Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "User Story Refinement",
+      "Count": 1
+    },
+    {
+      "Name": "Deployment Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "Replication Setup Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Runbook Catalog",
+      "Count": 1
+    },
+    {
+      "Name": "API Response Time Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Data Privacy Architecture Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Deadlock Resolution Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Error Budget Report",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Monitoring Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile UI/UX Design",
+      "Count": 1
+    },
+    {
+      "Name": "State Management Design",
+      "Count": 1
+    },
+    {
+      "Name": "User Personas",
+      "Count": 1
+    },
+    {
+      "Name": "Dashboard Design Standards",
+      "Count": 1
+    },
+    {
+      "Name": "Quality Metrics Definition",
+      "Count": 1
+    },
+    {
+      "Name": "Threat Modeling",
+      "Count": 1
+    },
+    {
+      "Name": "Executive Summary",
+      "Count": 1
+    },
+    {
+      "Name": "Decommissioning Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Lessons Learned Document",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Testing Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Database Cutover Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Product Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "Security Assessment Report",
+      "Count": 1
+    },
+    {
+      "Name": "API Key Management Setup",
+      "Count": 1
+    },
+    {
+      "Name": "Emergency Procedures Training",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Release Communication",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Communication Plan",
+      "Count": 1
+    },
+    {
+      "Name": "SLI/SLO Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Common API Issues and Solutions",
+      "Count": 1
+    },
+    {
+      "Name": "Cookie Policy Document",
+      "Count": 1
+    },
+    {
+      "Name": "Chaos Engineering Testing",
+      "Count": 1
+    },
+    {
+      "Name": "User Retention Metrics",
+      "Count": 1
+    },
+    {
+      "Name": "API Integration Examples",
+      "Count": 1
+    },
+    {
+      "Name": "API Version Rollout",
+      "Count": 1
+    },
+    {
+      "Name": "Technology Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Test Environment Setup",
+      "Count": 1
+    },
+    {
+      "Name": "Tool Training",
+      "Count": 1
+    },
+    {
+      "Name": "Browser Compatibility Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "Database Compliance Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Product Lessons Learned",
+      "Count": 1
+    },
+    {
+      "Name": "Test Case Repository",
+      "Count": 1
+    },
+    {
+      "Name": "Project Progress Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Cost Optimization Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Data Synchronization Incident",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Goals",
+      "Count": 1
+    },
+    {
+      "Name": "Product Retrospective",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Reference",
+      "Count": 1
+    },
+    {
+      "Name": "DR Test Report",
+      "Count": 1
+    },
+    {
+      "Name": "Implementation Roadmap",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Classification Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "Access Control Review",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Incident Response",
+      "Count": 1
+    },
+    {
+      "Name": "OpenAPI/Swagger Definition",
+      "Count": 1
+    },
+    {
+      "Name": "Budget Proposal Template",
+      "Count": 1
+    },
+    {
+      "Name": "Frontend Monitoring Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Service Dependency Map",
+      "Count": 1
+    },
+    {
+      "Name": "Data Architecture Vision",
+      "Count": 1
+    },
+    {
+      "Name": "Error Tracking Setup",
+      "Count": 1
+    },
+    {
+      "Name": "High Availability Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Metrics Definition",
+      "Count": 1
+    },
+    {
+      "Name": "Capacity Forecast Report",
+      "Count": 1
+    },
+    {
+      "Name": "Database Performance Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Catalog",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "Maintenance Window Notifications",
+      "Count": 1
+    },
+    {
+      "Name": "Market Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Milestone Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Problem Statement",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Resource Provisioning",
+      "Count": 1
+    },
+    {
+      "Name": "Resource Management Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Test Environment Setup Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Disaster Recovery Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Release Readiness Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Cost Optimization Procedures",
+      "Count": 1
+    },
+    {
+      "Name": "Data Dictionary",
+      "Count": 1
+    },
+    {
+      "Name": "Database Installation Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Security Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "SLI Monitoring Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Target User Profile",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Migration Roadmap",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Component Inventory",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Baseline",
+      "Count": 1
+    },
+    {
+      "Name": "Reference Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Secrets Management",
+      "Count": 1
+    },
+    {
+      "Name": "High-Level Architecture Concept",
+      "Count": 1
+    },
+    {
+      "Name": "Replication Design",
+      "Count": 1
+    },
+    {
+      "Name": "Test Result Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "User Experience Monitoring Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Blameless Postmortem Template",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Patterns Catalog",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Release Readiness Statement",
+      "Count": 1
+    },
+    {
+      "Name": "Database Naming Conventions",
+      "Count": 1
+    },
+    {
+      "Name": "Post-Release Review",
+      "Count": 1
+    },
+    {
+      "Name": "Product Operations Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Data Integrity Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Project Decision Log",
+      "Count": 1
+    },
+    {
+      "Name": "Resource Allocation Plan",
+      "Count": 1
+    },
+    {
+      "Name": "System Landscape Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Recovery Procedures",
+      "Count": 1
+    },
+    {
+      "Name": "Component Architecture Diagram",
+      "Count": 1
+    },
+    {
+      "Name": "Product Launch Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Project Glossary",
+      "Count": 1
+    },
+    {
+      "Name": "Risk Mitigation Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Sensitive Data Identification",
+      "Count": 1
+    },
+    {
+      "Name": "Test Data Preparation Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Data Validation Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Logging Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "A/B Testing Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Performance Metrics",
+      "Count": 1
+    },
+    {
+      "Name": "Backup System Configuration",
+      "Count": 1
+    },
+    {
+      "Name": "Database Recovery Procedures",
+      "Count": 1
+    },
+    {
+      "Name": "Risk appetite i tolerancje (skrót)",
+      "Count": 1
+    },
+    {
+      "Name": "UI/UX Design Document",
+      "Count": 1
+    },
+    {
+      "Name": "Accessibility Testing Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Coding Standards Document",
+      "Count": 1
+    },
+    {
+      "Name": "Project Execution Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Project Retrospective",
+      "Count": 1
+    },
+    {
+      "Name": "FAQ Document",
+      "Count": 1
+    },
+    {
+      "Name": "Icons/Assets Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Service Reliability Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Resource Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Contract Template",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Test Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Technology Stack Selection",
+      "Count": 1
+    },
+    {
+      "Name": "Alerting Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Compliance Architecture Review",
+      "Count": 1
+    },
+    {
+      "Name": "CSS/Styling Guidelines",
+      "Count": 1
+    },
+    {
+      "Name": "End-to-End Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Penetration Test Report",
+      "Count": 1
+    },
+    {
+      "Name": "API Documentation Generation",
+      "Count": 1
+    },
+    {
+      "Name": "Database Monitoring Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Vendor Risk Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "API Design Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Decision Records (ADR)",
+      "Count": 1
+    },
+    {
+      "Name": "Deployment Plan",
+      "Count": 1
+    },
+    {
+      "Name": "iOS/Android Implementation Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile Testing Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "User Onboarding Experience",
+      "Count": 1
+    },
+    {
+      "Name": "Query Optimization Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Review Retrospective",
+      "Count": 1
+    },
+    {
+      "Name": "Detailed Project Schedule",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Support Training",
+      "Count": 1
+    },
+    {
+      "Name": "API Platform Implementation Schedule",
+      "Count": 1
+    },
+    {
+      "Name": "API Security Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Review Presentation",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Infrastructure Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "API Incident Postmortem",
+      "Count": 1
+    },
+    {
+      "Name": "Business Value Proposition",
+      "Count": 1
+    },
+    {
+      "Name": "Database Deployment Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Maintenance Schedule",
+      "Count": 1
+    },
+    {
+      "Name": "Product Privacy Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Service Level Philosophy",
+      "Count": 1
+    },
+    {
+      "Name": "API Platform Tool Training",
+      "Count": 1
+    },
+    {
+      "Name": "Growth Projections",
+      "Count": 1
+    },
+    {
+      "Name": "Index Maintenance Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Installation Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Lessons Learned Repository",
+      "Count": 1
+    },
+    {
+      "Name": "Certification Documentation",
+      "Count": 1
+    },
+    {
+      "Name": "Interaction Design Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Cost Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Database Health Checks",
+      "Count": 1
+    },
+    {
+      "Name": "Defect Reproduction Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Escalation Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "App Store Submission Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Privacy Policy for Mobile App",
+      "Count": 1
+    },
+    {
+      "Name": "Test Automation Framework Guide",
+      "Count": 1
+    },
+    {
+      "Name": "User Feedback Collection Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Backup Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Cost Report",
+      "Count": 1
+    },
+    {
+      "Name": "Load Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Design Guidelines / Brand Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Audit Trail Log",
+      "Count": 1
+    },
+    {
+      "Name": "Capacity Threshold Alerts",
+      "Count": 1
+    },
+    {
+      "Name": "Change Management Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Competitive Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Solution Vision Document",
+      "Count": 1
+    },
+    {
+      "Name": "Code Documentation / API Docs",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Management Tool Setup",
+      "Count": 1
+    },
+    {
+      "Name": "SLO Validation Testing",
+      "Count": 1
+    },
+    {
+      "Name": "UAT Preparation",
+      "Count": 1
+    },
+    {
+      "Name": "Availability Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Sekcje przykładowe",
+      "Count": 1
+    },
+    {
+      "Name": "Escape Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "API Monitoring Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Review Process",
+      "Count": 1
+    },
+    {
+      "Name": "Product Health Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Query Optimization Patterns",
+      "Count": 1
+    },
+    {
+      "Name": "Dependency Impact Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Design Debt Register",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile Development Roadmap",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile SDK Documentation",
+      "Count": 1
+    },
+    {
+      "Name": "Index Strategy Design",
+      "Count": 1
+    },
+    {
+      "Name": "On-Call Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Testing Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Browser-Specific Issue Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Przykładowe punkty DoR/DoD (do oznaczenia ✔/N/A)",
+      "Count": 1
+    },
+    {
+      "Name": "Scalability Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Roadmap Updates",
+      "Count": 1
+    },
+    {
+      "Name": "Toil Reduction Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Project Closure Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Test Data Preparation",
+      "Count": 1
+    },
+    {
+      "Name": "Acceptance Criteria",
+      "Count": 1
+    },
+    {
+      "Name": "API Versioning Maintenance",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Testing for Mobile",
+      "Count": 1
+    },
+    {
+      "Name": "Domain Knowledge Training",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Patterns Document",
+      "Count": 1
+    },
+    {
+      "Name": "API Deprecation Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Data Quality Report",
+      "Count": 1
+    },
+    {
+      "Name": "Dependency and Library List",
+      "Count": 1
+    },
+    {
+      "Name": "Production Issue Triage",
+      "Count": 1
+    },
+    {
+      "Name": "Release Communication",
+      "Count": 1
+    },
+    {
+      "Name": "Alerting System Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Message Flow Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Testing Approach",
+      "Count": 1
+    },
+    {
+      "Name": "Replication Lag Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Security Architecture for Cloud",
+      "Count": 1
+    },
+    {
+      "Name": "Database Vulnerability Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Commander Role",
+      "Count": 1
+    },
+    {
+      "Name": "Non-Functional Requirements (NFR)",
+      "Count": 1
+    },
+    {
+      "Name": "Toil Reduction Case Studies",
+      "Count": 1
+    },
+    {
+      "Name": "Cross-Browser Testing Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Patterns Library",
+      "Count": 1
+    },
+    {
+      "Name": "Migration Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Project Handover Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "SLO Performance Report",
+      "Count": 1
+    },
+    {
+      "Name": "Status Report Template",
+      "Count": 1
+    },
+    {
+      "Name": "API Error Rate Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Test Case Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Rollback Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Sprint Planning Document",
+      "Count": 1
+    },
+    {
+      "Name": "Project Requirements Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "ADR (Architecture Decision Records)",
+      "Count": 1
+    },
+    {
+      "Name": "Database Troubleshooting Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Browser/Device Support Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "Deployment Architecture Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Alert Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Business Requirements Document (BRD)",
+      "Count": 1
+    },
+    {
+      "Name": "Common Cloud Issues and Solutions",
+      "Count": 1
+    },
+    {
+      "Name": "Project Change Log",
+      "Count": 1
+    },
+    {
+      "Name": "Project Success Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Task Assignment Document",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Transparency Report",
+      "Count": 1
+    },
+    {
+      "Name": "Interface Specification",
+      "Count": 1
+    },
+    {
+      "Name": "SLA Agreement Template",
+      "Count": 1
+    },
+    {
+      "Name": "Bug Tracking and Management",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Dashboard Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Network Performance Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Decision Log",
+      "Count": 1
+    },
+    {
+      "Name": "Backup and Recovery Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Capacity Planning Model",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Migration Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Database Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Metrics Definition",
+      "Count": 1
+    },
+    {
+      "Name": "Query Performance Testing",
+      "Count": 1
+    },
+    {
+      "Name": "API Support Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Failure Response",
+      "Count": 1
+    },
+    {
+      "Name": "Post-Deployment Support Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Project Vision Statement",
+      "Count": 1
+    },
+    {
+      "Name": "Release Planning for App Store",
+      "Count": 1
+    },
+    {
+      "Name": "Work Breakdown Structure (WBS)",
+      "Count": 1
+    },
+    {
+      "Name": "Slow Query Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Rollout Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "KPI Dashboard",
+      "Count": 1
+    },
+    {
+      "Name": "Runbook Reference",
+      "Count": 1
+    },
+    {
+      "Name": "SLO Adoption Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Total Cost of Ownership (TCO)",
+      "Count": 1
+    },
+    {
+      "Name": "Message Format Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Proof of Concept (PoC) Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Security Architecture Document",
+      "Count": 1
+    },
+    {
+      "Name": "User Testing Results Summary",
+      "Count": 1
+    },
+    {
+      "Name": "Communication Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Customer Feedback Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Golden Signals Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Postmortem",
+      "Count": 1
+    },
+    {
+      "Name": "Product Status Report",
+      "Count": 1
+    },
+    {
+      "Name": "Solution Architecture Reference",
+      "Count": 1
+    },
+    {
+      "Name": "User Acceptance Testing (UAT) Plan",
+      "Count": 1
+    },
+    {
+      "Name": "API Integration for Mobile",
+      "Count": 1
+    },
+    {
+      "Name": "Compliance Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Database Consolidation Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "OKR (Objectives and Key Results)",
+      "Count": 1
+    },
+    {
+      "Name": "User Stories Document",
+      "Count": 1
+    },
+    {
+      "Name": "Capacity Planning Report",
+      "Count": 1
+    },
+    {
+      "Name": "Ryzyko akceptowalne (risk appetite) i tolerancje",
+      "Count": 1
+    },
+    {
+      "Name": "Risk Register",
+      "Count": 1
+    },
+    {
+      "Name": "Networking Setup",
+      "Count": 1
+    },
+    {
+      "Name": "Service Maintenance Windows",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Monitoring Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "CapEx/OpEx Planning",
+      "Count": 1
+    },
+    {
+      "Name": "Compliance Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Data Migration Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Identity and Access Management",
+      "Count": 1
+    },
+    {
+      "Name": "System Administration Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Toil Tracking Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "UAT Execution Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Test Coverage Report",
+      "Count": 1
+    },
+    {
+      "Name": "Storage Capacity Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Component Usage Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Container Orchestration Setup",
+      "Count": 1
+    },
+    {
+      "Name": "In-App Update Communication",
+      "Count": 1
+    },
+    {
+      "Name": "Value Proposition Canvas",
+      "Count": 1
+    },
+    {
+      "Name": "Blameless Postmortem Culture",
+      "Count": 1
+    },
+    {
+      "Name": "Data Reconciliation Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Design Retrospective",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Glossary",
+      "Count": 1
+    },
+    {
+      "Name": "Backup and Recovery Design",
+      "Count": 1
+    },
+    {
+      "Name": "API Developer Onboarding",
+      "Count": 1
+    },
+    {
+      "Name": "Data Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "Database Health Report",
+      "Count": 1
+    },
+    {
+      "Name": "Multi-Cloud Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Wireframe Specifications",
+      "Count": 1
+    },
+    {
+      "Name": "Database Monitoring Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Database Administration Training",
+      "Count": 1
+    },
+    {
+      "Name": "Historical Data Retention Policy",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Deployment Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Product FAQ",
+      "Count": 1
+    },
+    {
+      "Name": "Technology Stack Training",
+      "Count": 1
+    },
+    {
+      "Name": "Capacity Planning",
+      "Count": 1
+    },
+    {
+      "Name": "Device Testing Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure Sizing Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile Developer Onboarding",
+      "Count": 1
+    },
+    {
+      "Name": "Product Incident Response",
+      "Count": 1
+    },
+    {
+      "Name": "Request for Proposal (RFP)",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Performance Review",
+      "Count": 1
+    },
+    {
+      "Name": "Accessibility (A11y) Design Guide",
+      "Count": 1
+    },
+    {
+      "Name": "API Integration Specification",
+      "Count": 1
+    },
+    {
+      "Name": "App Store Review Guidelines Summary",
+      "Count": 1
+    },
+    {
+      "Name": "Custom Adapter Development",
+      "Count": 1
+    },
+    {
+      "Name": "Beta Tester Communication",
+      "Count": 1
+    },
+    {
+      "Name": "Post-Incident Review (PIR)",
+      "Count": 1
+    },
+    {
+      "Name": "Solution Architecture Document",
+      "Count": 1
+    },
+    {
+      "Name": "API Improvement Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Launch Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Vendor Evaluation Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "API Performance Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Data Security Design",
+      "Count": 1
+    },
+    {
+      "Name": "Go-Live Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Non-Functional Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Project Timeline / Schedule",
+      "Count": 1
+    },
+    {
+      "Name": "Schema Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Support Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Project Business Case",
+      "Count": 1
+    },
+    {
+      "Name": "Rollback Plan",
+      "Count": 1
+    },
+    {
+      "Name": "User Issue Troubleshooting",
+      "Count": 1
+    },
+    {
+      "Name": "Compliance Testing Report",
+      "Count": 1
+    },
+    {
+      "Name": "Critical Bug Hotfix Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Data Privacy Impact Assessment (DPIA)",
+      "Count": 1
+    },
+    {
+      "Name": "Data Quality Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "API Documentation Training",
+      "Count": 1
+    },
+    {
+      "Name": "Disaster Recovery Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "SRE Practice Rollout Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Test Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Setup Android Development Environment",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Testing Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Project Lessons Learned Log",
+      "Count": 1
+    },
+    {
+      "Name": "Workload Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Database Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Accessibility Compliance",
+      "Count": 1
+    },
+    {
+      "Name": "API Lifecycle Management Design",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Fault Diagnosis",
+      "Count": 1
+    },
+    {
+      "Name": "Trade-off Analysis Document",
+      "Count": 1
+    },
+    {
+      "Name": "Data Exchange Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Change Impact Assessment",
+      "Count": 1
+    },
+    {
+      "Name": "Reliability Report",
+      "Count": 1
+    },
+    {
+      "Name": "Risk and Issue Report",
+      "Count": 1
+    },
+    {
+      "Name": "Code Examples for Mobile",
+      "Count": 1
+    },
+    {
+      "Name": "Backup and Recovery Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Error Budget Policy",
+      "Count": 1
+    },
+    {
+      "Name": "Glossary of Terms",
+      "Count": 1
+    },
+    {
+      "Name": "Common Database Issues and Solutions",
+      "Count": 1
+    },
+    {
+      "Name": "Common Test Issues and Solutions",
+      "Count": 1
+    },
+    {
+      "Name": "Crisis Communication Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Failover Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Post-Migration Validation",
+      "Count": 1
+    },
+    {
+      "Name": "QA Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "SRE Practice Review",
+      "Count": 1
+    },
+    {
+      "Name": "Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Go-Live Architecture Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Observability Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Monitoring Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Onboarding",
+      "Count": 1
+    },
+    {
+      "Name": "Navigation Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "Code Examples Repository",
+      "Count": 1
+    },
+    {
+      "Name": "Component Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Developer Portal Creation",
+      "Count": 1
+    },
+    {
+      "Name": "Latency Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "API Testing Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Cost-Benefit Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Hotfix Verification",
+      "Count": 1
+    },
+    {
+      "Name": "JavaScript Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Test Coverage Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Caching Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Migration Retrospective",
+      "Count": 1
+    },
+    {
+      "Name": "Customer Feedback Collection",
+      "Count": 1
+    },
+    {
+      "Name": "Error Handling Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile Analytics Setup",
+      "Count": 1
+    },
+    {
+      "Name": "Recovery Time Objective (RTO) Definition",
+      "Count": 1
+    },
+    {
+      "Name": "API Product Vision",
+      "Count": 1
+    },
+    {
+      "Name": "Customer Impact Communication",
+      "Count": 1
+    },
+    {
+      "Name": "Testing Vision Statement",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Adoption Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Baseline Document",
+      "Count": 1
+    },
+    {
+      "Name": "Cost Optimization Findings",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile App Requirements Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Rate Limiting Configuration",
+      "Count": 1
+    },
+    {
+      "Name": "Business Requirements Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Test Automation Tool Training",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile-Specific Constraints",
+      "Count": 1
+    },
+    {
+      "Name": "User Insights Repository",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Health Metrics",
+      "Count": 1
+    },
+    {
+      "Name": "Backup and Recovery Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Product Metrics Framework",
+      "Count": 1
+    },
+    {
+      "Name": "Change Request Form (RFC)",
+      "Count": 1
+    },
+    {
+      "Name": "Testing Methodology Training",
+      "Count": 1
+    },
+    {
+      "Name": "API Error Codes Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Setup iOS Development Environment",
+      "Count": 1
+    },
+    {
+      "Name": "UAT Sign-off Document",
+      "Count": 1
+    },
+    {
+      "Name": "User Feedback Summary",
+      "Count": 1
+    },
+    {
+      "Name": "Database Administration Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Best Practices Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Budget and Cost Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Database Requirements Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Improvement Recommendations",
+      "Count": 1
+    },
+    {
+      "Name": "Local Storage/Database Design",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Incident Response",
+      "Count": 1
+    },
+    {
+      "Name": "Patching Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Product Analytics Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Information Architecture Document",
+      "Count": 1
+    },
+    {
+      "Name": "Stakeholder Architecture Updates",
+      "Count": 1
+    },
+    {
+      "Name": "Data Mapping Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Progress Update",
+      "Count": 1
+    },
+    {
+      "Name": "System Overview Training Material",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Compliance Roadmap",
+      "Count": 1
+    },
+    {
+      "Name": "Data Encryption Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Operational Architecture Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Project Issue Management Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Threat Model",
+      "Count": 1
+    },
+    {
+      "Name": "Data Protection Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Data Security in Transit",
+      "Count": 1
+    },
+    {
+      "Name": "Database Architecture Diagram",
+      "Count": 1
+    },
+    {
+      "Name": "Product Improvement Roadmap",
+      "Count": 1
+    },
+    {
+      "Name": "Test Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "API Change Communication",
+      "Count": 1
+    },
+    {
+      "Name": "API Contract Testing",
+      "Count": 1
+    },
+    {
+      "Name": "FinOps Metrics and KPIs",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure Development Roadmap",
+      "Count": 1
+    },
+    {
+      "Name": "Security Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Code Review Guidelines",
+      "Count": 1
+    },
+    {
+      "Name": "Cutover Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Prioritization Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "Monitoring Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "Non-Functional Testing Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "QA Engineer Onboarding",
+      "Count": 1
+    },
+    {
+      "Name": "Database Deployment Schedule",
+      "Count": 1
+    },
+    {
+      "Name": "Design Decisions Log",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Flags Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "User Journey Maps",
+      "Count": 1
+    },
+    {
+      "Name": "Acceptance Criteria Definition",
+      "Count": 1
+    },
+    {
+      "Name": "IaC Code Repository",
+      "Count": 1
+    },
+    {
+      "Name": "Known Issues Database",
+      "Count": 1
+    },
+    {
+      "Name": "Postmortem Database",
+      "Count": 1
+    },
+    {
+      "Name": "Risk Management Plan",
+      "Count": 1
+    },
+    {
+      "Name": "SRE Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Response Plan",
+      "Count": 1
+    },
+    {
+      "Name": "SLO/SLA Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "API Status Updates",
+      "Count": 1
+    },
+    {
+      "Name": "Automation Priority Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Compliance Mapping",
+      "Count": 1
+    },
+    {
+      "Name": "Cost Tracking Report",
+      "Count": 1
+    },
+    {
+      "Name": "Product Release Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Data Mapping Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Data Migration Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure Testing Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Implementation Schedule",
+      "Count": 1
+    },
+    {
+      "Name": "Platform Strategy Document",
+      "Count": 1
+    },
+    {
+      "Name": "Frontend Security Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "App Update Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Database Testing Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Encryption Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "User Research Summary",
+      "Count": 1
+    },
+    {
+      "Name": "Developer Onboarding Guide",
+      "Count": 1
+    },
+    {
+      "Name": "API Security Testing",
+      "Count": 1
+    },
+    {
+      "Name": "Cutover Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Response for Frontend",
+      "Count": 1
+    },
+    {
+      "Name": "API Developer Onboarding Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Procurement Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Procurement Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Screen Design Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Quality Metrics Report",
+      "Count": 1
+    },
+    {
+      "Name": "Regression Testing Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Communication During Incidents",
+      "Count": 1
+    },
+    {
+      "Name": "Release Notes for Mobile",
+      "Count": 1
+    },
+    {
+      "Name": "User Management Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Runbook Automation",
+      "Count": 1
+    },
+    {
+      "Name": "Distributed Tracing Setup",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Response Training",
+      "Count": 1
+    },
+    {
+      "Name": "Risks and Open Issues Report",
+      "Count": 1
+    },
+    {
+      "Name": "SRE Security Practices",
+      "Count": 1
+    },
+    {
+      "Name": "API Gateway Design",
+      "Count": 1
+    },
+    {
+      "Name": "Chaos Engineering Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Database Connection Pooling Setup",
+      "Count": 1
+    },
+    {
+      "Name": "Go-Live Readiness Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Test Harness Development",
+      "Count": 1
+    },
+    {
+      "Name": "Target Customer Profile",
+      "Count": 1
+    },
+    {
+      "Name": "Technology Stack Documentation",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile App Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "API Gateway Setup",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Architecture Training",
+      "Count": 1
+    },
+    {
+      "Name": "Partitioning Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Patching and Update Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Alerting Configuration",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Platform Training",
+      "Count": 1
+    },
+    {
+      "Name": "Database Security Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Monitoring Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "System Retirement Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Error Budget Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile Interaction Patterns",
+      "Count": 1
+    },
+    {
+      "Name": "System Design Document",
+      "Count": 1
+    },
+    {
+      "Name": "Test Effectiveness Review",
+      "Count": 1
+    },
+    {
+      "Name": "Database Performance Report",
+      "Count": 1
+    },
+    {
+      "Name": "SRE Onboarding Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Use Case Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Container and Kubernetes Training",
+      "Count": 1
+    },
+    {
+      "Name": "Database Configuration Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Status Report",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile Design Patterns Library",
+      "Count": 1
+    },
+    {
+      "Name": "Announcement for End-Users",
+      "Count": 1
+    },
+    {
+      "Name": "Common Integration Issues and Solutions",
+      "Count": 1
+    },
+    {
+      "Name": "Product Vision Statement",
+      "Count": 1
+    },
+    {
+      "Name": "Security Architecture Review",
+      "Count": 1
+    },
+    {
+      "Name": "Stakeholder Communication Plan",
+      "Count": 1
+    },
+    {
+      "Name": "API Rate Limiting Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Feature Flag Management",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Response Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Policy Review Record",
+      "Count": 1
+    },
+    {
+      "Name": "User Engagement Metrics",
+      "Count": 1
+    },
+    {
+      "Name": "Automated Test Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Database Schema Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Frontend Developer Onboarding",
+      "Count": 1
+    },
+    {
+      "Name": "API Outage Response",
+      "Count": 1
+    },
+    {
+      "Name": "Database Architecture Design",
+      "Count": 1
+    },
+    {
+      "Name": "Database Incident Postmortem",
+      "Count": 1
+    },
+    {
+      "Name": "Project Quality Assurance Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Device Testing Matrix",
+      "Count": 1
+    },
+    {
+      "Name": "API Deprecation Notice",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Optimization Tips",
+      "Count": 1
+    },
+    {
+      "Name": "Product Manager Onboarding",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Improvement Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Project Postmortem",
+      "Count": 1
+    },
+    {
+      "Name": "OWASP Testing Report",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Operations Runbook",
+      "Count": 1
+    },
+    {
+      "Name": "Error Budget Concept",
+      "Count": 1
+    },
+    {
+      "Name": "Struktura sekcji (skrót)",
+      "Count": 1
+    },
+    {
+      "Name": "Compliance and Regulatory Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Cost-Benefit Analysis (CBA)",
+      "Count": 1
+    },
+    {
+      "Name": "Crash Rate Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "SLO Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Sprint Planning",
+      "Count": 1
+    },
+    {
+      "Name": "Build and Release Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Database Platform Selection",
+      "Count": 1
+    },
+    {
+      "Name": "Project Performance Dashboard",
+      "Count": 1
+    },
+    {
+      "Name": "Bug Report",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Implementation Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Evolution Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Code Architecture Guideline",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Strategy Vision",
+      "Count": 1
+    },
+    {
+      "Name": "Mobile Development Best Practices",
+      "Count": 1
+    },
+    {
+      "Name": "Project Management Plan",
+      "Count": 1
+    },
+    {
+      "Name": "API Usage Monitoring",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Improvement Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Security Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "API Platform Goals",
+      "Count": 1
+    },
+    {
+      "Name": "API Release Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Data Flow Diagram",
+      "Count": 1
+    },
+    {
+      "Name": "Design Pattern Catalog",
+      "Count": 1
+    },
+    {
+      "Name": "OAuth/JWT Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "API Integration Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Networking Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Degradation Response",
+      "Count": 1
+    },
+    {
+      "Name": "QA Project Schedule",
+      "Count": 1
+    },
+    {
+      "Name": "Recovery Point Objective (RPO) Definition",
+      "Count": 1
+    },
+    {
+      "Name": "Security Architecture",
+      "Count": 1
+    },
+    {
+      "Name": "Scalability Testing",
+      "Count": 1
+    },
+    {
+      "Name": "API Analytics Dashboard",
+      "Count": 1
+    },
+    {
+      "Name": "API Reference for Mobile Developers",
+      "Count": 1
+    },
+    {
+      "Name": "Cloud Architecture Design",
+      "Count": 1
+    },
+    {
+      "Name": "IaC Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "Quality Metrics Tracking",
+      "Count": 1
+    },
+    {
+      "Name": "Emergency Change Procedure",
+      "Count": 1
+    },
+    {
+      "Name": "Alert Configuration Guide",
+      "Count": 1
+    },
+    {
+      "Name": "API Strategy Vision",
+      "Count": 1
+    },
+    {
+      "Name": "Struktura sekcji (per case)",
+      "Count": 1
+    },
+    {
+      "Name": "UI Test Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "API Integration Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Compliance Report Template",
+      "Count": 1
+    },
+    {
+      "Name": "Corruption Detection and Recovery",
+      "Count": 1
+    },
+    {
+      "Name": "Product Documentation",
+      "Count": 1
+    },
+    {
+      "Name": "Stakeholder Presentation",
+      "Count": 1
+    },
+    {
+      "Name": "Announcement Bulletin",
+      "Count": 1
+    },
+    {
+      "Name": "Architecture Status Report",
+      "Count": 1
+    },
+    {
+      "Name": "Data Retention Requirements",
+      "Count": 1
+    },
+    {
+      "Name": "Major Incident Handling",
+      "Count": 1
+    },
+    {
+      "Name": "Responsive Design Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Struktura checklisty (przykładowe sekcje)",
+      "Count": 1
+    },
+    {
+      "Name": "Data Transformation Rules",
+      "Count": 1
+    },
+    {
+      "Name": "Test Automation Code",
+      "Count": 1
+    },
+    {
+      "Name": "Automation Strategy",
+      "Count": 1
+    },
+    {
+      "Name": "Cost Planning and Forecasting",
+      "Count": 1
+    },
+    {
+      "Name": "Performance Optimization Tips",
+      "Count": 1
+    },
+    {
+      "Name": "Sprint Execution Guidance",
+      "Count": 1
+    },
+    {
+      "Name": "System Interoperability Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "API Consumer Analysis",
+      "Count": 1
+    },
+    {
+      "Name": "Change Advisory Board (CAB) Notes",
+      "Count": 1
+    },
+    {
+      "Name": "Functional Requirements Specification (FRS)",
+      "Count": 1
+    },
+    {
+      "Name": "User Journey Mapping",
+      "Count": 1
+    },
+    {
+      "Name": "App Crash Investigation Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Frontend Metrics Definition",
+      "Count": 1
+    },
+    {
+      "Name": "Audit Checklist",
+      "Count": 1
+    },
+    {
+      "Name": "Chaos Engineering Training",
+      "Count": 1
+    },
+    {
+      "Name": "Message Format Specification",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure as Code (IaC) Design",
+      "Count": 1
+    },
+    {
+      "Name": "Project Methodology Training",
+      "Count": 1
+    },
+    {
+      "Name": "Database Security Audit",
+      "Count": 1
+    },
+    {
+      "Name": "Security Testing Report",
+      "Count": 1
+    },
+    {
+      "Name": "Frontend Architecture Document",
+      "Count": 1
+    },
+    {
+      "Name": "Incident Classification",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure Documentation",
+      "Count": 1
+    },
+    {
+      "Name": "Network Security Design",
+      "Count": 1
+    },
+    {
+      "Name": "Rollout Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Infrastructure Maintenance Schedule",
+      "Count": 1
+    },
+    {
+      "Name": "Beta Testing Program",
+      "Count": 1
+    },
+    {
+      "Name": "Security Implementation",
+      "Count": 1
+    },
+    {
+      "Name": "System Cutover Plan",
+      "Count": 1
+    },
+    {
+      "Name": "Competitive Intelligence",
+      "Count": 1
+    },
+    {
+      "Name": "Integration Patterns Training",
+      "Count": 1
+    },
+    {
+      "Name": "On-Call Rotation Design",
+      "Count": 1
+    },
+    {
+      "Name": "API Design Patterns",
+      "Count": 1
+    },
+    {
+      "Name": "App Store Submission Guide",
+      "Count": 1
+    },
+    {
+      "Name": "Component Catalog",
+      "Count": 1
+    },
+    {
+      "Name": "Lessons from App Store Reviews",
+      "Count": 1
+    },
+    {
+      "Name": "Project Objectives",
+      "Count": 1
+    },
+    {
+      "Name": "Stored Procedures Reference",
+      "Count": 1
+    },
+    {
+      "Name": "Database Incident Response",
+      "Count": 1
+    },
+    {
+      "Name": "Development Environment Setup",
+      "Count": 1
+    },
+    {
+      "Name": "Product Performance Report",
+      "Count": 1
+    },
+    {
+      "Name": "Product Roadmap",
+      "Count": 1
+    }
+  ],
+  "total_bytes": 7780016,
+  "total_lines": 233976,
+  "total_templates": 829
+}

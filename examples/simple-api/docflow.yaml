@@ -1,0 +1,18 @@
+docs_root: examples/simple-api
+ignore_patterns: []
+cache:
+  enabled: false
+  dir: .docflow/cache
+  max_size_mb: 10
+  max_age_days: 7
+log:
+  level: info
+  format: text
+db:
+  path: .docflow/docflow.db
+dependency:
+  promote_context_for: []
+section_aliases:
+  Przegląd: ["Overview"]
+  Kroki: ["Steps"]
+  FAQ: ["Q&A"]

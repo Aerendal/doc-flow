@@ -1,0 +1,58 @@
+name: Docflow Bundle
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+      - name: Build docflow
+        env:
+          GOFLAGS: -mod=vendor
+        run: go build -o build/docflow-linux-amd64 ./cmd/docflow
+
+      - name: Audit
+        run: ./scripts/audit.sh --root docs --log LOGS/AUDIT_CI.md
+
+      - name: Release artifacts bundle
+        run: ./scripts/release_artifacts.sh --log LOGS/RELEASE_ARTIFACT_CI.md
+
+      - name: PR bundle
+        run: ./scripts/pr_bundle.sh --log LOGS/PR_BUNDLE_CI.md
+
+      - name: Order guard (audit -> bundle)
+        run: ./scripts/order_guard.sh --bundle dist/release/docflow-pr-bundle.zip --health dist/health/docs/health_latest.html --queue dist/health/docs/queue_latest.json --compliance dist/health/docs/compliance_latest.json --log LOGS/ORDER_GUARD_CI.md || true
+
+      - name: Palette smoke
+        run: ./scripts/palette_smoke.sh || true
+
+      - name: Evidence map (200-225)
+        run: ./scripts/evidence_map.sh --from 200 --to 225 --out LOGS/EVIDENCE_MAP_CI.md | tee LOGS/EVIDENCE_MAP_CI_DAY_225.md
+
+      - name: Upload bundles
+        uses: actions/upload-artifact@v4
+        with:
+          name: docflow-bundles
+          path: |
+            LOGS/AUDIT_CI.md
+            LOGS/RELEASE_ARTIFACT_CI.md
+            LOGS/PR_BUNDLE_CI.md
+            LOGS/ORDER_GUARD_CI.md
+            LOGS/PALETTE_SMOKE_DAY_220.md
+            LOGS/PALETTE_DAY_216.md
+            LOGS/PALETTE_BIN_DAY_217.md
+            LOGS/EVIDENCE_MAP_CI.md
+            LOGS/EVIDENCE_MAP_CI_DAY_225.md
+            dist/release/docflow-artifacts.zip
+            dist/release/docflow-pr-bundle.zip
+            dist/health/docs/health_latest.svg
+            dist/health/docs/health_latest.html
+            dist/health/docs/queue_latest.json
+            dist/health/docs/queue_latest.html
+            dist/health/docs/compliance_latest.json

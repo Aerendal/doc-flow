@@ -1,0 +1,43 @@
+statuses:
+  draft:
+    required_fields: [title, doc_id, doc_type, status, owner]
+    allow_empty_sections: true
+    min_quality: 0
+    approvals_required: 0
+  review:
+    required_fields: [title, doc_id, doc_type, status, owner, version, depends_on]
+    allow_empty_sections: false
+    min_quality: 60
+    approvals_required: 1
+  published:
+    required_fields: [title, doc_id, doc_type, status, owner, version, depends_on, context_sources]
+    allow_empty_sections: false
+    min_quality: 75
+    approvals_required: 2
+
+families:
+  api:
+    required_sections: ["Przegląd", "Endpoints", "Authentication", "Errors"]
+    allowed_status: [draft, review, published]
+    min_quality_published: 80
+  architecture:
+    required_sections: ["Przegląd", "Decyzje architektoniczne", "Komponenty", "Ryzyka"]
+    allowed_status: [draft, review, published]
+    min_quality_published: 75
+  guide:
+    required_sections: ["Przegląd", "Kroki", "FAQ"]
+    allowed_status: [draft, review, published]
+    min_quality_published: 70
+  proposal:
+    required_sections: ["Wstęp"]
+    allowed_status: [draft, review, published]
+    min_quality_published: 60
+  tasklist:
+    required_sections: ["Wstęp", "Zadania", "Następne kroki"]
+    allowed_status: [draft]
+    min_quality_published: 0
+
+approvals:
+  draft: []
+  review: ["owner"]
+  published: ["owner", "doc_lead"]

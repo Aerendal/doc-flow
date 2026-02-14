@@ -1,0 +1,55 @@
+docs_root: "."
+ignore_patterns:
+  - ".git"
+  - ".docflow"
+  - "node_modules"
+  - "vendor"
+  - "_build"
+  - "attached_assets"
+
+output_dir: ".docflow/output"
+
+cache:
+  enabled: true
+  dir: ".docflow/cache"
+  max_size_mb: 100
+  max_age_days: 30
+  checksum_algorithm: "sha256"
+
+log:
+  level: "info"
+  format: "text"
+  file: ""
+
+db:
+  path: ".docflow/docflow.db"
+
+dependency:
+  promote_context_for: [] # lista doc_type, które traktują context_sources jako twardą zależność
+  family_rules_path: ""   # opcjonalny plik rules dla depends_on per rodzina/doc_type
+
+validation:
+  status_aware: true
+  draft:
+    allow_empty_sections: true
+    allow_missing_context: true
+  review:
+    allow_empty_sections: false
+    allow_missing_context: false
+  published:
+    allow_empty_sections: false
+    allow_missing_context: false
+
+section_aliases:
+  "Przegląd": ["Overview", "Podsumowanie", "Kontekst i Motywacja", "Architektura Techniczna"]
+  "Endpoints": ["API Endpoints", "API"]
+  "Wstęp": ["Intro", "Introduction", "Overview"]
+  "Decyzje architektoniczne": ["Architecture decisions", "Arch decisions", "Krytyczne Decyzje Techniczne"]
+  "Komponenty": ["Components", "Architektura Modułowa"]
+  "Ryzyka": ["Risks", "Plan Implementacji"]
+  "Zadania": ["Tasks", "Checklist", "Taski"]
+  "Następne kroki": ["Next steps", "Next Steps", "Next"]
+  "Authentication": ["Auth", "Security"]
+  "Errors": ["Error handling", "HTTP errors"]
+  "Kroki": ["Steps", "How-to"]
+  "FAQ": ["Questions", "Q&A"]

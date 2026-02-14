@@ -1,0 +1,179 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  test:
+    name: Test (Go ${{ matrix.go }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: ["1.23.x", "1.24.x", "1.25.x"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Guard tracked worklog/day files
+        shell: bash
+        run: |
+          set -euo pipefail
+          pattern='^(worklog/|days/|day[_-][0-9].*\.md$)'
+          if git ls-files | grep -qE "$pattern"; then
+            echo "ERROR: worklog/day_* files must not be tracked in product repo."
+            git ls-files | grep -E "$pattern" || true
+            exit 1
+          fi
+      - name: Set up Go ${{ matrix.go }}
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go }}
+      - name: Cache Go build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ matrix.go }}-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-${{ matrix.go }}-
+            ${{ runner.os }}-go-
+      - name: Test
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: go test ./...
+
+      - name: Smoke CLI contract
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: |
+          go build -o build/docflow-ci ./cmd/docflow
+          ./build/docflow-ci --help >/dev/null
+
+  tools:
+    name: Build supporting tools (Go 1.25)
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+      - name: Cache Go build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-1.25-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-1.25-
+            ${{ runner.os }}-go-
+      - name: Build section/template tools
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: |
+          mkdir -p build
+          go build -o build/docflow-section-order-lint ./cmd/section-order-lint
+          go build -o build/docflow-source-template-check ./cmd/source-template-check
+
+      - name: Upload supporting tool artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: supporting-tools
+          path: |
+            build/docflow-section-order-lint
+            build/docflow-source-template-check
+
+  queue_compliance:
+    name: Queue + Compliance Smoke (Go 1.25)
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+      - name: Cache Go build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-1.25-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-1.25-
+            ${{ runner.os }}-go-
+      - name: Build docflow
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+          VERSION: dev
+          COMMIT: ${{ github.sha }}
+        run: |
+          DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          LDFLAGS="-X docflow/internal/buildinfo.Version=${VERSION} -X docflow/internal/buildinfo.Commit=${COMMIT} -X docflow/internal/buildinfo.Date=${DATE}"
+          go build -ldflags "$LDFLAGS" -o build/docflow-ci ./cmd/docflow
+
+      - name: Section order lint
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: |
+          mkdir -p .docflow
+          go run ./cmd/section-order-lint examples/simple-api examples/architecture examples/knowledge-base
+        continue-on-error: false
+
+      - name: Queue evaluate (examples backlog)
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: |
+          echo "T1 examples/simple-api" > /tmp/backlog_ci.txt
+          echo "T2 examples/architecture" >> /tmp/backlog_ci.txt
+          scripts/queue_evaluate.sh --bin ./build/docflow-ci --format json --cache /tmp/queue_cache_ci.json /tmp/backlog_ci.txt > /tmp/queue_report.json
+          ./scripts/queue_report_html.py /tmp/queue_report.json /tmp/queue_report.html
+        continue-on-error: false
+
+      - name: Compliance (examples/architecture)
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: |
+          ./build/docflow-ci compliance --config examples/architecture/docflow.yaml --rules docs/_meta/GOVERNANCE_RULES.yaml --format json --output /tmp/compliance_report.json
+
+      - name: Upload queue/compliance artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: queue-compliance-lint-reports
+          path: |
+            /tmp/queue_report.json
+            /tmp/queue_report.html
+            /tmp/compliance_report.json
+            .docflow/section_order_lint.json
+
+  bench:
+    name: Bench (Go 1.25)
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+      - name: Run benchmarks
+        env:
+          GOFLAGS: -mod=vendor
+          GOCACHE: /tmp/go-cache
+        run: go test -bench=. -benchmem ./... | tee bench.txt
+      - name: Upload bench artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bench-results
+          path: bench.txt

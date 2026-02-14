@@ -1,0 +1,62 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+docflow
+
+# Test binary
+*.test
+
+# Output
+*.out
+
+# Go workspace
+go.work
+go.work.sum
+
+# Vendor
+vendor/
+
+# Local/runtime artifacts
+.config/
+.local/
+tmp/
+LOGS/
+worklog/
+archive/
+attached_assets/
+zz
+zz2
+
+# Docflow runtime state (keep baseline as source-of-truth)
+.docflow/*
+!.docflow/
+!.docflow/baseline/
+!.docflow/baseline/*.json
+
+# Stray local scratch files
+$SECTION_DIFF
+-
+Agents.md
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Build
+dist/
+build/

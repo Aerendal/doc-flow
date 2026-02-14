@@ -3,7 +3,7 @@
 CLI do zarządzania dokumentacją i szablonami (Go, bez CGO). Release Candidate 2 (GA-ready).
 
 ## Wymagania
-- Go 1.25+ (zainstalowane lokalnie)
+- Go 1.23+ (zainstalowane lokalnie)
 - Build ze źródeł używa `vendor/` (`-mod=vendor`) i nie wymaga pobierania modułów podczas standardowego builda/testów
 - Przy zmianach zależności uruchom `go mod tidy && go mod vendor` (to może wymagać sieci)
 
@@ -231,7 +231,7 @@ cosign verify-blob \
 ```
 
 ## Troubleshooting
-- **Build ze źródeł bez internetu**: wykonaj raz `go mod download` online i zachowaj `GOMODCACHE`, albo użyj binarki z Releases.
+- **Build ze źródeł bez internetu**: standardowy build/test działa z `vendor/` (`-mod=vendor`). Jeśli zmieniasz zależności, uruchom `go mod tidy && go mod vendor` (to może wymagać sieci).
 - **Permission denied w $HOME/.cache/go-build**: ustaw `GOCACHE=/tmp/go-cache` (jak w poleceniu testów) lub `HOME=/tmp` / `XDG_CACHE_HOME=/tmp`.
 - **Brak template_source**: `template-impact` zwraca puste wyniki — uzupełnij `template_source` w frontmatter dokumentów generowanych z szablonów.
 - **Wysoki czas skanu**: uruchom po raz drugi (checksum cache); rozważ wyłączenie hints jeśli niepotrzebne.

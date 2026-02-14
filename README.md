@@ -28,6 +28,15 @@ go tool pprof -top /tmp/docflow.cpu
 ## Maintainer workflows (artefacts/logs)
 Wewnętrzne bundlowanie release/PR oraz mapa evidence są opisane w `docs/MAINTAINER_NOTES.md`.
 
+## Maintainers (release)
+Skrócona procedura release (vendor-first):
+1. Pre-check: `make vendor-sync`; `GOFLAGS=-mod=vendor go test ./...`; `GOFLAGS=-mod=vendor go vet ./...`.
+2. Tag i push: `git tag -a vX.Y.Z -m "vX.Y.Z"`; `git push origin vX.Y.Z`.
+3. GitHub Actions: sprawdź workflow `release` (`vendor_guard`, `build`, `sbom`, `release`, `attest_provenance`, `sign_cosign`).
+4. Verify assets: `checksums.txt` + opcjonalnie podpisy cosign (`*.sig`, `*.cert`).
+5. Test bez publikacji: uruchom `workflow_dispatch` (publikacja release tylko dla `refs/tags/v*`).
+Szczegóły i troubleshooting: `docs/MAINTAINER_NOTES.md`.
+
 ## Quickstart dla Twojego repo (zewnętrznego)
 1) Przygotuj pliki wejściowe:
 - `docflow.yaml` w katalogu repo (albo wskaż `--config`)

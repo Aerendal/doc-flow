@@ -79,17 +79,21 @@ jobs:
           "$BIN" --help >/dev/null
           "$BIN" validate --help >/dev/null
           "$BIN" compliance --help >/dev/null
-      - name: Archive
+      - name: Archive (unix)
+        if: matrix.goos != 'windows'
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p dist
           fname=docflow-${{ matrix.goos }}-${{ matrix.goarch }}
-          if [ "${{ matrix.goos }}" = "windows" ]; then
-            zip -j dist/${fname}.zip build/${fname}.exe
-          else
-            tar -czf dist/${fname}.tar.gz -C build ${fname}
-          fi
+          tar -czf dist/${fname}.tar.gz -C build ${fname}
+      - name: Archive (windows)
+        if: matrix.goos == 'windows'
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path dist | Out-Null
+          $fname = "docflow-${{ matrix.goos }}-${{ matrix.goarch }}"
+          Compress-Archive -Path "build/$fname.exe" -DestinationPath "dist/$fname.zip" -Force
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:

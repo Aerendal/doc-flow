@@ -179,6 +179,13 @@ Szczegóły parametrów i kontraktu outputów: `docs/CLI_REFERENCE.md` oraz `doc
 ## Instalacja (release)
 - Releases są opcjonalne. Jeśli `.../releases/latest/download/...` zwraca `404`, użyj instalacji ze źródeł (sekcja wyżej).
 - Ręcznie (gdy release istnieje): pobierz archiwum z Releases (`docflow-<os>-<arch>.tar.gz` lub `.zip`), rozpakuj i uruchom.
+- Linux amd64 (gdy release istnieje):
+```bash
+curl -LO https://github.com/Aerendal/doc-flow/releases/latest/download/docflow-linux-amd64.tar.gz
+tar -xzf docflow-linux-amd64.tar.gz
+chmod +x docflow-linux-amd64
+./docflow-linux-amd64 --version
+```
 - Weryfikacja: `sha256sum -c checksums.txt` (plik `checksums.txt` z tej samej strony release).
 - Skrypt instalacyjny: `PREFIX=$HOME/.local ./install.sh` (domyślnie instaluje lokalny build z `./build/docflow`). `--dry-run` aby sprawdzić bez kopiowania.
   - Możesz wskazać własną binarkę: `--from /path/to/docflow`.

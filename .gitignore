@@ -39,7 +39,6 @@ zz2
 # Stray local scratch files
 $SECTION_DIFF
 -
-Agents.md
 
 # IDE
 .idea/

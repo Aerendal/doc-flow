@@ -22,7 +22,7 @@ go.work.sum
 .local/
 tmp/
 LOGS/
-worklog/
+/worklog/
 archive/
 attached_assets/
 zz

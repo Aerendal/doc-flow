@@ -15,7 +15,7 @@ Hook runs:
 Jeśli nie masz zbudowanego `./docflow`, hook pominie walidację.
 
 ## CI
-- GitHub Actions workflow `.github/workflows/ci.yml` (test matrix 1.23–1.25, benchmark job).
+- GitHub Actions workflow `.github/workflows/ci.yml` (Go 1.25, benchmark job).
 - Ustaw `GOCACHE=/tmp/go-cache` w lokalnych testach gdy widzisz `permission denied` w `~/.cache/go-build`.
 
 ## Style

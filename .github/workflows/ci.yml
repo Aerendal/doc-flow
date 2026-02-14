@@ -38,6 +38,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-${{ matrix.go }}-
             ${{ runner.os }}-go-
+      - name: Vendor sanity snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "HEAD=$(git rev-parse HEAD)"
+          test -s vendor/modules.txt
+          lines=$(wc -l < vendor/modules.txt)
+          explicit=$(grep -c '^## explicit' vendor/modules.txt || true)
+          echo "vendor/modules.txt lines=${lines}"
+          echo "vendor/modules.txt explicit_markers=${explicit}"
+          test "${lines}" -gt 20
+          test "${explicit}" -gt 0
       - name: Vendor up-to-date gate
         if: matrix.go == '1.25.x'
         run: |

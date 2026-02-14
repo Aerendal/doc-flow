@@ -10,7 +10,7 @@ CLI do zarządzania dokumentacją i szablonami (Go, vendor-only, bez CGO). Relea
 ## Quickstart (60s)
 ```bash
 # pobierz binarkę z releases (podstaw swój system/arch)
-curl -LO https://github.com/Aerendal/docflow/releases/latest/download/docflow-linux-amd64.tar.gz
+curl -LO https://github.com/Aerendal/doc-flow/releases/latest/download/docflow-linux-amd64.tar.gz
 tar -xzf docflow-linux-amd64.tar.gz
 chmod +x docflow-linux-amd64
 

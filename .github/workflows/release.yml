@@ -4,6 +4,13 @@ on:
   push:
     tags:
       - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Git ref (branch, tag, or SHA) to release-test
+        required: false
+        default: main
+        type: string
 
 permissions:
   contents: write
@@ -13,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.ref || github.ref }}
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
@@ -27,6 +36,8 @@ jobs:
   build:
     needs: vendor_guard
     uses: ./.github/workflows/build.yml
+    with:
+      ref: ${{ github.event_name == 'workflow_dispatch' && inputs.ref || github.ref }}
 
   sbom:
     needs: build
@@ -36,6 +47,8 @@ jobs:
       has_sbom: ${{ steps.sbom_probe.outputs.exists }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.ref || github.ref }}
       - name: Generate SBOM (CycloneDX)
         uses: CycloneDX/gh-gomod-generate-sbom@v2
         with:
@@ -86,6 +99,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.ref || github.ref }}
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
@@ -160,6 +174,7 @@ jobs:
             echo "has_sbom=false" >> "$GITHUB_OUTPUT"
           fi
       - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
           files: |
@@ -171,7 +186,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload SBOM asset
-        if: steps.optional_assets.outputs.has_sbom == 'true'
+        if: startsWith(github.ref, 'refs/tags/v') && steps.optional_assets.outputs.has_sbom == 'true'
         uses: softprops/action-gh-release@v2
         with:
           files: release_assets/sbom.cdx.json
@@ -237,6 +252,7 @@ jobs:
             release_assets/*.sig
             release_assets/*.cert
       - name: Upload signatures to release
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
           files: |

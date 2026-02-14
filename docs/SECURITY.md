@@ -10,7 +10,7 @@
 
 ## Best practices for users
 - Uruchamiaj `docflow` na zaufanych repo; waliduj wejściowe frontmatter/YAML (brak sandboxa).
-- Ustaw `GOFLAGS=-mod=vendor`; build ze źródeł uruchamiaj w kontrolowanym środowisku sieciowym.
+- Ustaw `GOFLAGS=-mod=vendor`; build ze źródeł uruchamiaj z kontrolowanego źródła kodu i spójnym `vendor/`.
 - Waliduj pliki pochodzące z zewnątrz (`docflow validate --strict`).
 - Weryfikuj artefakty release wg `docs/SECURITY_VERIFICATION.md` (checksums/cosign/attestations/SBOM).
 

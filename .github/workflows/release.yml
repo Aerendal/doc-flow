@@ -9,7 +9,23 @@ permissions:
   contents: write
 
 jobs:
+  vendor_guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+      - name: Vendor up-to-date gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          go mod vendor
+          git diff --exit-code vendor/ go.mod go.sum
+
   build:
+    needs: vendor_guard
     uses: ./.github/workflows/build.yml
 
   sbom:

@@ -20,4 +20,6 @@ Jeśli nie masz zbudowanego `./docflow`, hook pominie walidację.
 
 ## Style
 - Go modules przez `go.mod/go.sum` (`GOFLAGS=-mod=vendor`).
-- Build/test ze źródeł na CI wymaga dostępu do modułów (sieć lub preseedowany cache).
+- Zmiany zależności wymagają: `go mod tidy && go mod vendor`.
+- CI failuje, jeśli vendor nie jest zsynchronizowany (`vendor/`, `go.mod`, `go.sum`).
+- Nie edytuj ręcznie `vendor/`.

@@ -7,7 +7,7 @@ export GOCACHE
 
 BUILD_DIR ?= build
 
-.PHONY: build test tools lint smoke
+.PHONY: build test tools lint smoke vendor-sync
 
 build: $(BUILD_DIR)/docflow
 
@@ -29,3 +29,8 @@ lint:
 
 smoke: build
 	./$(BUILD_DIR)/docflow --help >/dev/null
+
+vendor-sync:
+	$(GO) mod tidy
+	$(GO) mod vendor
+	$(GO) mod verify

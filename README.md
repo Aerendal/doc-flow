@@ -4,8 +4,8 @@ CLI do zarządzania dokumentacją i szablonami (Go, bez CGO). Release Candidate 
 
 ## Wymagania
 - Go 1.25+ (zainstalowane lokalnie)
-- Build ze źródeł (`./cmd/docflow`) wymaga dostępu do sieci przy pierwszym pobraniu Go modules (standard)
-- Użycie offline: pobierz gotową binarkę z GitHub Releases
+- Build ze źródeł używa `vendor/` (`-mod=vendor`) i nie wymaga pobierania modułów podczas standardowego builda/testów
+- Przy zmianach zależności uruchom `go mod tidy && go mod vendor` (to może wymagać sieci)
 
 ## Quickstart (60s)
 ```bash

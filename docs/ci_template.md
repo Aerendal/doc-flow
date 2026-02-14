@@ -13,7 +13,7 @@ Plik: `templates/ci/docflow-gate.yml`
 ## Wymagania w repo
 - `docflow.yaml` w root + `docs/_meta/GOVERNANCE_RULES.yaml`.
 - Backlog: `examples/backlog_ci_template.txt` (możesz podmienić własny plik).
-- Dostęp do Go modules (sieć albo przygotowany cache) i `GOFLAGS=-mod=vendor`.
+- `vendor/` zsynchronizowany z `go.mod/go.sum` oraz `GOFLAGS=-mod=vendor`.
 
 ## Jak użyć
 - Skopiuj `templates/ci/docflow-gate.yml` do `.github/workflows/docflow-gate.yml` w swoim repo.

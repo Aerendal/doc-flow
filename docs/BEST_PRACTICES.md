@@ -29,7 +29,7 @@
 
 ## Dokumentacja
 - Aktualizuj `GOVERNANCE_RULES.yaml` wraz ze zmianami typów dokumentów.
-- Przypominaj w README/TROUBLESHOOTING, że build ze źródeł wymaga modułów (sieć lub przygotowany cache).
+- Przypominaj w README/TROUBLESHOOTING, że build/test działają z `vendor/`, a sieć jest potrzebna głównie przy aktualizacji zależności (`go mod tidy && go mod vendor`).
 
 ## Migracje
 - `migrate-sections` uruchamiaj na branchu roboczym; review diffów przed merge.

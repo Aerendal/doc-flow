@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Support & Questions (Discussions)"
+    url: "/discussions"
+    about: "Pytania i pomoc — używaj Discussions. Nie używaj Issues do pytań."
+  - name: "Security policy"
+    url: "/SECURITY.md"
+    about: "Nie publikuj podatności publicznie — zobacz SECURITY.md.",

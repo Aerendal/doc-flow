@@ -1,0 +1,62 @@
+name: "Zgłoszenie błędu / Bug report"
+description: "Użyj tego formularza do zgłaszania reproducible błędów. Jeśli to potencjalna luka bezpieczeństwa — NIE publikuj tutaj, postępuj wg SECURITY.md."
+title: "[BUG] ${{short_description}}"
+labels:
+  - "type/bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie. Wypełnij pola poniżej tak dokładnie, jak to możliwe.
+        Jeśli to możliwa luka bezpieczeństwa — nie publikuj jej publicznie i postępuj wg [SECURITY.md](/SECURITY.md).
+  - type: input
+    id: short_description
+    attributes:
+      label: "Krótki opis (tytuł)"
+      description: "Jasne, krótkie streszczenie problemu."
+      placeholder: "np. 'błąd przy instalacji na macOS 13'"
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "Wersja"
+      description: "Wersja doc-flow lub commit/sha (np. `doc-flow --version`)."
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: "System operacyjny / środowisko"
+      options:
+        - "Linux"
+        - "macOS"
+        - "Windows"
+        - "CI (GitHub Actions, inne)"
+        - "Inne"
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Kroki reprodukcji"
+      description: "Krok po kroku jak odtworzyć problem (kopiuj/wklej polecenia)."
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Oczekiwane zachowanie"
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Rzeczywiste zachowanie / błąd"
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logi / błędy (opcjonalne)"
+      description: "Wklej istotne fragmenty logów lub dołącz plik."
+      required: false
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Dodatkowe informacje (opcjonalne)"
+      required: false

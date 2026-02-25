@@ -1,0 +1,42 @@
+name: "Propozycja funkcji / Feature request"
+description: "Zgłaszaj pomysły na funkcje. Jeśli chcesz omówić koncepcyjnie — rozważ najpierw Discussions."
+title: "[FEATURE] ${{short_summary}}"
+labels:
+  - "type/feature"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za pomysł! Podaj kontekst, uzasadnienie i oczekiwane korzyści.
+        Jeśli chcesz szerzej przedyskutować pomysł, użyj Discussions i przypnij link tutaj.
+  - type: input
+    id: short_summary
+    attributes:
+      label: "Krótki opis pomysłu"
+      placeholder: "np. 'opcjonalne logowanie w formacie JSON'"
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Dlaczego to jest potrzebne? (motywacja)"
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proponowane rozwiązanie / UX"
+      description: "Szkic implementacji, przykładowe CLI/kontrakt, przykłady użycia."
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: "Ocena wpływu"
+      options:
+        - "niski (drobna poprawka)"
+        - "średni (wymaga pracy dev/test)"
+        - "wysoki (może łamać kompatybilność)"
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatywy, uwagi (opcjonalne)"
+      required: false

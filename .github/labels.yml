@@ -1,0 +1,84 @@
+# Definicje labeli dla Aerendal/doc-flow
+# Synchronizuj przez: ./scripts/sync-labels.sh
+
+labels:
+  # Typ zgloszenia
+  - name: "type/bug"
+    color: "d73a4a"
+    description: "Potwierdzony blad lub niepoprawne zachowanie"
+
+  - name: "type/feature"
+    color: "a2eeef"
+    description: "Prosba o nowa funkcjonalnosc lub ulepszenie"
+
+  - name: "type/question"
+    color: "d876e3"
+    description: "Pytanie - preferuj GitHub Discussions"
+
+  - name: "type/docs"
+    color: "0075ca"
+    description: "Zmiana lub blad w dokumentacji"
+
+  # Priorytet
+  - name: "prio/p0"
+    color: "b60205"
+    description: "Krytyczny: crash / utrata danych / bezpieczenstwo"
+
+  - name: "prio/p1"
+    color: "e4e669"
+    description: "Wysoki: blokuje instalacje lub CI"
+
+  - name: "prio/p2"
+    color: "fbca04"
+    description: "Normalny: utrudnienie, ale jest obejscie"
+
+  # Status
+  - name: "status/needs-triage"
+    color: "ededed"
+    description: "Nowe zgloszenie, wymaga oceny"
+
+  - name: "status/needs-repro"
+    color: "fef2c0"
+    description: "Czeka na minimalne kroki reprodukcji"
+
+  - name: "status/needs-info"
+    color: "fef2c0"
+    description: "Czeka na dodatkowe informacje od autora"
+
+  - name: "status/accepted"
+    color: "0e8a16"
+    description: "Zaakceptowane do implementacji"
+
+  - name: "status/wontfix"
+    color: "ffffff"
+    description: "Nie bedzie naprawiane / poza zakresem projektu"
+
+  - name: "status/duplicate"
+    color: "cfd3d7"
+    description: "Duplikat istniejacego zgloszenia"
+
+  # Obszar
+  - name: "area/cli"
+    color: "bfd4f2"
+    description: "Komendy CLI, flagi, UX terminala"
+
+  - name: "area/docs"
+    color: "bfd4f2"
+    description: "Dokumentacja, README, przyklady"
+
+  - name: "area/install"
+    color: "bfd4f2"
+    description: "Instalacja, release, install.sh"
+
+  - name: "area/ci"
+    color: "bfd4f2"
+    description: "GitHub Actions, workflows, CI/CD"
+
+  # Feedback week
+  - name: "feedback/accepted"
+    color: "0e8a16"
+    description: "Feedback z tygodnia feedbacku - przyjety"
+
+  - name: "feedback/declined"
+    color: "cfd3d7"
+    description: "Feedback z tygodnia feedbacku - odrzucony (z uzasadnieniem)"

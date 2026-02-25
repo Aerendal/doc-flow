@@ -1,0 +1,21 @@
+changelog:
+  categories:
+    - title: "Zmiany lamace kompatybilnosc"
+      labels:
+        - "breaking-change"
+    - title: "Nowe funkcjonalnosci"
+      labels:
+        - "type/feature"
+    - title: "Naprawione bledy"
+      labels:
+        - "type/bug"
+    - title: "Dokumentacja"
+      labels:
+        - "type/docs"
+    - title: "CI i utrzymanie"
+      labels:
+        - "area/ci"
+        - "type/docs"
+      exclude-labels:
+        - "type/feature"
+        - "type/bug"

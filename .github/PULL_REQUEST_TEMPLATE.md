@@ -17,6 +17,12 @@
 
 <!-- Closes #XX lub Refs #XX -->
 
+## Determinizm i kompatybilność
+
+- [ ] Output CLI pozostaje stabilny (lub zmiany są udokumentowane i celowe)
+- [ ] Brak niedetministycznego zachowania (timestampy, losowość, niestabilna kolejność) chyba że celowo z opt-in flagą
+- [ ] Wsteczna kompatybilność zachowana: flagi, formaty konfigów, układy plików
+
 ## Checklist
 
 - [ ] Zbudowałem lokalnie: `go build -mod=vendor -o build/docflow ./cmd/docflow`

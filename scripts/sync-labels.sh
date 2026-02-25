@@ -1,93 +1,78 @@
 #!/usr/bin/env bash
 # scripts/sync-labels.sh
-# Idempotentny skrypt synchronizujący labele GitHuba z .github/labels.yml
-# Wymaga: gh CLI (zalogowany), python3 lub yq
+# Idempotentny skrypt synchronizujacy labele GitHuba z .github/labels.yml
 #
-# Użycie:
-#   ./scripts/sync-labels.sh                        # używa bieżącego repo
-#   REPO=owner/repo ./scripts/sync-labels.sh        # wskaż inne repo
-#   DRY_RUN=1 ./scripts/sync-labels.sh              # podgląd bez zmian
+# Uzycie:
+#   ./scripts/sync-labels.sh                   # uzywa biezacego repo
+#   REPO=owner/repo ./scripts/sync-labels.sh   # wskaż inne repo
+#   DRY_RUN=1 ./scripts/sync-labels.sh         # podglad bez zmian
 
 set -euo pipefail
 
 REPO="${REPO:-$(gh repo view --json nameWithOwner -q .nameWithOwner 2>/dev/null)}"
-LABELS_FILE="$(git rev-parse --show-toplevel)/.github/labels.yml"
 DRY_RUN="${DRY_RUN:-0}"
 
 if [[ -z "$REPO" ]]; then
-  echo "ERROR: nie można ustalić repo. Ustaw REPO=owner/repo lub uruchom z katalogu z git remote." >&2
-  exit 1
-fi
-
-if [[ ! -f "$LABELS_FILE" ]]; then
-  echo "ERROR: nie znaleziono $LABELS_FILE" >&2
+  echo "ERROR: nie mozna ustalic repo. Ustaw REPO=owner/repo lub uruchom z katalogu z git remote." >&2
   exit 1
 fi
 
 echo "Repo: $REPO"
-echo "Plik: $LABELS_FILE"
 [[ "$DRY_RUN" == "1" ]] && echo "Tryb DRY-RUN (bez zmian)"
 
-# Parsuj YAML przez python3 (bez dodatkowych zależności)
-python3 - "$LABELS_FILE" <<'PYEOF'
-import sys, json, re
+ensure_label() {
+  local name="$1" color="$2" desc="$3"
+  if gh label list --repo "$REPO" --search "$name" --json name --jq '.[].name' | grep -Fxq "$name"; then
+    if [[ "$DRY_RUN" != "1" ]]; then
+      gh label edit "$name" --repo "$REPO" --color "$color" --description "$desc" >/dev/null
+    fi
+    echo "  update: $name"
+  else
+    if [[ "$DRY_RUN" != "1" ]]; then
+      gh label create "$name" --repo "$REPO" --color "$color" --description "$desc" >/dev/null
+    fi
+    echo "  create: $name"
+  fi
+}
 
-def parse_labels_yml(path):
-    labels = []
-    current = {}
-    with open(path) as f:
-        for line in f:
-            line = line.rstrip('\n')
-            m = re.match(r'^  - name:\s+"?([^"]+)"?', line)
-            if m:
-                if current:
-                    labels.append(current)
-                current = {"name": m.group(1)}
-            m = re.match(r'^    color:\s+"?([^"]+)"?', line)
-            if m and current:
-                current["color"] = m.group(1).lstrip('#')
-            m = re.match(r'^    description:\s+"?([^"]+)"?', line)
-            if m and current:
-                current["description"] = m.group(1).rstrip('"')
-    if current:
-        labels.append(current)
-    print(json.dumps(labels))
+# type/*
+ensure_label "type/bug"      "d73a4a" "Potwierdzony blad lub niepoprawne zachowanie"
+ensure_label "type/feature"  "a2eeef" "Prosba o nowa funkcjonalnosc lub ulepszenie"
+ensure_label "type/question" "d876e3" "Pytanie - preferuj GitHub Discussions"
+ensure_label "type/docs"     "0075ca" "Zmiana lub blad w dokumentacji"
+ensure_label "type/security" "b60205" "Bezpieczenstwo - nie ujawniaj publicznie"
 
-parse_labels_yml(sys.argv[1])
-PYEOF
-) | python3 -c "
-import sys, json, subprocess, os
+# status/*
+ensure_label "status/needs-triage" "fbca04" "Nowe zgloszenie, wymaga oceny"
+ensure_label "status/needs-info"   "fef2c0" "Brakuje srodowiska, logow lub szczegolów"
+ensure_label "status/needs-repro"  "fef2c0" "Potrzebne minimalne kroki reprodukcji"
+ensure_label "status/accepted"     "0e8a16" "Zaakceptowane do implementacji"
+ensure_label "status/duplicate"    "cfd3d7" "Duplikat innego zgloszenia"
+ensure_label "status/wontfix"      "ffffff" "Nie bedzie naprawiane / poza zakresem"
+ensure_label "status/blocked"      "e99695" "Zablokowane przez zaleznosc lub decyzje"
+ensure_label "status/in-progress"  "1d76db" "Praca w toku"
+ensure_label "status/review"       "1d76db" "Oczekuje na review PR"
 
-labels = json.load(sys.stdin)
-repo = os.environ['REPO']
-dry = os.environ.get('DRY_RUN', '0') == '1'
+# prio/*
+ensure_label "prio/p0" "b60205" "Krytyczny: bezpieczenstwo, utrata danych, crash"
+ensure_label "prio/p1" "d93f0b" "Wysoki: blokuje instalacje lub CI"
+ensure_label "prio/p2" "fbca04" "Normalny: wazny, ale jest obejscie"
+ensure_label "prio/p3" "cfd3d7" "Niski: nice-to-have"
 
-# Pobierz istniejące labele
-existing_raw = subprocess.check_output(['gh', 'label', 'list', '--repo', repo, '--json', 'name,color,description', '--limit', '200'])
-existing = {l['name']: l for l in json.loads(existing_raw)}
+# area/*
+ensure_label "area/cli"      "5319e7" "Komendy CLI, flagi, UX terminala"
+ensure_label "area/install"  "0052cc" "Instalacja, pakowanie, release"
+ensure_label "area/ci"       "0052cc" "GitHub Actions, workflows, CI/CD"
+ensure_label "area/indexing" "5319e7" "Logika indeksowania i ingestion"
+ensure_label "area/sqlite"   "5319e7" "SQLite, FTS, schematy, zapytania"
+ensure_label "area/docs"     "0075ca" "Dokumentacja i przyklady"
+ensure_label "area/security" "b60205" "Polityka i procesy bezpieczenstwa"
 
-created = updated = skipped = 0
-for label in labels:
-    name = label['name']
-    color = label.get('color', 'ededed')
-    desc = label.get('description', '')
-    if name in existing:
-        e = existing[name]
-        if e['color'].lower() == color.lower() and e.get('description','') == desc:
-            print(f'  skip   {name}')
-            skipped += 1
-        else:
-            print(f'  update {name}')
-            if not dry:
-                subprocess.run(['gh', 'label', 'edit', name, '--repo', repo,
-                                '--color', color, '--description', desc], check=True)
-            updated += 1
-    else:
-        print(f'  create {name}')
-        if not dry:
-            subprocess.run(['gh', 'label', 'create', name, '--repo', repo,
-                            '--color', color, '--description', desc], check=True)
-        created += 1
+# meta/*
+ensure_label "meta/feedback-week"    "bfdadc" "Zgloszenie z tygodnia feedbacku"
+ensure_label "meta/good-first-issue" "7057ff" "Dobre pierwsze zadanie dla nowego kontrybutora"
+ensure_label "meta/help-wanted"      "008672" "Poszukujemy pomocy / mile widziane PR"
 
-print(f'\nGotowe: {created} utworzono, {updated} zaktualizowano, {skipped} bez zmian.')
-"
+echo ""
+echo "Gotowe."
+

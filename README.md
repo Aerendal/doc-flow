@@ -2,6 +2,25 @@
 
 CLI do zarządzania dokumentacją i szablonami (Go, bez CGO). Release Candidate 2 (GA-ready).
 
+## Feedback Week (7 days)
+
+For the next 7 days we are collecting user feedback in a structured way.
+
+- **Bugs / actionable tasks**: open an Issue  
+  https://github.com/Aerendal/doc-flow/issues
+- **Questions / troubleshooting / ideas**: start a Discussion  
+  https://github.com/Aerendal/doc-flow/discussions
+- **Security vulnerabilities**: do NOT open an Issue/Discussion; follow SECURITY policy  
+  https://github.com/Aerendal/doc-flow/security/policy
+
+When reporting a bug, please include:
+- doc-flow version / commit
+- OS + architecture
+- exact command(s)
+- expected vs actual behavior
+- minimal steps to reproduce
+- logs (redacted: no secrets)
+
 ## Wymagania
 - Go 1.25+ (zainstalowane lokalnie)
 - Build ze źródeł używa `vendor/` (`-mod=vendor`) i nie wymaga pobierania modułów podczas standardowego builda/testów

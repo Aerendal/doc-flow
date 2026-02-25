@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Questions / Help (Discussions)"
+    url: "https://github.com/Aerendal/doc-flow/discussions"
+    about: "Use Discussions for questions, usage help, and general troubleshooting."
+  - name: "Ideas / Proposals (Discussions)"
+    url: "https://github.com/Aerendal/doc-flow/discussions"
+    about: "Use Discussions for feature ideas and design proposals."
+  - name: "Security reports (do NOT open an Issue)"
+    url: "https://github.com/Aerendal/doc-flow/security/policy"
+    about: "Report security vulnerabilities privately. Do not disclose publicly in Issues/Discussions."
+  - name: "Documentation"
+    url: "https://github.com/Aerendal/doc-flow/blob/main/README.md"
+    about: "Start here: installation, usage, and project overview."

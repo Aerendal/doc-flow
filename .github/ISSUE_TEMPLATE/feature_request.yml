@@ -1,0 +1,71 @@
+name: "Feature request"
+description: "Request or propose a change (new behavior, option, integration)."
+title: "[FEATURE]: "
+labels: ["type/feature", "status/needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For questions or brainstorming, prefer Discussions:
+        https://github.com/Aerendal/doc-flow/discussions
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Pre-flight checks"
+      options:
+        - label: "I searched existing issues/discussions and this is not a duplicate."
+          required: true
+        - label: "This is NOT a security report."
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / motivation"
+      description: "What problem are you trying to solve? Why is it important?"
+      placeholder: "Describe the pain point or missing capability."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposed solution"
+      description: "What would you like doc-flow to do? Be specific about CLI UX and outputs."
+      placeholder: |
+        - New subcommand / flag:
+        - Expected output format:
+        - Compatibility considerations:
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives considered"
+      description: "What did you try instead? Any workarounds?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope / impact"
+      description: "Which areas does this touch? (docs/cli/indexing/sqlite/ci/release/etc.)"
+      placeholder: "e.g. CLI + docs + release artifacts"
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      description: "When can we say it's done? Provide testable bullet points."
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true

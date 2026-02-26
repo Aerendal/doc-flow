@@ -3,10 +3,10 @@ changelog:
     - title: "Zmiany lamace kompatybilnosc"
       labels:
         - "breaking-change"
-    - title: "Nowe funkcjonalnosci"
+    - title: "Nowe funkcjonalności"
       labels:
         - "type/feature"
-    - title: "Naprawione bledy"
+    - title: "Naprawione błędy"
       labels:
         - "type/bug"
     - title: "Dokumentacja"

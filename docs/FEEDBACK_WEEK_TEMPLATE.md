@@ -31,9 +31,9 @@ Poza zakresem (przykłady):
 - Problemy specyficzne dla środowiska bez minimalnego repro
 
 Priorytety:
-- P0: bezpieczenstwo, utrata danych, crash, blokada release/CI
-- P1: blokuje typowy workflow lub instalacje
-- P2: wazne, ale jest obejscie
+- P0: bezpieczeństwo, utrata danych, crash, blokada release/CI
+- P1: blokuje typowy workflow lub instalację
+- P2: ważne, ale jest obejście
 - P3: nice-to-have
 
 ## 3. Metryki triage
@@ -51,7 +51,7 @@ Uwagi:
 
 Kolumny: ID | Tytuł | Priorytet | Obszar | Status | Uwagi
 
-- #<ID> | <tytuł> | P? | area/<x> | accepted/in-progress | <krotka uwaga>
+- #<ID> | <tytuł> | P? | area/<x> | accepted/in-progress | <krótka uwaga>
 
 ## 5. Zaakceptowane feature requesty
 
@@ -61,25 +61,25 @@ Motywacja:
 - <dlaczego>
 
 Proponowane podejście:
-- <co zmienia sie w CLI/docs/output>
+- <co zmienia się w CLI/docs/output>
 
 Acceptance criteria:
 - [ ] <warunek 1>
 - [ ] <warunek 2>
 
-Ryzyka i kompatybilnosc:
-- <ryzyko zlamana kompatybilnosci, ryzyko determinizmu>
+Ryzyka i kompatybilność:
+- <ryzyko złamania kompatybilności, ryzyko determinizmu>
 
 Plan opt-in:
-- <flaga/konfiguracja jesli potrzebna>
+- <flaga/konfiguracja jeśli potrzebna>
 
 ## 6. Duplikaty i poza zakresem (zamknięte)
 
 Duplikaty:
-- #<ID> do #<ID glownego> (powód)
+- #<ID> do #<ID głównego> (powód)
 
 Poza zakresem:
-- #<ID> (powód: <krotkie uzasadnienie>)
+- #<ID> (powód: <krótkie uzasadnienie>)
 
 ## 7. Podjęte decyzje
 
@@ -88,12 +88,12 @@ Poza zakresem:
 
 ## 8. Następne kroki (7-14 dni)
 
-1. <zadanie> (właściciel: <ty/spolecznosc>, cel: <data>)
+1. <zadanie> (właściciel: <ty/społeczność>, cel: <data>)
 2. <zadanie>
 
 ## 9. Gdzie można pomóc (help wanted)
 
-- #<ID> (label: meta/help-wanted) - <co zrobic> - <jak testowac>
+- #<ID> (label: meta/help-wanted) - <co zrobić> - <jak testować>
 
 ## 10. Linki
 

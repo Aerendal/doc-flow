@@ -15,7 +15,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-          # Oznacz jako stale po 5 dniach braku aktywnosci jesli czeka na dane od uzytkownika
+          # Oznacz jako stale po 5 dniach braku aktywności jeśli czeka na dane od użytkownika
           stale-issue-label: "status/stale"
           exempt-issue-labels: "status/accepted,status/in-progress,status/blocked,prio/p0,prio/p1"
 
@@ -23,11 +23,11 @@ jobs:
           days-before-close: 3
 
           stale-issue-message: >
-            Brak odpowiedzi od 5 dni. Jezeli uzupelnisz wymagane informacje (wersja, OS, kroki reprodukcji),
-            chetnie wroce do oceny. Zamkne ten watek za 3 dni jezeli nie bede mial wiecej danych.
+            Brak odpowiedzi od 5 dni. Jeżeli uzupełnisz wymagane informacje (wersja, OS, kroki reprodukcji),
+            chętnie wrócę do oceny. Zamknę ten wątek za 3 dni jeżeli nie będę miał więcej danych.
 
           close-issue-message: >
-            Zamykam z powodu braku danych do weryfikacji. Mozesz otworzyc ponownie z wymaganymi informacjami.
+            Zamykam z powodu braku danych do weryfikacji. Możesz otworzyć ponownie z wymaganymi informacjami.
 
           # Pull Requesty - nie dotykaj automatycznie
           days-before-pr-stale: -1

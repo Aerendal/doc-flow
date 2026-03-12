@@ -106,7 +106,7 @@ func TestApplyPlanFailsOnReadOnlyDirectory(t *testing.T) {
 	if err := os.Chmod(dir, 0o555); err != nil {
 		t.Fatal(err)
 	}
-	defer os.Chmod(dir, 0o755)
+	defer func() { _ = os.Chmod(dir, 0o755) }()
 
 	if err := ApplyPlan(plan, ApplyOptions{Root: tmp}); err == nil {
 		t.Fatalf("expected write error in read-only directory")

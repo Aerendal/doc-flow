@@ -43,7 +43,7 @@ func TestLoadSectionSchemaFails(t *testing.T) {
 	yaml := `description: brak id
 sections: []`
 	tmp := t.TempDir() + "/schema.yaml"
-	os.WriteFile(tmp, []byte(yaml), 0o644)
+	_ = os.WriteFile(tmp, []byte(yaml), 0o644)
 	if _, err := LoadSectionSchema(tmp); err == nil {
 		t.Fatalf("expected error for missing id")
 	}

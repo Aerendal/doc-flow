@@ -11,7 +11,7 @@ func TestSQLiteCachePutGetHitAndMiss(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	defer c.Close()
+	defer func() { _ = c.Close() }()
 
 	fp := Fingerprint{Size: 10, MTimeUnix: 12345, MetaChecksum: "m1", BodyChecksum: "b1"}
 	in := DocumentFacts{
@@ -69,7 +69,7 @@ func TestSQLiteCacheSchemaVersionReset(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	defer c2.Close()
+	defer func() { _ = c2.Close() }()
 
 	_, hit, err := c2.Get("a.md", Fingerprint{Size: 1, MTimeUnix: 1})
 	if err != nil {

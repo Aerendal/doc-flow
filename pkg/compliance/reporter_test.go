@@ -13,7 +13,7 @@ import (
 func TestReport(t *testing.T) {
 	tmpDir := t.TempDir()
 	file := tmpDir + "/doc.md"
-	os.WriteFile(file, []byte("---\ntitle: T\ndoc_id: a\ndoc_type: guide\nstatus: draft\n---\n# T\n## Przegląd\ntext\n"), 0o644)
+	_ = os.WriteFile(file, []byte("---\ntitle: T\ndoc_id: a\ndoc_type: guide\nstatus: draft\n---\n# T\n## Przegląd\ntext\n"), 0o644)
 
 	idx := index.New()
 	idx.Add(&index.DocumentRecord{DocID: "a", Path: file, Status: "draft", DocType: "guide"})

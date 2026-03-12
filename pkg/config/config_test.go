@@ -103,7 +103,7 @@ func TestLoadMissing(t *testing.T) {
 func TestLoadInvalidYAML(t *testing.T) {
 	dir := t.TempDir()
 	cfgPath := filepath.Join(dir, "bad.yaml")
-	os.WriteFile(cfgPath, []byte("{{{{invalid"), 0644)
+	_ = os.WriteFile(cfgPath, []byte("{{{{invalid"), 0644)
 
 	_, err := Load(cfgPath)
 	if err == nil {

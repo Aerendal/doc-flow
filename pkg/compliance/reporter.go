@@ -238,14 +238,14 @@ func SaveHTML(sum *Summary, path string) error {
 	b.WriteString("<html><head><meta charset=\"utf-8\"><title>Compliance Report</title>")
 	b.WriteString(`<style>body{font-family:Arial, sans-serif;max-width:900px;margin:20px auto;}table{border-collapse:collapse;width:100%;}th,td{border:1px solid #ddd;padding:6px;text-align:left;}th{background:#f5f5f5;}code{background:#f2f2f2;padding:2px 4px;}</style></head><body>`)
 	b.WriteString("<h1>Compliance Report</h1>")
-	b.WriteString(fmt.Sprintf("<p>Documents: %d | Passed: %d | Failed: %d | Pass rate: %.1f%%</p>", sum.Documents, sum.Passed, sum.Failed, sum.PassRate*100))
+	fmt.Fprintf(&b, "<p>Documents: %d | Passed: %d | Failed: %d | Pass rate: %.1f%%</p>", sum.Documents, sum.Passed, sum.Failed, sum.PassRate*100)
 	b.WriteString(bar("Passed", sum.Passed, sum.Documents))
 	b.WriteString(bar("Failed", sum.Failed, sum.Documents))
 
 	if len(sum.ViolationsCount) > 0 {
 		b.WriteString("<h2>Violations by type</h2><table><tr><th>Type</th><th>Count</th></tr>")
 		for k, v := range sum.ViolationsCount {
-			b.WriteString(fmt.Sprintf("<tr><td>%s</td><td>%d</td></tr>", k, v))
+			fmt.Fprintf(&b, "<tr><td>%s</td><td>%d</td></tr>", k, v)
 		}
 		b.WriteString("</table>")
 	}
@@ -256,8 +256,8 @@ func SaveHTML(sum *Summary, path string) error {
 			if len(d.Violations) == 0 {
 				continue
 			}
-			b.WriteString(fmt.Sprintf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>",
-				d.Path, d.DocID, d.Status, d.DocType, strings.Join(d.Violations, ", ")))
+			fmt.Fprintf(&b, "<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>",
+				d.Path, d.DocID, d.Status, d.DocType, strings.Join(d.Violations, ", "))
 		}
 		b.WriteString("</table>")
 	}

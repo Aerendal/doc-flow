@@ -18,7 +18,7 @@ func setupTestDir(t *testing.T) string {
 		"node_modules",
 	}
 	for _, d := range dirs {
-		os.MkdirAll(filepath.Join(dir, d), 0755)
+		_ = os.MkdirAll(filepath.Join(dir, d), 0755)
 	}
 
 	files := map[string]string{
@@ -32,7 +32,7 @@ func setupTestDir(t *testing.T) string {
 		"node_modules/pkg.md":  "# Node pkg",
 	}
 	for name, content := range files {
-		os.WriteFile(filepath.Join(dir, name), []byte(content), 0644)
+		_ = os.WriteFile(filepath.Join(dir, name), []byte(content), 0644)
 	}
 
 	return dir

@@ -207,7 +207,7 @@ func TestScanPatternsSmall(t *testing.T) {
         tmpDir := t.TempDir()
         for _, name := range []string{"doc1.md", "doc2.md"} {
                 content := "---\ntitle: Test\n---\n\n# Title\n\n## Sekcja A\n\n## Sekcja B\n"
-                os.WriteFile(filepath.Join(tmpDir, name), []byte(content), 0o644)
+                _ = os.WriteFile(filepath.Join(tmpDir, name), []byte(content), 0o644)
         }
 
         patterns, err := ScanPatterns(tmpDir, nil)

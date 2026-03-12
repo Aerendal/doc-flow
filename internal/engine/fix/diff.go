@@ -25,9 +25,9 @@ func UnifiedDiff(path, before, after string) string {
 	}
 
 	var b strings.Builder
-	b.WriteString(fmt.Sprintf("--- a/%s\n", path))
-	b.WriteString(fmt.Sprintf("+++ b/%s\n", path))
-	b.WriteString(fmt.Sprintf("@@ -%s +%s @@\n", formatRange(oldStart, len(oldLines)), formatRange(newStart, len(newLines))))
+	fmt.Fprintf(&b, "--- a/%s\n", path)
+	fmt.Fprintf(&b, "+++ b/%s\n", path)
+	fmt.Fprintf(&b, "@@ -%s +%s @@\n", formatRange(oldStart, len(oldLines)), formatRange(newStart, len(newLines)))
 	for _, line := range oldLines {
 		b.WriteString("-")
 		b.WriteString(line)

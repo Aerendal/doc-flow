@@ -66,7 +66,7 @@ func TestParseSkipsMissingLevels(t *testing.T) {
 	if deep.Text != "Deep" {
 		t.Fatalf("deep text = %s, want Deep", deep.Text)
 	}
-	if deep.Children != nil && len(deep.Children) != 0 {
+	if len(deep.Children) != 0 {
 		t.Fatalf("deep should have no children, got %d", len(deep.Children))
 	}
 }

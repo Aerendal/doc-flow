@@ -11,7 +11,7 @@ func TestGenerateWithPreview(t *testing.T) {
 	dir := t.TempDir()
 	tmpl := filepath.Join(dir, "tmpl.md")
 	out := filepath.Join(dir, "out.md")
-	os.WriteFile(tmpl, []byte("# {{DOC_ID}}\nType: {{DOC_TYPE}}\nBody"), 0o644)
+	_ = os.WriteFile(tmpl, []byte("# {{DOC_ID}}\nType: {{DOC_TYPE}}\nBody"), 0o644)
 
 	item := DocItem{
 		DocID:        "doc-1",

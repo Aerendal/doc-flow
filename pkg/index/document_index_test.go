@@ -320,8 +320,8 @@ This is a test document without YAML frontmatter.
 Just plain markdown content.
 `
 
-	os.WriteFile(filepath.Join(tmpDir, "no_fm_doc1.md"), []byte(doc1), 0o644)
-	os.WriteFile(filepath.Join(tmpDir, "no_fm_doc2.md"), []byte(doc2), 0o644)
+	_ = os.WriteFile(filepath.Join(tmpDir, "no_fm_doc1.md"), []byte(doc1), 0o644)
+	_ = os.WriteFile(filepath.Join(tmpDir, "no_fm_doc2.md"), []byte(doc2), 0o644)
 
 	idx, err := BuildIndex(tmpDir, nil)
 	if err != nil {
@@ -368,7 +368,7 @@ func TestLoadCorruptedChecksum(t *testing.T) {
 
 	data, _ := os.ReadFile(indexPath)
 	corrupted := strings.Replace(string(data), idx.Checksum, "deadbeefdeadbeef", 1)
-	os.WriteFile(indexPath, []byte(corrupted), 0o644)
+	_ = os.WriteFile(indexPath, []byte(corrupted), 0o644)
 
 	_, err := LoadJSON(indexPath)
 	if err == nil {

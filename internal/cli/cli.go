@@ -68,7 +68,7 @@ func Execute() error {
 				f, err := os.Create(memProfile)
 				if err == nil {
 					_ = pprof.WriteHeapProfile(f)
-					f.Close()
+					_ = f.Close()
 				}
 			}
 		},

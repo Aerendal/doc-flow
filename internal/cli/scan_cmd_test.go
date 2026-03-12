@@ -54,14 +54,14 @@ context_sources: ["seed"]
 	os.Stderr = wErr
 
 	if err := cmd.Execute(); err != nil {
-		wOut.Close()
-		wErr.Close()
+		_ = wOut.Close()
+		_ = wErr.Close()
 		os.Stdout = stdout
 		os.Stderr = stderr
 		t.Fatalf("scanCmd.Execute() error = %v", err)
 	}
-	wOut.Close()
-	wErr.Close()
+	_ = wOut.Close()
+	_ = wErr.Close()
 	os.Stdout = stdout
 	os.Stderr = stderr
 

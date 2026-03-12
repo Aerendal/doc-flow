@@ -1,6 +1,6 @@
 # Contributing
 
-Dziękujemy za zainteresowanie projektem.
+Dziękuję za zainteresowanie projektem.
 
 To repo jest utrzymywane bez SLA i bez gwarantowanego wsparcia. Pull Requesty są mile widziane, ale review i akceptacja nie są gwarantowane.
 

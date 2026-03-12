@@ -41,6 +41,6 @@ If you accidentally posted secrets, edit/delete the content and rotate the secre
 ## Response expectations
 
 This project is maintained on a best-effort basis. Response times are not guaranteed.
-- We may ask for additional info or a minimal reproduction.
+- I may ask for additional info or a minimal reproduction.
 - Items may be labelled as `needs-info` / `needs-repro` / `duplicate` / `wontfix`.
 - Issues and pull requests may remain unaddressed for extended periods.

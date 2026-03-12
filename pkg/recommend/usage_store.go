@@ -45,7 +45,7 @@ func (s *UsageStore) Save() error {
 	if err != nil {
 		return fmt.Errorf("marshal usage: %w", err)
 	}
-	if err := os.WriteFile(s.Path, data, 0o644); err != nil {
+	if err := os.WriteFile(s.Path, data, 0o600); err != nil {
 		return fmt.Errorf("write usage: %w", err)
 	}
 	return nil

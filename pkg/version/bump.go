@@ -31,7 +31,7 @@ func BumpPatch(v string) string {
 func parse(v string) (int, int, int) {
 	v = strings.TrimPrefix(v, "v")
 	var maj, min, patch int
-	fmt.Sscanf(v, "%d.%d.%d", &maj, &min, &patch)
+	_, _ = fmt.Sscanf(v, "%d.%d.%d", &maj, &min, &patch)
 	if maj == 0 && min == 0 && patch == 0 {
 		maj = 1
 	}

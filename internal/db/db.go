@@ -20,7 +20,7 @@ type Store struct {
 func New(dbPath string) (*Store, error) {
         dir := filepath.Dir(dbPath)
         if dir != "." && dir != "" {
-                if err := os.MkdirAll(dir, 0755); err != nil {
+                if err := os.MkdirAll(dir, 0750); err != nil {
                         return nil, fmt.Errorf("cannot create directory %s: %w", dir, err)
                 }
         }
@@ -154,7 +154,7 @@ func (s *Store) ListPhases(statusFilter string) ([]model.Phase, error) {
         if err != nil {
                 return nil, err
         }
-        defer rows.Close()
+        defer func() { _ = rows.Close() }()
 
         var phases []model.Phase
         for rows.Next() {
@@ -184,7 +184,7 @@ func (s *Store) getPhaseDependencies(phaseID int) ([]int, error) {
         if err != nil {
                 return nil, err
         }
-        defer rows.Close()
+        defer func() { _ = rows.Close() }()
 
         var deps []int
         for rows.Next() {
@@ -289,7 +289,7 @@ func (s *Store) ListTasks(phaseDay int) ([]model.Task, error) {
         if err != nil {
                 return nil, err
         }
-        defer rows.Close()
+        defer func() { _ = rows.Close() }()
 
         var tasks []model.Task
         for rows.Next() {
@@ -312,7 +312,7 @@ func (s *Store) GetStats() (*model.ProjectStats, error) {
         if err != nil {
                 return nil, err
         }
-        defer rows.Close()
+        defer func() { _ = rows.Close() }()
 
         for rows.Next() {
                 var status string

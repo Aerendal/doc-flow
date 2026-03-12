@@ -135,7 +135,7 @@ func (l *Logger) log(level Level, msg string, args ...any) {
 			entry.Fields = l.fields
 		}
 		data, _ := json.Marshal(entry)
-		fmt.Fprintln(l.out, string(data))
+		_, _ = fmt.Fprintln(l.out, string(data))
 		return
 	}
 
@@ -143,7 +143,7 @@ func (l *Logger) log(level Level, msg string, args ...any) {
 	for k, v := range l.fields {
 		fieldsStr += fmt.Sprintf(" %s=%s", k, v)
 	}
-	fmt.Fprintf(l.out, "%s [%s] %s%s\n", now, level.String(), formatted, fieldsStr)
+	_, _ = fmt.Fprintf(l.out, "%s [%s] %s%s\n", now, level.String(), formatted, fieldsStr)
 }
 
 func (l *Logger) Debug(msg string, args ...any) {

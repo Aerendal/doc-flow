@@ -52,7 +52,7 @@ func healthCmd() *cobra.Command {
 				)
 			}
 			runDir := filepath.Join(bundleDir, runID)
-			if err := os.MkdirAll(runDir, 0o755); err != nil {
+			if err := os.MkdirAll(runDir, 0o750); err != nil {
 				return runtimeError(
 					"DOCFLOW.RUNTIME.BUNDLE_DIR_CREATE_FAILED",
 					fmt.Sprintf("nie można utworzyć katalogu bundle %s", runDir),
@@ -219,7 +219,7 @@ func healthCmd() *cobra.Command {
 					map[string]any{"path": summaryJSONPath},
 				)
 			}
-			if err := os.WriteFile(summaryMDPath, []byte(renderHealthSummaryMarkdown(summary, runDir)), 0o644); err != nil {
+			if err := os.WriteFile(summaryMDPath, []byte(renderHealthSummaryMarkdown(summary, runDir)), 0o600); err != nil {
 				return runtimeError(
 					"DOCFLOW.RUNTIME.SUMMARY_WRITE_FAILED",
 					fmt.Sprintf("nie można zapisać %s", summaryMDPath),
@@ -415,7 +415,7 @@ func resolveHealthBaselinePaths(mode, baselineDir string) (string, string, []str
 }
 
 func loadValidateReport(path string) (validateReportJSON, error) {
-	data, err := os.ReadFile(path)
+	data, err := os.ReadFile(path) // #nosec G304
 	if err != nil {
 		return validateReportJSON{}, err
 	}
@@ -427,7 +427,7 @@ func loadValidateReport(path string) (validateReportJSON, error) {
 }
 
 func loadComplianceReport(path string) (compliance.Summary, error) {
-	data, err := os.ReadFile(path)
+	data, err := os.ReadFile(path) // #nosec G304
 	if err != nil {
 		return compliance.Summary{}, err
 	}
@@ -443,38 +443,38 @@ func writeHealthJSONFile(path string, value any) error {
 	if err != nil {
 		return err
 	}
-	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(path), 0o750); err != nil {
 		return err
 	}
-	return os.WriteFile(path, append(data, '\n'), 0o644)
+	return os.WriteFile(path, append(data, '\n'), 0o600)
 }
 
 func renderHealthSummaryMarkdown(summary healthSummary, runDir string) string {
 	var b strings.Builder
 	b.WriteString("# docflow health summary\n\n")
-	b.WriteString(fmt.Sprintf("- Run ID: `%s`\n", summary.RunID))
-	b.WriteString(fmt.Sprintf("- Mode: `%s`\n", summary.Mode))
-	b.WriteString(fmt.Sprintf("- Overall exit: `%d`\n", summary.OverallExit))
-	b.WriteString(fmt.Sprintf("- Bundle: `%s`\n", runDir))
+	fmt.Fprintf(&b, "- Run ID: `%s`\n", summary.RunID)
+	fmt.Fprintf(&b, "- Mode: `%s`\n", summary.Mode)
+	fmt.Fprintf(&b, "- Overall exit: `%d`\n", summary.OverallExit)
+	fmt.Fprintf(&b, "- Bundle: `%s`\n", runDir)
 	b.WriteString("\n## Validate\n")
-	b.WriteString(fmt.Sprintf("- exit: `%d` (json=%d, sarif=%d)\n", summary.Validate.Exit, summary.Validate.JSONExit, summary.Validate.SARIFExit))
-	b.WriteString(fmt.Sprintf("- new errors/warnings: `%d/%d`\n", summary.Validate.NewErrors, summary.Validate.NewWarnings))
-	b.WriteString(fmt.Sprintf("- report: `%s`\n", filepath.Join(runDir, summary.Validate.JSON)))
-	b.WriteString(fmt.Sprintf("- sarif: `%s`\n", filepath.Join(runDir, summary.Validate.SARIF)))
+	fmt.Fprintf(&b, "- exit: `%d` (json=%d, sarif=%d)\n", summary.Validate.Exit, summary.Validate.JSONExit, summary.Validate.SARIFExit)
+	fmt.Fprintf(&b, "- new errors/warnings: `%d/%d`\n", summary.Validate.NewErrors, summary.Validate.NewWarnings)
+	fmt.Fprintf(&b, "- report: `%s`\n", filepath.Join(runDir, summary.Validate.JSON))
+	fmt.Fprintf(&b, "- sarif: `%s`\n", filepath.Join(runDir, summary.Validate.SARIF))
 	if summary.Validate.Error != "" {
-		b.WriteString(fmt.Sprintf("- error: `%s`\n", summary.Validate.Error))
+		fmt.Fprintf(&b, "- error: `%s`\n", summary.Validate.Error)
 	}
 	if summary.Validate.ParseError != "" {
-		b.WriteString(fmt.Sprintf("- parse_error: `%s`\n", summary.Validate.ParseError))
+		fmt.Fprintf(&b, "- parse_error: `%s`\n", summary.Validate.ParseError)
 	}
 	b.WriteString("\n## Compliance\n")
-	b.WriteString(fmt.Sprintf("- exit: `%d`\n", summary.Compliance.Exit))
+	fmt.Fprintf(&b, "- exit: `%d`\n", summary.Compliance.Exit)
 	if summary.Compliance.Skipped {
 		b.WriteString("- skipped: `true`\n")
 	} else {
-		b.WriteString(fmt.Sprintf("- new failed: `%d`\n", summary.Compliance.NewFailed))
+		fmt.Fprintf(&b, "- new failed: `%d`\n", summary.Compliance.NewFailed)
 	}
-	b.WriteString(fmt.Sprintf("- report: `%s`\n", filepath.Join(runDir, summary.Compliance.JSON)))
+	fmt.Fprintf(&b, "- report: `%s`\n", filepath.Join(runDir, summary.Compliance.JSON))
 	if len(summary.Compliance.NewViolations) > 0 {
 		keys := make([]string, 0, len(summary.Compliance.NewViolations))
 		for k := range summary.Compliance.NewViolations {
@@ -483,14 +483,14 @@ func renderHealthSummaryMarkdown(summary healthSummary, runDir string) string {
 		sort.Strings(keys)
 		b.WriteString("- new violations:\n")
 		for _, k := range keys {
-			b.WriteString(fmt.Sprintf("  - `%s`: %d\n", k, summary.Compliance.NewViolations[k]))
+			fmt.Fprintf(&b, "  - `%s`: %d\n", k, summary.Compliance.NewViolations[k])
 		}
 	}
 	if summary.Compliance.Error != "" {
-		b.WriteString(fmt.Sprintf("- error: `%s`\n", summary.Compliance.Error))
+		fmt.Fprintf(&b, "- error: `%s`\n", summary.Compliance.Error)
 	}
 	if summary.Compliance.ParseError != "" {
-		b.WriteString(fmt.Sprintf("- parse_error: `%s`\n", summary.Compliance.ParseError))
+		fmt.Fprintf(&b, "- parse_error: `%s`\n", summary.Compliance.ParseError)
 	}
 	return b.String()
 }

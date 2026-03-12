@@ -56,7 +56,7 @@ func GenerateSchemas(report *PatternReport, topN int) []*SectionSchema {
 }
 
 func SaveSchemaYAML(schema *SectionSchema, dir string) error {
-	if err := os.MkdirAll(dir, 0o755); err != nil {
+	if err := os.MkdirAll(dir, 0o750); err != nil {
 		return fmt.Errorf("nie można utworzyć katalogu %s: %w", dir, err)
 	}
 
@@ -66,7 +66,7 @@ func SaveSchemaYAML(schema *SectionSchema, dir string) error {
 	}
 
 	path := filepath.Join(dir, schema.PatternID+".yaml")
-	if err := os.WriteFile(path, data, 0o644); err != nil {
+	if err := os.WriteFile(path, data, 0o600); err != nil {
 		return fmt.Errorf("błąd zapisu schematu do %s: %w", path, err)
 	}
 	return nil

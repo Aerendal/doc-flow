@@ -189,8 +189,8 @@ func writeValidateSARIFReport(report validateReportJSON, output string) error {
 		_, err = os.Stdout.Write(append(data, '\n'))
 		return err
 	}
-	if err := os.MkdirAll(filepath.Dir(output), 0o755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(output), 0o750); err != nil {
 		return fmt.Errorf("błąd utworzenia katalogu dla raportu SARIF: %w", err)
 	}
-	return os.WriteFile(output, data, 0o644)
+	return os.WriteFile(output, data, 0o600)
 }

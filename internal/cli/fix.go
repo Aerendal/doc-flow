@@ -182,10 +182,10 @@ func writeFixJSON(plan engfix.Plan, output string) error {
 		_, err = os.Stdout.Write(append(data, '\n'))
 		return err
 	}
-	if err := os.MkdirAll(filepath.Dir(output), 0o755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(output), 0o750); err != nil {
 		return err
 	}
-	return os.WriteFile(output, data, 0o644)
+	return os.WriteFile(output, data, 0o600)
 }
 
 func writeFixDiff(plan engfix.Plan, output string) error {
@@ -194,8 +194,8 @@ func writeFixDiff(plan engfix.Plan, output string) error {
 		_, err := os.Stdout.Write([]byte(diff))
 		return err
 	}
-	if err := os.MkdirAll(filepath.Dir(output), 0o755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(output), 0o750); err != nil {
 		return err
 	}
-	return os.WriteFile(output, []byte(diff), 0o644)
+	return os.WriteFile(output, []byte(diff), 0o600)
 }

@@ -356,8 +356,8 @@ func main() {
         jsonFile, _ := os.Create("tools/scripts/analysis_results.json")
         enc := json.NewEncoder(jsonFile)
         enc.SetIndent("", "  ")
-        enc.Encode(jsonData)
-        jsonFile.Close()
+        _ = enc.Encode(jsonData)
+        _ = jsonFile.Close()
 
         fmt.Println("\nJSON zapisany do tools/scripts/analysis_results.json")
 }

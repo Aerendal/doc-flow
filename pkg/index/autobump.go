@@ -64,7 +64,7 @@ func AutoBumpVersions(changes []DocChange, docsRoot string) ([]VersionBump, erro
 		}
 
 		out := fmt.Sprintf("---\n%s---\n%s", string(newYaml), res.Body)
-		if err := os.WriteFile(abs, []byte(out), 0o644); err != nil {
+		if err := os.WriteFile(abs, []byte(out), 0o600); err != nil {
 			return bumps, fmt.Errorf("write %s: %w", abs, err)
 		}
 

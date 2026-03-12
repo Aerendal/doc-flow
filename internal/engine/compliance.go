@@ -43,7 +43,7 @@ func BuildComplianceReport(sum *compliance.Summary) ComplianceReport {
 			SchemaVersion:   sum.Baseline.SchemaVersion,
 			IdentityVersion: sum.Baseline.IdentityVersion,
 		}
-		report.ReportViewMeta.Against = sum.Baseline.Path
+		report.Against = sum.Baseline.Path
 	}
 
 	for _, doc := range sum.Docs {

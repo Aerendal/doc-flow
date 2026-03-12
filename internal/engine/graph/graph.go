@@ -323,9 +323,7 @@ func normalizeLinkPath(srcPath, target string) string {
 	if target == "" {
 		return ""
 	}
-	if strings.HasPrefix(target, "/") {
-		target = strings.TrimPrefix(target, "/")
-	}
+	target = strings.TrimPrefix(target, "/")
 	srcDir := filepath.Dir(srcPath)
 	joined := filepath.Clean(filepath.Join(srcDir, target))
 	return index.NormalizePath(joined)

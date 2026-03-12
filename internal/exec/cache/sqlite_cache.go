@@ -18,7 +18,7 @@ type sqliteCache struct {
 }
 
 func OpenSQLite(path string) (Cache, error) {
-	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(path), 0o750); err != nil {
 		return nil, fmt.Errorf("cannot create cache dir: %w", err)
 	}
 

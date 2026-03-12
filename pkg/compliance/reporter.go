@@ -174,9 +174,6 @@ func validateAgainstRules(content string, rec *index.DocumentRecord, rules *gove
 			}
 		}
 	}
-	if sr.MinQuality > 0 && rec.Checksum == "" {
-		// placeholder; cannot compute quality
-	}
 	if !sr.AllowEmptySections {
 		metrics := sections.ComputeMetrics(content)
 		if metrics.Empty > 0 {
@@ -224,7 +221,7 @@ func SaveJSON(sum *Summary, path string) error {
 		_, err = os.Stdout.Write(data)
 		return err
 	}
-	return os.WriteFile(path, data, 0o644)
+	return os.WriteFile(path, data, 0o600)
 }
 
 // SaveHTML renders a minimal HTML dashboard (no external assets).
@@ -266,5 +263,5 @@ func SaveHTML(sum *Summary, path string) error {
 	}
 
 	b.WriteString("</body></html>")
-	return os.WriteFile(path, []byte(b.String()), 0o644)
+	return os.WriteFile(path, []byte(b.String()), 0o600)
 }

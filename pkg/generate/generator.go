@@ -21,10 +21,10 @@ func Generate(item DocItem, previewLines int) (string, error) {
 		content = replacePlaceholder(content, "TEMPLATE_VERSION", item.TemplateVersion)
 	}
 
-	if err := os.MkdirAll(filepath.Dir(item.OutputPath), 0o755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(item.OutputPath), 0o750); err != nil {
 		return "", fmt.Errorf("cannot create output dir: %w", err)
 	}
-	if err := os.WriteFile(item.OutputPath, []byte(content), 0o644); err != nil {
+	if err := os.WriteFile(item.OutputPath, []byte(content), 0o600); err != nil {
 		return "", fmt.Errorf("cannot write output %s: %w", item.OutputPath, err)
 	}
 	return preview(content, previewLines), nil

@@ -145,7 +145,7 @@ func (idx *DocumentIndex) SaveJSONWithOptions(path string, opts SaveOptions) err
 	}
 
 	dir := filepath.Dir(path)
-	if err := os.MkdirAll(dir, 0o755); err != nil {
+	if err := os.MkdirAll(dir, 0o750); err != nil {
 		return fmt.Errorf("nie można utworzyć katalogu %s: %w", dir, err)
 	}
 
@@ -154,7 +154,7 @@ func (idx *DocumentIndex) SaveJSONWithOptions(path string, opts SaveOptions) err
 		return fmt.Errorf("błąd serializacji indeksu: %w", err)
 	}
 
-	if err := os.WriteFile(path, data, 0o644); err != nil {
+	if err := os.WriteFile(path, data, 0o600); err != nil {
 		return fmt.Errorf("błąd zapisu indeksu do %s: %w", path, err)
 	}
 

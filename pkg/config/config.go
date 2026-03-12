@@ -82,7 +82,7 @@ func Default() *Config {
 func Load(path string) (*Config, error) {
 	cfg := Default()
 
-	data, err := os.ReadFile(path)
+	data, err := os.ReadFile(path) // #nosec G304
 	if err != nil {
 		if os.IsNotExist(err) {
 			return cfg, nil

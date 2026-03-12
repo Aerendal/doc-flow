@@ -25,6 +25,6 @@ func fixGuidedCmd() *cobra.Command {
 	}
 	cmd.Flags().StringVar(&root, "root", "", "katalog z docflow.yaml")
 	cmd.Flags().StringVar(&logFile, "log", "LOGS/GUIDED_FIX_BIN_DAY_232.md", "plik logu guided fix")
-	cmd.MarkFlagRequired("root")
+	_ = cmd.MarkFlagRequired("root")
 	return cmd
 }

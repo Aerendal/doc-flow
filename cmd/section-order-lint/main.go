@@ -104,8 +104,8 @@ func main() {
 	}
 
 	out, _ := json.MarshalIndent(results, "", "  ")
-	_ = os.MkdirAll(".docflow", 0o755)
-	_ = os.WriteFile(".docflow/section_order_lint.json", out, 0o644)
+	_ = os.MkdirAll(".docflow", 0o750)
+	_ = os.WriteFile(".docflow/section_order_lint.json", out, 0o600)
 	os.Exit(exit)
 }
 
@@ -114,7 +114,7 @@ func parseFile(path string) (string, []string) {
 	if err != nil {
 		return "", nil
 	}
-	defer f.Close()
+	defer func() { _ = f.Close() }()
 
 	sc := bufio.NewScanner(f)
 	docType := ""

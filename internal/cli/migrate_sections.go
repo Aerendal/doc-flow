@@ -53,7 +53,7 @@ func migrateSectionsCmd() *cobra.Command {
 					fmt.Printf("  %s -> %s\n", h.From, h.To)
 				}
 				if apply {
-					if err := os.WriteFile(f.Path, []byte(newContent), 0o644); err != nil {
+					if err := os.WriteFile(f.Path, []byte(newContent), 0o600); err != nil {
 						return fmt.Errorf("write %s: %w", rel, err)
 					}
 				}

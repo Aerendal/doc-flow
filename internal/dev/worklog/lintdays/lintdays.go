@@ -14,27 +14,27 @@ import (
 // 0 = ok, 1 = lint issues found, 2 = usage/runtime error.
 func Run(root string, out, errOut io.Writer) int {
 	if strings.TrimSpace(root) == "" {
-		fmt.Fprintln(errOut, "lint-days: --root cannot be empty")
+		_, _ = fmt.Fprintln(errOut, "lint-days: --root cannot be empty")
 		return 2
 	}
 
 	info, err := os.Stat(root)
 	if err != nil {
 		if os.IsNotExist(err) {
-			fmt.Fprintf(out, "lint-days: root does not exist, skipping: %s\n", root)
+			_, _ = fmt.Fprintf(out, "lint-days: root does not exist, skipping: %s\n", root)
 			return 0
 		}
-		fmt.Fprintf(errOut, "lint-days: cannot stat root %q: %v\n", root, err)
+		_, _ = fmt.Fprintf(errOut, "lint-days: cannot stat root %q: %v\n", root, err)
 		return 2
 	}
 	if !info.IsDir() {
-		fmt.Fprintf(errOut, "lint-days: root is not a directory: %s\n", root)
+		_, _ = fmt.Fprintf(errOut, "lint-days: root is not a directory: %s\n", root)
 		return 2
 	}
 
 	entries, err := os.ReadDir(root)
 	if err != nil {
-		fmt.Fprintf(errOut, "lint-days: cannot read root %q: %v\n", root, err)
+		_, _ = fmt.Fprintf(errOut, "lint-days: cannot read root %q: %v\n", root, err)
 		return 2
 	}
 
@@ -57,22 +57,22 @@ func Run(root string, out, errOut io.Writer) int {
 	for _, p := range files {
 		ok, line, readErr := hasHeadingLine(p)
 		if readErr != nil {
-			fmt.Fprintf(errOut, "lint-days: read error %s: %v\n", p, readErr)
+			_, _ = fmt.Fprintf(errOut, "lint-days: read error %s: %v\n", p, readErr)
 			issues++
 			continue
 		}
 		if !ok {
-			fmt.Fprintf(errOut, "lint-days: missing H1 heading in %s (first line: %q)\n", p, line)
+			_, _ = fmt.Fprintf(errOut, "lint-days: missing H1 heading in %s (first line: %q)\n", p, line)
 			issues++
 		}
 	}
 
 	if issues > 0 {
-		fmt.Fprintf(errOut, "lint-days: found %d issue(s)\n", issues)
+		_, _ = fmt.Fprintf(errOut, "lint-days: found %d issue(s)\n", issues)
 		return 1
 	}
 
-	fmt.Fprintf(out, "lint-days: ok (%d file(s))\n", len(files))
+	_, _ = fmt.Fprintf(out, "lint-days: ok (%d file(s))\n", len(files))
 	return 0
 }
 
@@ -81,7 +81,7 @@ func hasHeadingLine(path string) (ok bool, firstLine string, err error) {
 	if err != nil {
 		return false, "", err
 	}
-	defer f.Close()
+	defer func() { _ = f.Close() }()
 
 	sc := bufio.NewScanner(f)
 	if !sc.Scan() {

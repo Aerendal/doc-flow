@@ -129,7 +129,7 @@ func initCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			if err := store.InitProject(name); err != nil {
 				return err
@@ -154,9 +154,9 @@ func importCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
-			data, err := os.ReadFile(filePath)
+			data, err := os.ReadFile(filePath) // #nosec G304
 			if err != nil {
 				return fmt.Errorf("cannot read file %s: %w", filePath, err)
 			}
@@ -216,7 +216,7 @@ func importCmd() *cobra.Command {
 	}
 	cmd.Flags().StringVarP(&filePath, "file", "f", "", "plik z planem (YAML lub JSON)")
 	cmd.Flags().BoolVar(&clear, "clear", false, "wyczyść istniejące fazy przed importem")
-	cmd.MarkFlagRequired("file")
+	_ = cmd.MarkFlagRequired("file")
 	return cmd
 }
 
@@ -242,7 +242,7 @@ func phaseListCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			phases, err := store.ListPhases(statusFilter)
 			if err != nil {
@@ -294,7 +294,7 @@ func phaseShowCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			p, err := store.GetPhaseByDay(day)
 			if err != nil {
@@ -353,7 +353,7 @@ func phaseUpdateCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			if err := store.UpdatePhaseStatus(day, status); err != nil {
 				return err
@@ -377,7 +377,7 @@ func phaseAddCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			p := model.Phase{
 				Day:         day,
@@ -398,8 +398,8 @@ func phaseAddCmd() *cobra.Command {
 	cmd.Flags().IntVarP(&day, "day", "d", 0, "numer dnia (wymagany)")
 	cmd.Flags().StringVarP(&name, "name", "n", "", "nazwa fazy (wymagana)")
 	cmd.Flags().StringVar(&description, "desc", "", "opis fazy")
-	cmd.MarkFlagRequired("day")
-	cmd.MarkFlagRequired("name")
+	_ = cmd.MarkFlagRequired("day")
+	_ = cmd.MarkFlagRequired("name")
 	return cmd
 }
 
@@ -425,7 +425,7 @@ func taskAddCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			if err := store.AddTask(phaseDay, name); err != nil {
 				return err
@@ -437,8 +437,8 @@ func taskAddCmd() *cobra.Command {
 	}
 	cmd.Flags().IntVarP(&phaseDay, "phase", "p", 0, "numer dnia fazy (wymagany)")
 	cmd.Flags().StringVarP(&name, "name", "n", "", "nazwa zadania (wymagana)")
-	cmd.MarkFlagRequired("phase")
-	cmd.MarkFlagRequired("name")
+	_ = cmd.MarkFlagRequired("phase")
+	_ = cmd.MarkFlagRequired("name")
 	return cmd
 }
 
@@ -457,7 +457,7 @@ func taskListCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			tasks, err := store.ListTasks(day)
 			if err != nil {
@@ -497,7 +497,7 @@ func taskDoneCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			if err := store.CompleteTask(id); err != nil {
 				return err
@@ -518,7 +518,7 @@ func statusCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			defer store.Close()
+			defer func() { _ = store.Close() }()
 
 			name, err := store.GetProjectName()
 			if err != nil {
@@ -937,7 +937,8 @@ func validateCmd() *cobra.Command {
 				}
 			}
 
-			if format == "json" {
+			switch format {
+			case "json":
 				if err := writeValidateJSONReport(reportJSON, output); err != nil {
 					return commandRuntimeError(
 						format,
@@ -948,7 +949,7 @@ func validateCmd() *cobra.Command {
 						map[string]any{"output": output},
 					)
 				}
-			} else if format == "sarif" {
+			case "sarif":
 				if err := writeValidateSARIFReport(reportJSON, output); err != nil {
 					return commandRuntimeError(
 						format,
@@ -1072,10 +1073,10 @@ func writeValidateJSONReport(report validateReportJSON, output string) error {
 		_, err = os.Stdout.Write(append(data, '\n'))
 		return err
 	}
-	if err := os.MkdirAll(filepath.Dir(output), 0o755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(output), 0o750); err != nil {
 		return fmt.Errorf("błąd utworzenia katalogu dla raportu validate: %w", err)
 	}
-	return os.WriteFile(output, data, 0o644)
+	return os.WriteFile(output, data, 0o600)
 }
 
 func planCmd() *cobra.Command {

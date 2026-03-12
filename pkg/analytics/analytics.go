@@ -69,7 +69,7 @@ func ExportCSV(path string, stats []TemplateStats) error {
 	if err != nil {
 		return fmt.Errorf("cannot create csv %s: %w", path, err)
 	}
-	defer f.Close()
+	defer func() { _ = f.Close() }()
 	w := csv.NewWriter(f)
 	defer w.Flush()
 
@@ -101,5 +101,5 @@ func ExportHTML(path string, stats []TemplateStats, summary Summary) error {
 			s.Path, s.DocType, s.Language, s.Version, s.Status, s.Quality, s.Usage)
 	}
 	b.WriteString("</table></body></html>")
-	return os.WriteFile(path, []byte(b.String()), 0o644)
+	return os.WriteFile(path, []byte(b.String()), 0o600)
 }

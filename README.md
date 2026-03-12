@@ -1,25 +1,24 @@
 # docflow
 
-CLI do zarządzania dokumentacją i szablonami (Go, bez CGO). Release Candidate 2 (GA-ready).
+CLI do zarządzania dokumentacją i szablonami (Go, bez CGO).
 
-## Feedback Week (7 days)
+**docflow** skanuje i waliduje dokumenty Markdown, egzekwuje governance metadanych, śledzi zależności i generuje artefakty CI (SARIF, JSON bundles). Działa bez zewnętrznych serwisów — tylko lokalne pliki i vendor.
 
-For the next 7 days we are collecting user feedback in a structured way.
-
-- **Bugs / actionable tasks**: open an Issue  
-  https://github.com/Aerendal/doc-flow/issues
-- **Questions / troubleshooting / ideas**: start a Discussion  
-  https://github.com/Aerendal/doc-flow/discussions
-- **Security vulnerabilities**: do NOT open an Issue/Discussion; follow SECURITY policy  
-  https://github.com/Aerendal/doc-flow/security/policy
-
-When reporting a bug, please include:
-- doc-flow version / commit
-- OS + architecture
-- exact command(s)
-- expected vs actual behavior
-- minimal steps to reproduce
-- logs (redacted: no secrets)
+## Spis treści
+- [Wymagania](#wymagania)
+- [Quickstart (60s)](#quickstart-60s)
+- [Komendy CLI](#komendy-cli-overview)
+- [Quickstart dla zewnętrznego repo](#quickstart-dla-twojego-repo-zewnętrznego)
+- [GitHub Actions](#github-actions-recommended-health---ci)
+- [Instalacja ze źródeł](#instalacja-ze-źródeł)
+- [Instalacja (release)](#instalacja-release)
+- [Weryfikacja release](#verify-release)
+- [Testy](#testy)
+- [Konfiguracja](#konfiguracja)
+- [Troubleshooting](#troubleshooting)
+- [Roadmapa](#roadmapa-v02-skrót)
+- [Status](#status)
+- [Support / Disclaimer](#support--disclaimer)
 
 ## Wymagania
 - Go 1.25+ (zainstalowane lokalnie)

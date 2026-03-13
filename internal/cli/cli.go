@@ -111,6 +111,8 @@ func Execute() error {
 	rootCmd.AddCommand(paletteCmd())
 	rootCmd.AddCommand(healthCmd())
 	rootCmd.AddCommand(fixCmd())
+	rootCmd.AddCommand(checkCmd())
+	rootCmd.AddCommand(doctorCmd())
 
 	return rootCmd.Execute()
 }
@@ -121,10 +123,15 @@ func openStore() (*db.Store, error) {
 
 func initCmd() *cobra.Command {
 	var name string
+	var scaffold bool
 	cmd := &cobra.Command{
 		Use:   "init",
 		Short: "Inicjalizuje nowy projekt",
 		RunE: func(cmd *cobra.Command, args []string) error {
+			if scaffold {
+				return runScaffold(name)
+			}
+
 			store, err := openStore()
 			if err != nil {
 				return err
@@ -140,6 +147,7 @@ func initCmd() *cobra.Command {
 		},
 	}
 	cmd.Flags().StringVarP(&name, "name", "n", "docflow", "nazwa projektu")
+	cmd.Flags().BoolVar(&scaffold, "scaffold", false, "utwórz szkielet projektu (docflow.yaml, docs/_meta/GOVERNANCE_RULES.yaml, przykładowy doc)")
 	return cmd
 }
 
@@ -1144,4 +1152,54 @@ func statusToIcon(s model.PhaseStatus) string {
 	default:
 		return "?"
 	}
+}
+
+func runScaffold(projectName string) error {
+files := map[string]string{
+"docflow.yaml": `# docflow configuration
+project: ` + projectName + `
+docs_root: docs
+`,
+filepath.Join("docs", "_meta", "GOVERNANCE_RULES.yaml"): `# Governance rules for docflow compliance
+rules:
+  - id: requires-title
+    description: Każdy dokument musi mieć pole title w frontmatter
+    selector: "**/*.md"
+    check: frontmatter.title != ""
+
+  - id: requires-status
+    description: Każdy dokument musi mieć pole status w frontmatter
+    selector: "**/*.md"
+    check: frontmatter.status != ""
+`,
+filepath.Join("docs", "example.md"): `---
+title: Przykładowy dokument
+status: draft
+author: ` + projectName + `
+---
+
+# Przykładowy dokument
+
+Ten plik jest częścią szkieletu projektu wygenerowanego przez ` + "`docflow init --scaffold`" + `.
+Możesz go edytować lub usunąć.
+`,
+}
+
+created := 0
+for path, content := range files {
+if _, err := os.Stat(path); err == nil {
+fmt.Printf("  %s  pomijam (już istnieje): %s\n", warnLabel(), cyan(path))
+continue
+}
+if err := os.MkdirAll(filepath.Dir(path), 0o750); err != nil {
+return fmt.Errorf("nie można utworzyć katalogu dla %s: %w", path, err)
+}
+if err := os.WriteFile(path, []byte(content), 0o600); err != nil {
+return fmt.Errorf("nie można zapisać %s: %w", path, err)
+}
+fmt.Printf("  %s  %s\n", passLabel(), cyan(path))
+created++
+}
+fmt.Printf("\n%s Scaffold gotowy — %d plik(ów) utworzonych\n", bold("✓"), created)
+return nil
 }

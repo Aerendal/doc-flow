@@ -102,10 +102,28 @@ func Load(path string) (*Config, error) {
 }
 
 func FindConfigFile() string {
+	// 1. Explicit current directory
 	if _, err := os.Stat(DefaultConfigFile); err == nil {
 		return DefaultConfigFile
 	}
 
+	// 2. Walk up directory tree (like git)
+	dir, err := os.Getwd()
+	if err == nil {
+		for {
+			candidate := filepath.Join(dir, DefaultConfigFile)
+			if _, err := os.Stat(candidate); err == nil {
+				return candidate
+			}
+			parent := filepath.Dir(dir)
+			if parent == dir {
+				break
+			}
+			dir = parent
+		}
+	}
+
+	// 3. Global user config
 	home, err := os.UserHomeDir()
 	if err == nil {
 		global := filepath.Join(home, ".config", "docflow", DefaultConfigFile)

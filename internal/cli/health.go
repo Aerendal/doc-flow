@@ -131,10 +131,12 @@ func healthCmd() *cobra.Command {
 				meta.CacheDir = cachePath
 			}
 
+			spin := newSpinner("Analizuję dokumentację")
 			validateJSONRes := runHealthSubcommand(
 				validateCmd,
 				healthValidateArgs(validateJSONPath, "json", ciMode, validateAgainst),
 			)
+			spin.Stop()
 			summary.Validate.JSONExit = validateJSONRes.Exit
 			if validateJSONRes.Error != "" {
 				summary.Validate.Error = validateJSONRes.Error
@@ -237,7 +239,7 @@ func healthCmd() *cobra.Command {
 			}
 
 			if summary.OverallExit == 0 {
-				fmt.Printf("Health OK. Bundle: %s\n", runDir)
+				printHealthSummaryConsole(summary, runDir)
 				return nil
 			}
 
@@ -545,4 +547,41 @@ func resolvedConfigPathForHealth() string {
 		return p
 	}
 	return "docflow.yaml"
+}
+
+func printHealthSummaryConsole(s healthSummary, bundleDir string) {
+vLabel := passLabel()
+if s.Validate.Exit != 0 {
+vLabel = failLabel()
+} else if s.Validate.WarnCount > 0 {
+vLabel = warnLabel()
+}
+
+cLabel := passLabel()
+if s.Compliance.Exit != 0 {
+cLabel = failLabel()
+} else if s.Compliance.Failed > 0 {
+cLabel = warnLabel()
+}
+
+fmt.Printf("%s  validate  ", vLabel)
+if s.Validate.ErrorCount > 0 || s.Validate.WarnCount > 0 {
+fmt.Printf("errors: %s  warnings: %s",
+red(fmt.Sprintf("%d", s.Validate.ErrorCount)),
+yellow(fmt.Sprintf("%d", s.Validate.WarnCount)),
+)
+} else {
+fmt.Print(green("OK"))
+}
+fmt.Println()
+
+fmt.Printf("%s  compliance", cLabel)
+if s.Compliance.Failed > 0 {
+fmt.Printf("  failed: %s", red(fmt.Sprintf("%d", s.Compliance.Failed)))
+} else {
+fmt.Print("  " + green("OK"))
+}
+fmt.Println()
+
+fmt.Printf("%s  %s\n", bold("Bundle:"), cyan(bundleDir))
 }

@@ -1,4 +1,4 @@
-# CLI Reference (MVP)
+# Dokumentacja CLI (MVP)
 
 > Uwaga: część komend (templates/recommend) działa na danych demo; wymagają realnego indeksu w przyszłych iteracjach.
 
@@ -75,7 +75,7 @@
 - `docflow fix --against .docflow/baseline/validate.json --show new` — naprawia wyłącznie nowe findings względem baseline.
 - `docflow fix guided --root <dir>` — dotychczasowy guided flow (skryptowy).
 
-## Benchmarks (CI)
+## Testy wydajności (CI)
 - `GOFLAGS=-mod=vendor go test -bench=. -benchmem ./...` — używane w workflow.
 
 ## Flagi wspólne

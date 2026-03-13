@@ -1,46 +1,47 @@
-# Support
+# Wsparcie
 
-This repository uses two primary support channels:
+To repozytorium używa dwóch kanałów wsparcia:
 
-1) **GitHub Discussions** (preferred for questions, troubleshooting, ideas):
+1) **GitHub Discussions** (preferowane dla pytań, rozwiązywania problemów, pomysłów):
    https://github.com/Aerendal/doc-flow/discussions
 
-2) **GitHub Issues** (only for confirmed bugs and actionable tasks):
+2) **GitHub Issues** (tylko potwierdzone błędy i zadania z jasnym scope):
    https://github.com/Aerendal/doc-flow/issues
 
-## What goes where?
+## Gdzie pisać?
 
-Use **Discussions** for:
-- Questions about usage, installation, configuration
-- "How do I...?" and troubleshooting where you're not sure it's a bug
-- Feature ideas / proposals and design discussion
+**Discussions** — gdy:
+- Masz pytanie o użycie, instalację, konfigurację
+- Zastanawiasz się „jak to zrobić...?" i nie wiesz czy to błąd
+- Masz pomysł na nową funkcję lub chcesz omówić design
 
-Use **Issues** for:
-- Reproducible bugs (crashes, incorrect output, broken workflow)
-- Actionable tasks with clear acceptance criteria
+**Issues** — gdy:
+- Masz powtarzalny błąd (crash, niepoprawny wynik, zepsuty workflow)
+- Zadanie ma jasne kryteria akceptacji
 
-When reporting a bug, please include:
-- doc-flow version / commit (`./build/docflow --version`)
-- OS + architecture
-- exact command(s) run
-- expected vs. actual behavior
-- minimal steps to reproduce
-- logs (redacted: no secrets)
+Zgłaszając błąd, dołącz:
+- wersję / commit (`./build/docflow --version`)
+- system operacyjny + architektura
+- dokładne wywołanie(a) komendy
+- oczekiwane vs. rzeczywiste zachowanie
+- minimalne kroki do odtworzenia
+- logi (bez sekretów — tokeny, klucze API, prywatne URL)
 
-## Security
+## Bezpieczeństwo
 
-Do **not** report security vulnerabilities via Issues or Discussions.
-Use the private channel described in SECURITY.md:
+**Nie** zgłaszaj luk bezpieczeństwa przez Issues ani Discussions.
+Użyj prywatnego kanału opisanego w SECURITY.md:
 https://github.com/Aerendal/doc-flow/security/policy
 
-## When you post logs
+## Gdy wklejasz logi
 
-Please **remove secrets** (tokens, API keys, private URLs, sensitive file contents).
-If you accidentally posted secrets, edit/delete the content and rotate the secret immediately.
+Usuń sekrety (tokeny, klucze API, prywatne URL, wrażliwe ścieżki) przed wklejeniem.
+Jeśli przypadkowo wkleiłeś sekret — edytuj/usuń komentarz i natychmiast zrotuj sekret.
 
-## Response expectations
+## Oczekiwania odpowiedzi
 
-This project is maintained on a best-effort basis. Response times are not guaranteed.
-- I may ask for additional info or a minimal reproduction.
-- Items may be labelled as `needs-info` / `needs-repro` / `duplicate` / `wontfix`.
-- Issues and pull requests may remain unaddressed for extended periods.
+Projekt jest utrzymywany w miarę możliwości, bez gwarantowanych czasów odpowiedzi.
+- Mogę poprosić o dodatkowe informacje lub minimalne odtworzenie.
+- Zgłoszenia mogą być oznaczone jako `needs-info` / `needs-repro` / `duplicate` / `wontfix`.
+- Issues i pull requesty mogą pozostawać bez odpowiedzi przez dłuższy czas.
+

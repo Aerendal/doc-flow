@@ -1,5 +1,6 @@
-# Security
-This project does not provide a formal security disclosure process or SLA.
+# Bezpieczeństwo
 
-If you believe you found a security issue, avoid using this tool in production
-environments until you have completed your own risk assessment.
+Ten projekt nie oferuje formalnego procesu ujawniania luk ani SLA.
+
+Jeśli uważasz, że znalazłeś problem bezpieczeństwa — nie używaj narzędzia w środowiskach produkcyjnych
+do czasu przeprowadzenia własnej oceny ryzyka.

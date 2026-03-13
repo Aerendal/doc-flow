@@ -1,4 +1,4 @@
-# Contributing
+# Wkład w projekt
 
 Dziękuję za zainteresowanie projektem.
 

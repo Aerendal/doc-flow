@@ -12,7 +12,7 @@ CLI do zarządzania dokumentacją i szablonami (Go, bez CGO).
 - [GitHub Actions](#github-actions-recommended-health---ci)
 - [Instalacja ze źródeł](#instalacja-ze-źródeł)
 - [Instalacja (release)](#instalacja-release)
-- [Weryfikacja release](#verify-release)
+- [Weryfikacja release](#weryfikacja-release)
 - [Testy](#testy)
 - [Konfiguracja](#konfiguracja)
 - [Troubleshooting](#troubleshooting)
@@ -43,7 +43,7 @@ go build -mod=vendor -o build/docflow ./cmd/docflow
 go tool pprof -top /tmp/docflow.cpu
 ```
 
-## Maintainer workflows (artefacts/logs)
+## Przepływy maintainera (artefakty/logi)
 Wewnętrzne bundlowanie release/PR oraz mapa evidence są opisane w `docs/MAINTAINER_NOTES.md`.
 
 ## Maintainers (release)
@@ -150,7 +150,7 @@ Przykład workflow (jedna komenda + upload SARIF i bundle):
 Gotowy workflow w repo: `.github/workflows/docflow.yml`.
 Upewnij się, że `docflow.yaml`, `docs/_meta/GOVERNANCE_RULES.yaml` i baseline (`.docflow/baseline/*.json`) są dostępne w runie CI.
 
-## Command palette
+## Paleta poleceń
 - Bash/fzf: `./scripts/palette.sh` (fzf opcjonalny; fallback lista + wybór numeru). Akcje: import, audit, bundle, demo, checks.
 - W binarce: `./build/docflow palette` (tekstowe menu bez fzf).
 
@@ -186,14 +186,14 @@ go build -mod=vendor -o build/docflow ./cmd/docflow
 - `validate --governance docs/_meta/GOVERNANCE_RULES.yaml` — egzekwuje reguły governance (pola i sekcje per status/rodzina).
 - `--log-format json`, `--cpu-profile`, `--mem-profile` — globalne flagi obserwowalności.
 
-## Kontrakt i GA (Source of Truth)
+## Kontrakt i GA (Źródło prawdy)
 - Kontrakt i integracje CI: `docs/CONTRACT.md`
 - GA Checklist: `docs/GA_CHECKLIST.md`
 - Gotowy workflow: `.github/workflows/docflow.yml`
 
 README opisuje szybkie użycie; szczegóły kontraktu i polityk są utrzymywane w `docs/`.
 
-## Legacy CI (manual flow)
+## Ręczny CI (bez health --ci)
 Jeżeli potrzebujesz uruchamiać kroki ręcznie (bez `health --ci`), użyj bezpośrednio komend `validate` i `compliance`.
 Kanoniczny sposób integracji CI pozostaje `docflow health --ci`, bo daje jeden spójny `overall_exit` i pełny bundle artefaktów.
 Szczegóły parametrów i kontraktu outputów: `docs/CLI_REFERENCE.md` oraz `docs/CONTRACT.md`.
@@ -213,7 +213,7 @@ chmod +x docflow-linux-amd64
   - Możesz wskazać własną binarkę: `--from /path/to/docflow`.
   - `--channel latest` używa lokalnych artefaktów `dist/` przygotowanych przez pipeline release.
 
-## Verify release
+## Weryfikacja release
 Release zawiera archiwa (`.tar.gz` dla Linux/macOS, `.zip` dla Windows) oraz:
 - `checksums.txt` (SHA-256 wszystkich archiwów)
 - opcjonalnie podpisy Cosign: `*.sig` i `*.cert`
@@ -221,7 +221,7 @@ Release zawiera archiwa (`.tar.gz` dla Linux/macOS, `.zip` dla Windows) oraz:
 - opcjonalnie provenance attestation (GitHub Attestations)
 - pełna checklista: `docs/SECURITY_VERIFICATION.md`
 
-### 1) Verify checksums (baseline)
+### 1) Weryfikacja sum kontrolnych
 Linux:
 ```bash
 sha256sum -c checksums.txt
@@ -240,7 +240,7 @@ $actual = (Get-FileHash .\$zip -Algorithm SHA256).Hash.ToLower()
 if ($expected.ToLower() -ne $actual) { throw "SHA256 mismatch" } else { "OK" }
 ```
 
-### 2) Verify Cosign signatures (optional)
+### 2) Weryfikacja podpisów Cosign (opcjonalne)
 Przykład dla archiwum:
 ```bash
 cosign verify-blob \

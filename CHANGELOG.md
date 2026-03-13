@@ -1,4 +1,4 @@
-# Changelog
+# Dziennik zmian
 
 Wszystkie istotne zmiany w projekcie są dokumentowane tutaj.
 Format oparty na [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).

@@ -1,4 +1,4 @@
-# docflow — User Guide (MVP)
+# docflow — Przewodnik użytkownika (MVP)
 
 ## 0. Wymagania
 - Go 1.25+ (lokalnie) lub gotowy binarek z Releases.
@@ -77,7 +77,7 @@ template_source: "templates/guide_v1.md"
 - Homebrew (po wydaniu sha256): `brew install --build-from-source ./homebrew/docflow.rb`
 - Manual: pobierz `docflow-<os>-<arch>.tar.gz` z GitHub Releases, rozpakuj do PATH.
 
-## 7. FAQ (skrót)
+## 7. FAQ — najczęstsze pytania
 - **Permission denied w ~/.cache/go-build?** Ustaw `GOCACHE=/tmp/go-cache` lub `HOME=/tmp`.
 - **Brak internetu na CI?** Build ze źródeł wymaga wcześniejszego `go mod download` online lub gotowej binarki z Releases.
 - **Dlaczego compliance pokazuje fałszywe brakujące pola?** Governance heurystyka szuka `field:` w treści; upewnij się, że frontmatter zawiera pola i jest poprawnie sformatowany.
